@@ -10,7 +10,7 @@ buildDrafts: false
 buildFuture: false
 buildExpired: false
 enableEmoji: true
-# googleAnalytics: UA-123-45
+googleAnalytics: UA-97060993-1
 
 minify:
   disableXML: true
@@ -151,6 +151,10 @@ params:
       url: "https://twitter.com/ReiAccept"
     - name: Telegram
       url: "https://t.me/CuteRei"
+    - name: Email
+      url: "mailto:lhh@live.com"
+    - name: Steam
+      url: "https://steamcommunity.com/profiles/76561198098645060/"
     - name: RSS
       url: "index.xml"
 
