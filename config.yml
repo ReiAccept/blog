@@ -60,15 +60,18 @@ languages:
         - name: 归档
           url: archives/
           weight: 1
-        - name: 标签
-          url: tags
-          weight: 3
         - name: 亲友
           url: friends/
           weight: 2
+        - name: 标签
+          url: tags
+          weight: 3
+        - name: 搜索
+          url: search
+          weight: 4
         - name: 旧版博客
           url: https://rei.meta.io
-          weight: 4
+          weight: 5
         # - name: 系列
         #   url: series
         #   weight: 10

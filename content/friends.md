@@ -1,6 +1,10 @@
 ---
 title: "亲友萌"
 # layout: ""
+ShowBreadCrumbs: false
+ShowReadingTime: false
+displayFullLangName: false
+ShowToc: false
 ---
 王神仙
 https://www.cnblogs.com/onglublog/

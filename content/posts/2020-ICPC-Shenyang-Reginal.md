@@ -2,7 +2,7 @@
 title = "ICPC 2020 Shenyang Reginal"
 date = "2021-09-06T20:35:24+08:00"
 tags = ["算法竞赛"]
-mathjax = true
+math = true
 description = ""
 +++
 
