@@ -45,7 +45,7 @@ languages:
     profileMode:
       enabled: true
       # title: PaperMod
-      imageUrl: "noeru_compressd.png"
+      imageUrl: "/noeru_compressd.png"
       # imageTitle: my image
       # imageWidth: 120
       # imageHeight: 120
