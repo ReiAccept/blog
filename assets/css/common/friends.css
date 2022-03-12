@@ -7,8 +7,8 @@
     margin: 10px;
     width: auto;
     height: auto;
-    /* min-width: 300px;
-    max-width: 590px; */
+    min-width: 300px;
+    max-width: 590px;
     background-color: var(--card-background);
     border-radius: var(--card-border-radius);
     box-shadow: var(--shadow-l1);
@@ -21,7 +21,7 @@
   }
   .friends-container .friends-list .friend-avatar .friend-avatar-img {
     width: 80px;
-    /* height: 80px; */
+    height: 80px;
     border-radius: 50%;
     object-fit: fill;
     border-style: solid;
@@ -30,7 +30,6 @@
   .friends-container .friends-list .friend-info {
     float: right;
     margin-left: 20px;
-    width: 100vw;
   }
   .friends-container .friends-list .friend-info .friend-name {
     font-size: 2rem;
