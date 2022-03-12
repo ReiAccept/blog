@@ -64,3 +64,9 @@ name = "BruceChen"
 url = "https://brucec.cn/"
 avatar = "https://static.brucec.cn/image/avatar/my/avatar_1080w.webp"
 desc = "QwQ"
+
+[[friend]]
+name = "Hiromi Yuasa"
+url = "http://hiromiyuasa.github.io/"
+avatar = "https://avatars.githubusercontent.com/u/72242390"
+desc = "涩涩！"
