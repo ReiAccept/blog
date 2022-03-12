@@ -1,0 +1,23 @@
+{{ define "body-class" }}template-archives{{ end }}
+{{ define "main" }}
+<h1 class="section-title">亲友们</h1>
+<div class="friends-container">
+    {{ range .Site.Data.friends.friend }}
+    <a class="friends-list" href="{{ .url }}" target="_blank">
+        <div class=friend-avatar>
+            <img src="{{ .avatar }}" class="friend-avatar-img" alt="{{ .name }}"/>
+        </div>
+        <div class="friend-info">
+            <h2 class="friend-name">
+                {{ .name }}
+            </h2>
+            <p class="friend-desc">
+                {{ .desc }}
+            </p>
+        </div>
+    </a>
+
+    {{ end }}
+</div>
+
+{{ end }}

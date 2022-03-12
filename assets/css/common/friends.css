@@ -1,0 +1,47 @@
+.friends-container {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+  }
+  .friends-container .friends-list {
+    margin: 10px;
+    width: auto;
+    height: auto;
+    min-width: 300px;
+    max-width: 590px;
+    background-color: var(--card-background);
+    border-radius: var(--card-border-radius);
+    box-shadow: var(--shadow-l1);
+    display: flex;
+    flex-direction: row;
+    padding: 30px;
+  }
+  .friends-container .friends-list .friend-avatar {
+    margin: auto 0px;
+  }
+  .friends-container .friends-list .friend-avatar .friend-avatar-img {
+    width: 80px;
+    height: 80px;
+    border-radius: 50%;
+    object-fit: fill;
+    border-style: solid;
+    border-color: var(--table-border-color);
+  }
+  .friends-container .friends-list .friend-info {
+    float: right;
+    margin-left: 20px;
+    width: 100vw;
+  }
+  .friends-container .friends-list .friend-info .friend-name {
+    font-size: 2rem;
+    font-weight: 500;
+  }
+  .friends-container .friends-list .friend-info .friend-desc {
+    max-width: 100%;
+    word-wrap: break-word;
+  }
+  .friends-container .friends-list:hover {
+    box-shadow: var(--shadow-l2);
+    transition: box-shadow 0.5s;
+    -webkit-transition: box-shadow 0.5s;
+  }
