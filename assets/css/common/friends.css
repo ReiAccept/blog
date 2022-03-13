@@ -7,11 +7,13 @@
     margin: 10px;
     width: auto;
     height: auto;
-    min-width: 300px;
+    min-width: 320px;
     max-width: 590px;
-    background-color: var(--card-background);
-    border-radius: var(--card-border-radius);
-    box-shadow: var(--shadow-l1);
+    border-radius: 10px;
+    background-color: #f9f9f9;
+    /* border-style: solid; */
+    /* border-color: #dadada; */
+    box-shadow: 2px 2px 1px #dadada;
     display: flex;
     flex-direction: row;
     padding: 30px;
@@ -25,7 +27,7 @@
     border-radius: 50%;
     object-fit: fill;
     border-style: solid;
-    border-color: var(--table-border-color);
+    border-color: #dadada;
   }
   .friends-container .friends-list .friend-info {
     float: right;
