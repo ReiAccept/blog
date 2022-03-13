@@ -10,10 +10,10 @@
     min-width: 320px;
     max-width: 590px;
     border-radius: 10px;
-    background-color: #f9f9f9;
+    /* background-color: #f9f9f9; */
     /* border-style: solid; */
-    /* border-color: #dadada; */
-    box-shadow: 2px 2px 1px #dadada;
+    /* border-color: gray; */
+    /* box-shadow: 2px 2px 1px #dadada; */
     display: flex;
     flex-direction: row;
     padding: 30px;
