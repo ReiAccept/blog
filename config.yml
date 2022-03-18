@@ -1,6 +1,6 @@
 baseURL: https://rei.ac/
 languageCode: zh-CN
-title: Rei的小窝
+title: Rei's blog
 # paginate: 5 # 一页的文章数
 theme: PaperMod
 
