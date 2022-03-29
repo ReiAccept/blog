@@ -1318,83 +1318,83 @@ signed main() {
 using namespace std;
 inline int read()
 {
-	char ch=getchar();
-	int res=0,flag=1;
-	while(ch<'0'||ch>'9')
-	{
-		if(ch=='-')
-			flag=-1;
-		ch=getchar();
-	}
-	while(ch>='0'&&ch<='9')
-	{
-		res=res*10+ch-'0';
-		ch=getchar();
-	}
-	return res*flag;
+    char ch=getchar();
+    int res=0,flag=1;
+    while(ch<'0'||ch>'9')
+    {
+        if(ch=='-')
+            flag=-1;
+        ch=getchar();
+    }
+    while(ch>='0'&&ch<='9')
+    {
+        res=res*10+ch-'0';
+        ch=getchar();
+    }
+    return res*flag;
 }
 int n;
 struct work
 {
-	int w;
-	int t;
-	bool operator <(work x2)
-	{
-		return w>x2.w;
-	}
+    int w;
+    int t;
+    bool operator <(work x2)
+    {
+        return w>x2.w;
+    }
 }x[100001];
 int c[100001];
 ll ans;
 inline int lowbit(int a)
 {
-	return a&(-a);
+    return a&(-a);
 }
 inline void update(int pos,int v)
 {
-	while(pos<=n)
-	{
-		c[pos]+=v;
-		pos+=lowbit(pos);
-	}	
+    while(pos<=n)
+    {
+        c[pos]+=v;
+        pos+=lowbit(pos);
+    }    
 }
 inline int sum(int pos)
 {
-	int res=0;
-	while(pos)
-	{
-		res+=c[pos];
-		pos-=lowbit(pos);
-	}
-	return res;
+    int res=0;
+    while(pos)
+    {
+        res+=c[pos];
+        pos-=lowbit(pos);
+    }
+    return res;
 }
 int main()
 {
-	n=read();
-	for(int i=1;i<=n;++i)
-	{
-		x[i].t=min(read(),(int)1e5);
-		x[i].w=read();
-	}
-	sort(x+1,x+n+1);
-	for(int i=1;i<=n;++i)
-		if(sum(x[i].t)!=x[i].t)
-		{
-			int l=1,r=x[i].t,mid,res;
-			while(l<=r)
-			{
-				mid=(l+r)>>1;
-				if(sum(x[i].t)-sum(mid-1)!=x[i].t-mid+1)
-				{
-					res=mid;
-					l=mid+1;
-				}
-				else
-					r=mid-1;
-			}
-			update(res,1);
-			ans+=x[i].w;
-		}
-	printf("%lld\n",ans);
+    n=read();
+    for(int i=1;i<=n;++i)
+    {
+        x[i].t=min(read(),(int)1e5);
+        x[i].w=read();
+    }
+    sort(x+1,x+n+1);
+    for(int i=1;i<=n;++i)
+        if(sum(x[i].t)!=x[i].t)
+        {
+            int l=1,r=x[i].t,mid,res;
+            while(l<=r)
+            {
+                mid=(l+r)>>1;
+                if(sum(x[i].t)-sum(mid-1)!=x[i].t-mid+1)
+                {
+                    res=mid;
+                    l=mid+1;
+                }
+                else
+                    r=mid-1;
+            }
+            update(res,1);
+            ans+=x[i].w;
+        }
+    printf("%lld\n",ans);
     return 0;
 }
 ```
@@ -1508,42 +1508,42 @@ int a[43];
 
 inline void work(signed CASE=1,bool FINAL_CASE=false) {
     n=read();
-	for(int i=1;i<=n;i++) {
+    for(int i=1;i<=n;i++) {
         a[i]=read();
     }
-	sort(a+1,a+1+n);
-	int cnt = 1;
-	for(int i=2;i<=n;i++) {
-		if(a[i]==a[i-1]) cnt++;
-		else cnt = 1;
-		if(cnt >= n/2) {
-			cout<<"-1\n";
-			return ;
-		}
-	}
-	int res = 0;
-	for(int i=1;i<=n;i++) {
-		map<int ,int >mp;
-		cnt = 0;
-		for(int j=1;j<=n;j++) {
-			int x = abs(a[j]-a[i]);
-			if(a[i]==a[j]) {
-				cnt ++ ;
-				continue;
-			}
-			for(int k=1;k*k<=x;k++) {
-				if(x % k==0) {
-					if(k*k==x) mp[k]++;
-					else mp[x/k]++,mp[k]++;
-				}
-			}
-		}
-		for(auto i : mp) {
-			if(i.se + cnt >= n/2) {
+    sort(a+1,a+1+n);
+    int cnt = 1;
+    for(int i=2;i<=n;i++) {
+        if(a[i]==a[i-1]) cnt++;
+        else cnt = 1;
+        if(cnt >= n/2) {
+            cout<<"-1\n";
+            return ;
+        }
+    }
+    int res = 0;
+    for(int i=1;i<=n;i++) {
+        map<int ,int >mp;
+        cnt = 0;
+        for(int j=1;j<=n;j++) {
+            int x = abs(a[j]-a[i]);
+            if(a[i]==a[j]) {
+                cnt ++ ;
+                continue;
+            }
+            for(int k=1;k*k<=x;k++) {
+                if(x % k==0) {
+                    if(k*k==x) mp[k]++;
+                    else mp[x/k]++,mp[k]++;
+                }
+            }
+        }
+        for(auto i : mp) {
+            if(i.se + cnt >= n/2) {
                 res = max(res,i.fi);
             }
-		}
-	}
+        }
+    }
     printf("%d\n",res);
     return;
 }
@@ -1765,26 +1765,26 @@ int cnt[10];
 
 bool find(string &s,string &t)
 {
-	int n=sz(s),m=sz(t),i=0;
-	for(auto c:t)
-	{
-		while (i<n&&s[i]!=c) {
+    int n=sz(s),m=sz(t),i=0;
+    for(auto c:t)
+    {
+        while (i<n&&s[i]!=c) {
             cnt[s[i++]-'0']--;
         }
-		if (i==n) {
+        if (i==n) {
             return false;
         }
-		i++;
-	}
-	while(i<n) {
+        i++;
+    }
+    while(i<n) {
         cnt[s[i++]-'0']--;
     }
-	for (int i=0;i<10;i++) {
+    for (int i=0;i<10;i++) {
         if (cnt[i]) {
             return false;
         }
     }
-	return true;
+    return true;
 }
 void work(int CASE,bool FINAL_CASE)
 {
@@ -1823,7 +1823,7 @@ void work(int CASE,bool FINAL_CASE)
         }
     }
     cout<<ans1<<' '<<ans2<<endl;
- 
+
 }
 
 signed main() {
@@ -1874,37 +1874,37 @@ inline int read(){int s=0,w=1;char ch=nc();while(!isdigit(ch)){if(ch=='-')w=-1;c
 
 int n,q,mod,cnt;
 int v[MAXN],fib[MAXN];
- 
+
 void upd(int pos,int val){
-	if(pos<n && v[pos]==0) {
+    if(pos<n && v[pos]==0) {
         cnt--;
     }
-	v[pos]=(v[pos]+val)%mod;
-	if(pos<n && v[pos]==0) {
+    v[pos]=(v[pos]+val)%mod;
+    if(pos<n && v[pos]==0) {
         cnt++;
     }
 }
 
 inline void work(signed CASE=1,bool FINAL_CASE=false) {
     cnt=n=read(); q=read(); mod=read();
-	fib[0]=fib[1]=1%mod;
-	for(int i=2;i<MAXN;i++) {
+    fib[0]=fib[1]=1%mod;
+    for(int i=2;i<MAXN;i++) {
         fib[i]=(fib[i-1]+fib[i-2])%mod;
     }
-	for(int a,i=0;i<n;i++) {
+    for(int a,i=0;i<n;i++) {
         a=read();
-		upd(i,a); upd(i+1,-a); upd(i+2,-a);
-	}	
-	for(int b,i=0;i<n;i++) {
+        upd(i,a); upd(i+1,-a); upd(i+2,-a);
+    }    
+    for(int b,i=0;i<n;i++) {
         b=read();
-		upd(i,-b); upd(i+1,b); upd(i+2,b);
-	}
-	for(int l,r,val,i=1;i<=q;i++) {
-		char c=nc(); l=read()-1; r=read()-1;
+        upd(i,-b); upd(i+1,b); upd(i+2,b);
+    }
+    for(int l,r,val,i=1;i<=q;i++) {
+        char c=nc(); l=read()-1; r=read()-1;
         val=(c=='A'?1:-1);
-		upd(l,val*fib[0]); upd(r+1,-val*fib[r+1-l]); upd(r+2,-val*fib[r-l]);
+        upd(l,val*fib[0]); upd(r+1,-val*fib[r+1-l]); upd(r+2,-val*fib[r-l]);
         puts(n==cnt?"Yes":"No");
-	}
+    }
     return;
 }
 
@@ -2125,7 +2125,7 @@ inline void work(signed CASE=1,bool FINAL_CASE=false) {
             stk.push(a[i]);
             instk[a[i]]=true;
         }
-        
+
     }
     while (!stk.empty()) {
         ans[++cnt]=stk.top();
@@ -2223,4 +2223,238 @@ signed main() {
     }
     return 0;
 }
+```
+
+# Day28 [#613. 好序列](http://oj.daimayuan.top/problem/613)
+
+```cpp
+#include<bits/stdc++.h>
+// #include<bits/extc++.h>
+// #define int long long//__int128
+#define mmst0(x) memset(x,0,sizeof(x))
+#define mmst3f(x) memset(x,0x3f,sizeof(x))
+#define si(x) scanf("%d",&x)//scanf("%lld",&x) // When define int ll
+#define pb(...) emplace_back(__VA_ARGS__)
+#define sz(x) ((int)(x.size()))
+#define PII pair<int,int>
+#define mkp(x, y) make_pair(x, y)
+#define fi first
+#define se second
+#define YESS puts("non-boring")
+#define NOO puts("boring")
+using namespace std;
+// using namespace __gnu_pbds; // If using pbds don't using std!
+typedef long long ll;
+// typedef long double rld; // use double pls!
+typedef unsigned long long ull;
+
+const double eps = 1e-6;
+const int INF=0x3f3f3f3f;//0x3f3f3f3f3f3f3f3f; // LLINF
+const int MAXN=(int)2e5+3;
+
+inline char nc(){static char buf[100000],*p1=buf,*p2=buf;return p1==p2&&(p2=(p1=buf)+fread(buf,1,100000,stdin),p1==p2)?EOF:*p1++;}
+inline int read(){int s=0,w=1;char ch=nc();while(!isdigit(ch)){if(ch=='-')w=-1;ch=nc();}while(isdigit(ch)){s=(s<<3)+(s<<1)+(ch^48);ch=nc();} return s*w;}
+//inline int read() {int x;si(x);return x;} // FAKE QUICK READ,JUST FOR DEBUG
+// inline void read(int &x){char ch=nc();x=0;while (!(ch>='0'&&ch<='9')) ch=nc();while (ch>='0'&&ch<='9') x=(x<<3)+(x<<1)+ch-48,ch=nc();} // 根据参数个数自动选择
+// void prt(int x){if(x<0){putchar('-');x=-x;}if(x>9)prt(x/10);putchar((char)(x%10+'0'));}
+
+int n;
+int a[MAXN],pre[MAXN],nxt[MAXN];
+
+bool chk(int l,int r) {
+    if(l>=r) {
+        return true;
+    }
+    int x=l,y=r;
+    while(x<=y) { // 启发式合并
+        if(pre[x]<l && r<nxt[x]) {
+            return (chk(l,x-1) && chk(x+1,r));
+        }
+        x++;
+        if(pre[y]<l && r<nxt[y]) {
+            return (chk(l,y-1) && chk(y+1,r));
+        }
+        y--;
+    }
+    return false;
+}
+
+inline void work(signed CASE=1,bool FINAL_CASE=false) {
+    n=read(); map<int,int> mp;
+    for(int i=1;i<=n;i++) {
+        pre[i]=-1; nxt[i]=n+1;
+    }
+    for(int i=1;i<=n;i++) {
+        a[i]=read();
+    }
+    for(int i=1;i<=n;i++) {
+        pre[i]=mp[a[i]];
+        nxt[mp[a[i]]]=i;
+        mp[a[i]]=i;
+    }
+    if(chk(1,n)) {
+        YESS;
+    } else {
+        NOO;
+    }
+    return;
+}
+
+signed main() {
+    // ios::sync_with_stdio(false); cin.tie(nullptr); cout.tie(nullptr); //freopen(".in", "r", stdin);//freopen(".out", "w", stdout);
+    signed T=(signed)read();//scanf("%d",&T);//cin>>T;
+    for(signed CASE=1; CASE<=T; CASE++) { //
+        //printf("Case #%d: ",CASE); //printf("Case %d: ",CASE); //printf("Case #%d: \n",CASE); //printf("Case %d: \n",CASE);
+        //while(cin>>n) work(n);
+        work(CASE,CASE==T);
+        if(CASE!=T) { }
+    }
+    return 0;
+}
+```
+
+# Day29 [#606. 社交圈](http://oj.daimayuan.top/problem/606)
+
+```
+#include<bits/stdc++.h>
+// #include<bits/extc++.h>
+#define int long long//__int128
+#define mmst0(x) memset(x,0,sizeof(x))
+#define mmst3f(x) memset(x,0x3f,sizeof(x))
+#define si(x) scanf("%d",&x)//scanf("%lld",&x) // When define int ll
+#define pb(...) emplace_back(__VA_ARGS__)
+#define sz(x) ((int)(x.size()))
+#define PII pair<int,int>
+#define mkp(x, y) make_pair(x, y)
+#define fi first
+#define se second
+#define YESS puts("YES")
+#define NOO puts("NO")
+using namespace std;
+// using namespace __gnu_pbds; // If using pbds don't using std!
+typedef long long ll;
+// typedef long double rld; // use double pls!
+typedef unsigned long long ull;
+
+const double eps = 1e-6;
+const int INF=0x3f3f3f3f;//0x3f3f3f3f3f3f3f3f; // LLINF
+const int MAXN=(int)1e5+3;
+
+inline char nc(){static char buf[100000],*p1=buf,*p2=buf;return p1==p2&&(p2=(p1=buf)+fread(buf,1,100000,stdin),p1==p2)?EOF:*p1++;}
+inline int read(){int s=0,w=1;char ch=nc();while(!isdigit(ch)){if(ch=='-')w=-1;ch=nc();}while(isdigit(ch)){s=(s<<3)+(s<<1)+(ch^48);ch=nc();} return s*w;}
+//inline int read() {int x;si(x);return x;} // FAKE QUICK READ,JUST FOR DEBUG
+// inline void read(int &x){char ch=nc();x=0;while (!(ch>='0'&&ch<='9')) ch=nc();while (ch>='0'&&ch<='9') x=(x<<3)+(x<<1)+ch-48,ch=nc();} // 根据参数个数自动选择
+// void prt(int x){if(x<0){putchar('-');x=-x;}if(x>9)prt(x/10);putchar((char)(x%10+'0'));}
+
+int n,ans;
+int l[MAXN],r[MAXN];
+
+inline void work(signed CASE=1,bool FINAL_CASE=false) {
+    n=read();
+    for(int i=1;i<=n;i++) {
+        l[i]=read(); r[i]=read();
+    }
+    sort(l+1,l+1+n);
+    sort(r+1,r+1+n);
+    for(int i=1;i<=n;i++) {
+        ans+=max(l[i],r[i]);
+    }
+    printf("%lld\n",ans+n); // +n 包括自己的椅子
+    return;
+}
+
+signed main() {
+    // ios::sync_with_stdio(false); cin.tie(nullptr); cout.tie(nullptr); //freopen(".in", "r", stdin);//freopen(".out", "w", stdout);
+    signed T=1;//(signed)read();//scanf("%d",&T);//cin>>T;
+    for(signed CASE=1; CASE<=T; CASE++) { //
+        //printf("Case #%d: ",CASE); //printf("Case %d: ",CASE); //printf("Case #%d: \n",CASE); //printf("Case %d: \n",CASE);
+        //while(cin>>n) work(n);
+        work(CASE,CASE==T);
+        if(CASE!=T) {}
+    }
+    return 0;
+}
+
+// 草，是若干个圈
+// 开始以为只有一个圈
+```
+
+# Day30 [#609. 区间和](http://oj.daimayuan.top/problem/609)
+
+```
+#include<bits/stdc++.h>
+// #include<bits/extc++.h>
+#define int long long//__int128
+#define mmst0(x) memset(x,0,sizeof(x))
+#define mmst3f(x) memset(x,0x3f,sizeof(x))
+#define si(x) scanf("%d",&x)//scanf("%lld",&x) // When define int ll
+#define pb(...) emplace_back(__VA_ARGS__)
+#define sz(x) ((int)(x.size()))
+#define PII pair<int,int>
+#define mkp(x, y) make_pair(x, y)
+#define fi first
+#define se second
+#define YESS puts("Yes")
+#define NOO puts("No")
+using namespace std;
+// using namespace __gnu_pbds; // If using pbds don't using std!
+typedef long long ll;
+// typedef long double rld; // use double pls!
+typedef unsigned long long ull;
+
+const double eps = 1e-6;
+const int INF=0x3f3f3f3f;//0x3f3f3f3f3f3f3f3f; // LLINF
+const int MAXN=(int)2e5+3;
+
+inline char nc(){static char buf[100000],*p1=buf,*p2=buf;return p1==p2&&(p2=(p1=buf)+fread(buf,1,100000,stdin),p1==p2)?EOF:*p1++;}
+inline int read(){int s=0,w=1;char ch=nc();while(!isdigit(ch)){if(ch=='-')w=-1;ch=nc();}while(isdigit(ch)){s=(s<<3)+(s<<1)+(ch^48);ch=nc();} return s*w;}
+//inline int read() {int x;si(x);return x;} // FAKE QUICK READ,JUST FOR DEBUG
+// inline void read(int &x){char ch=nc();x=0;while (!(ch>='0'&&ch<='9')) ch=nc();while (ch>='0'&&ch<='9') x=(x<<3)+(x<<1)+ch-48,ch=nc();} // 根据参数个数自动选择
+// void prt(int x){if(x<0){putchar('-');x=-x;}if(x>9)prt(x/10);putchar((char)(x%10+'0'));}
+
+int n,q;
+int fa[MAXN];
+
+int findx(int x) {
+    return x==fa[x]?x:fa[x]=findx(fa[x]);
+}
+
+void merge(int x,int y) {
+    fa[findx(x)]=findx(y);
+}
+
+inline void work(signed CASE=1,bool FINAL_CASE=false) {
+    n=read(); q=read();
+    for(int i=1;i<=n;i++) {
+        fa[i]=i;
+    }
+    while(q--) {
+        int l=read(),r=read();
+        merge(l-1,r);
+    }
+    if(findx(0)==findx(n)) {
+        YESS;
+    } else {
+        NOO;
+    }
+    return;
+}
+
+signed main() {
+    // ios::sync_with_stdio(false); cin.tie(nullptr); cout.tie(nullptr); //freopen(".in", "r", stdin);//freopen(".out", "w", stdout);
+    signed T=1;//(signed)read();//scanf("%d",&T);//cin>>T;
+    for(signed CASE=1; CASE<=T; CASE++) { //
+        //printf("Case #%d: ",CASE); //printf("Case %d: ",CASE); //printf("Case #%d: \n",CASE); //printf("Case %d: \n",CASE);
+        //while(cin>>n) work(n);
+        work(CASE,CASE==T);
+        if(CASE!=T) {}
+    }
+    return 0;
+}
+```
+
+# Day31 [#618. 选数2](http://oj.daimayuan.top/problem/618)
+
+```cpp
+
 ```
