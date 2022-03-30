@@ -1,4 +1,5 @@
 .friends-container {
+    width: 1000px;
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
@@ -7,16 +8,16 @@
     margin: 10px;
     width: auto;
     height: auto;
-    min-width: 320px;
+    min-width: 390px;
     max-width: 590px;
     border-radius: 10px;
     /* background-color: #f9f9f9; */
-    /* border-style: solid; */
-    /* border-color: gray; */
+    /* border-style: solid;
+    border-color: #dadada; */
     /* box-shadow: 2px 2px 1px #dadada; */
     display: flex;
     flex-direction: row;
-    padding: 30px;
+    padding: 23px;
   }
   .friends-container .friends-list .friend-avatar {
     margin: auto 0px;
@@ -31,7 +32,7 @@
   }
   .friends-container .friends-list .friend-info {
     float: right;
-    margin-left: 20px;
+    margin-left: 15px;
   }
   .friends-container .friends-list .friend-info .friend-name {
     font-size: 2rem;

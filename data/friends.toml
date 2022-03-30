@@ -75,4 +75,10 @@ desc = "涩涩！"
 name = "koto-k"
 url = "https://www.cnblogs.com/koto-k/"
 avatar = "https://q1.qlogo.cn/g?b=qq&nk=2557746160&s=640"
-desc = "Keep your feet on your track.|"
+desc = "Keep your feet on your track."
+
+[[friend]]
+name = "Aclarar"
+url = "https://collapsemos.top/"
+avatar = "https://q1.qlogo.cn/g?b=qq&nk=1957762024&s=640"
+desc = "爱与和平♂"
