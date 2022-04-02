@@ -13,7 +13,7 @@ CF Gym : [Dashboard - The 2020 ICPC Asia Shenyang Regional Programming Contest -
 
 
 
-## D [[Journey to Un'Goro](https://codeforces.com/gym/103202/problem/D)](https://codeforces.com/gym/102992/problem/D)
+## D [Journey to Un'Goro](https://codeforces.com/gym/103202/problem/D)
 
 ```cpp
 #include<bits/stdc++.h>
