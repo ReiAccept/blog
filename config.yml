@@ -164,8 +164,8 @@ params:
       favicon: "/noeru_compressd.png"
       # favicon16x16: "<link / abs url>"
       # favicon32x32: "<link / abs url>"
-      # apple_touch_icon: "<link / abs url>"
-      # safari_pinned_tab: "<link / abs url>"
+      apple_touch_icon: "/noeru_compressd.png"
+      safari_pinned_tab: "/noeru_compressd.png"
 
   # cover:
   #     hidden: true # hide everywhere but not in structured data
