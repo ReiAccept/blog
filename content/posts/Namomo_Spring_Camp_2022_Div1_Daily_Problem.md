@@ -2823,3 +2823,32 @@ signed main() {
     return 0;
 }
 ```
+
+看到一个 [AC submission](http://oj.daimayuan.top/submission/183740) 长这样
+
+```cpp
+#include<bits/stdc++.h>
+using namespace std;
+
+void solve()
+{
+	long long n;
+	cin>>n;
+	for(long long i=2; i<=1000000; i++)
+		if(n%(i*i) == 0)
+		{
+			cout << "YES" << endl;
+			return;
+		}
+	cout << "NO" << endl;
+}
+
+int main()
+{
+	int t;
+	cin>>t;
+	while(t--) solve();	
+}
+```
+
+这题数据是不是水了点
