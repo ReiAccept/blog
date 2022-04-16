@@ -45,7 +45,7 @@ languages:
     profileMode:
       enabled: true
       # title: PaperMod
-      imageUrl: "/noeru_compressd.png"
+      imageUrl: "https://cdn.jsdelivr.net/gh/ACRei/picBed/noeru_compressd.png"
       # imageTitle: my image
       # imageWidth: 120
       # imageHeight: 120
@@ -161,10 +161,10 @@ params:
   #         SiteVerificationTag: "XYZabc"
 
   assets:
-      favicon: "/noeru_compressd.png"
+      favicon: "https://cdn.jsdelivr.net/gh/ACRei/picBed/noeru_compressd.png"
       # favicon16x16: "<link / abs url>"
       # favicon32x32: "<link / abs url>"
-      apple_touch_icon: "/noeru_compressd.png"
+      apple_touch_icon: "https://cdn.jsdelivr.net/gh/ACRei/picBed/noeru_compressd.png"
       # safari_pinned_tab: "<link / abs url>"
 
   # cover:
