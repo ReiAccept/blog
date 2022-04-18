@@ -1,4 +1,4 @@
-baseURL: https://rei.ac/
+# baseURL: https://rei.ac/
 languageCode: zh-CN
 title: Rei's blog
 # paginate: 5 # 一页的文章数
