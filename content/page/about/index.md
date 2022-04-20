@@ -1,0 +1,34 @@
+---
+title: 关于本站
+slug: about
+comments: false
+toc: false
+menu:
+  main:
+    name: 关于
+    weight: 10000
+    params:
+      icon: user
+---
+
+- 就是记录一下摸鱼的日常
+
+
+## 关于我
+
+- 蒟蒻，XCPC 区域赛打铁专业户
+- 正在考研，大概就是想续费一下寒暑假
+- 简历在 LinkedIn 上，如果有大佬内推一下校招就好了 qwq
+- ~~梦想大概是变成猫娘~~
+
+## 版权说明
+
+- 除非注明，本博客所有文章皆为原创。
+- 除非另有声明，本博客之原创文章采用 [CC BY-NC-SA 4.0](https://creativecommons.org/licenses/by-nc-sa/4.0/deed.zh) 进行许可。
+- 转载请同时需要注明原文链接和作者名字。
+- 本博客运行于白嫖的 [Azure Static Web Apps](https://azure.microsoft.com/en-us/services/app-service/static/) 服务
+- 本博客的源代码位于我的 [Github 仓库](https://github.com/ACRei/blog)
+
+## 赞赏
+
+好像没啥值得您打钱的

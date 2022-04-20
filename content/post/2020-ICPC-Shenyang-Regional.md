@@ -1,16 +1,13 @@
 +++
-title = "ICPC 2020 Shenyang Reginal"
+title = "ICPC 2020 Shenyang Regional"
 date = "2021-09-06T20:35:24+08:00"
 tags = ["算法竞赛"]
+categories = ["XCPC"]
 math = true
 description = ""
 +++
 
-
-
-
 CF Gym : [Dashboard - The 2020 ICPC Asia Shenyang Regional Programming Contest - Codeforces](https://codeforces.com/gym/103202)
-
 
 
 ## D [Journey to Un'Goro](https://codeforces.com/gym/103202/problem/D)

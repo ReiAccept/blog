@@ -6,7 +6,7 @@ comments: false
 menu:
   main:
     name: 亲友
-    weight: -70
+    weight: 2
     params:
       icon: link
 ---
