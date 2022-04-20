@@ -2851,4 +2851,195 @@ int main()
 }
 ```
 
-这题数据是不是水了点
+## Day50 [P703. 删数](http://oj.daimayuan.top/problem/703)
+
+```cpp
+int n;
+int a[MAXN],d[MAXN],cnt[MAXN],f[MAXN];
+int g[MAXN][55];
+
+inline void work(signed CASE=1,bool FINAL_CASE=false) {
+    n=read();
+    for(int i=1; i<=n; i++) {
+        a[i]=read(); cnt[i]=0; f[i]=INF;
+        for(int j=0; j<55;j++) g[i][j]=-1;
+    }
+    f[1]=1;
+    for(int i = 1; i < n; i++) {
+        d[i] = a[i + 1] - a[i];
+        if (d[i] == 0) {
+            d[i] = INF;
+        } else {
+            while (d[i] % 2 == 0) {
+                cnt[i] ++, d[i] = d[i] >> 1;
+            }
+        }
+    }
+    for(int i = n - 1; i >= 1; i--) {
+        g[i][cnt[i] + 0] = i + 1;
+        for(int j = cnt[i] + 1; j <= 53; j++) {
+            if (g[i][j - 1] == -1)break;
+            if (g[i][j - 1] >= n)break;
+            if (d[g[i][j - 1]] != d[i])break;
+            int k = g[i][j - 1];
+            g[i][j] = g[k][j - 1];
+        }
+    }
+    for(int i = 1; i < n; i++) {
+        if (d[i] == INF && d[i + 1] == INF) {
+            f[i + 1] = min(f[i + 1], f[i]);
+        } else {
+            for(int j = 0; j <= 53; j++) {
+                if (g[i][j] != -1) {
+                    f[g[i][j]] = min(f[g[i][j]], f[i] + 1);
+                }
+            }
+        }
+    }
+    printf("%lld\n",f[n]);
+    return;
+}
+
+signed main() {
+    // ios::sync_with_stdio(false); cin.tie(nullptr); cout.tie(nullptr); // freopen(".in", "r", stdin);// freopen(".out", "w", stdout);
+    signed T=(signed)read();// scanf("%d",&T);// cin>>T;
+    for(signed CASE=1; CASE<=T; CASE++) { //
+        // printf("Case #%d: ",CASE); // printf("Case %d: ",CASE); // printf("Case #%d: \n",CASE); // printf("Case %d: \n",CASE);
+        work(CASE,CASE==T);
+        if(CASE!=T) { }
+    }
+    return 0;
+}
+```
+
+## Day51 [P675. 吃蛋糕](http://oj.daimayuan.top/problem/675)
+
+```cpp
+int n;
+int a[5];
+bool vis[MAXN][MAXN][MAXN];
+double dp[MAXN][MAXN][MAXN];
+
+double dfs(int i,int j,int k) {
+    if(!(i|j|k) || i<0 || j<0 || k<0) {
+        return 0;
+    }
+    if(vis[i][j][k]) {
+        return dp[i][j][k];
+    }
+    vis[i][j][k]=true;
+    double p0 = (n-(double)(i+j+k))/n;
+    double p1 = (double)i / n;
+    double p2 = (double)j / n;
+    double p3 = (double)k / n;
+    return dp[i][j][k] = (1 + p1 * dfs(i - 1, j, k) + p2 * dfs(i + 1, j - 1, k) + p3 * dfs(i, j + 1, k - 1)) / (1 - p0);
+}
+
+inline void work(signed CASE=1,bool FINAL_CASE=false) {
+    n=read();
+    for(int i=1;i<=n;i++) {
+        a[read()]++;
+    }
+    printf("%.9lf\n",dfs(a[1],a[2],a[3]));
+    return;
+}
+```
+
+## Day52 [P746. 排列](http://oj.daimayuan.top/problem/746)
+
+```cpp
+int n,sum;
+PII a[MAXN];
+
+inline void work(signed CASE=1,bool FINAL_CASE=false) {
+    n=read();
+    for(int i=1;i<=n;i++) {
+        a[i].fi=read(); a[i].se=read();
+        sum+=a[i].se;
+    }
+    if(n==2) {
+        YESS;
+        return;
+    }
+    sort(a+1,a+1+n,[](PII a,PII b){
+        return a.fi!=b.fi?a.fi<b.fi:a.se>b.se;
+    });
+    for(int i=1;i<n;i++) {
+        if(a[i].fi+sum-a[i].se>a[i+1].fi) {
+            NOO;
+            return;
+        }
+    }
+    YESS;
+    return;
+}
+
+signed main() {
+    // ios::sync_with_stdio(false); cin.tie(nullptr); cout.tie(nullptr); //freopen(".in", "r", stdin);//freopen(".out", "w", stdout);
+    signed T=(signed)read();//scanf("%d",&T);//cin>>T;
+    for(signed CASE=1; CASE<=T; CASE++) { //
+        //printf("Case #%d: ",CASE); //printf("Case %d: ",CASE); //printf("Case #%d: \n",CASE); //printf("Case %d: \n",CASE);
+        work(CASE,CASE==T);
+        if(CASE!=T) {
+            sum=0;
+        }
+    }
+    return 0;
+}
+```
+
+## Day53 [P738. 石子游戏 II](http://oj.daimayuan.top/course/10/problem/738)
+
+```cpp
+int n,one,ou;
+
+inline void work(signed CASE=1,bool FINAL_CASE=false) {
+    n=read();
+    for(int i=1;i<=n;i++) {
+        int a=read();
+        ou+=((a&1)==0);
+        one+=(a==1);
+    }
+    if((one==n) || (one==n-1 && ou==1) || ou&1) {
+        NOO;
+    } else {
+        YESS;
+    }
+    return;
+}
+```
+
+## Day54 [P807. Cow and Snacks](http://oj.daimayuan.top/problem/807)
+
+今天的 Div1 和 Div2 是不是放错了
+
+```cpp
+int n,m,ans;
+int fa[MAXN];
+
+int findx(int x) {
+    return x==fa[x]?x:fa[x]=findx(fa[x]);
+}
+
+void merge(int u,int v) {
+    u=findx(u),v=findx(v);
+    fa[u]=v;
+}
+
+inline void work(signed CASE=1,bool FINAL_CASE=false) {
+    n=read(); m=read();
+    for(int i=1;i<=n;i++) {
+        fa[i]=i;
+    }
+    while(m--) {
+        int u=read(),v=read();
+        if(findx(u)==findx(v)) {
+            ans++;
+        } else {
+            merge(u,v);
+        }
+    }
+    printf("%d\n",ans);
+    return;
+}
+```

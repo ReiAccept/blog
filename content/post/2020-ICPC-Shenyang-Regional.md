@@ -4,7 +4,7 @@ date = "2021-09-06T20:35:24+08:00"
 tags = ["算法竞赛"]
 categories = ["XCPC"]
 math = true
-description = ""
+description = "打铁实录"
 +++
 
 CF Gym : [Dashboard - The 2020 ICPC Asia Shenyang Regional Programming Contest - Codeforces](https://codeforces.com/gym/103202)
