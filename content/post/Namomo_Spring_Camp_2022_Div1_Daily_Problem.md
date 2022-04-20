@@ -12,7 +12,7 @@ categories: ["XCPC"]
 # draft: false
 # hidemeta: false
 # comments: false
-# description: "Desc Text."
+description: "预计会周更题解（不排除我会咕咕的可能性）"
 # canonicalURL: "https://canonical.url/to/page"
 # disableHLJS: true # to disable highlightjs
 # disableShare: false
@@ -33,7 +33,6 @@ categories: ["XCPC"]
 #     Text: "Suggest Changes" # edit text
 #     appendFilePath: true # to append file path to Edit link
 ---
-
 ## Day1 P436. 子串的最大差
 
 ```cpp
