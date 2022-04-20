@@ -1925,10 +1925,10 @@ inline void work(signed CASE=1,bool FINAL_CASE=false) {
         u=read()-1;v=read()-1;
         e[u][v]=e[v][u]=1;
     }
-	for(int i=0;i<n;++i) {
+    for(int i=0;i<n;++i) {
         dp[1<<i][i]=1;
     }
-	for(int i=0;i<1<<n;++i) {
+    for(int i=0;i<1<<n;++i) {
         for(int j=0;j<n;++j) {
             if(dp[i][j]) {
                 for(int k=0;k<n;++k) {
@@ -1945,7 +1945,7 @@ inline void work(signed CASE=1,bool FINAL_CASE=false) {
             }
         }
     }
-	printf("%lld\n",ans-m>>1);
+    printf("%lld\n",ans-m>>1);
     return;
 }
 ```
@@ -2085,105 +2085,105 @@ int dx[4] = {0, 1, 1, 0}, dy[4] = {1, 1, 0, 0};
  
 int main()
 {
-	cin >> n >> m;
+    cin >> n >> m;
     for (int i = 1; i <= n; i++) {
-    	for (int j = 1; j <= m; j++) {
-    		cin >> a[i][j];
-    	}
+        for (int j = 1; j <= m; j++) {
+            cin >> a[i][j];
+        }
     }
  
     queue<tuple<int, int, int>> q;
-   	vector<tuple<int, int, int>> res;
+       vector<tuple<int, int, int>> res;
  
-   	auto equal = [&](int x, int y) {
-   		for (int i = 0; i < 4; i++) {  //检查是否越界
-   			int a = x + dx[i], b = y + dy[i];
-   			if (a < 1 || a > n || b < 1 || b > m) return false;
-   		}
-   		
-   		int c = 0;
-   		for (int i = 0; i < 4; i++) {
-   			int xx = x + dx[i], yy = y + dy[i];
-   			if (a[xx][yy] == -1) continue;
-   			if (a[xx][yy] != -1 && c == 0) c = a[xx][yy];
-   			else if (c != 0 && a[xx][yy] != c) {
-   				return false;
-   			}
-   			//c = a[xx][yy];
-   		}
+       auto equal = [&](int x, int y) {
+           for (int i = 0; i < 4; i++) {  //检查是否越界
+               int a = x + dx[i], b = y + dy[i];
+               if (a < 1 || a > n || b < 1 || b > m) return false;
+           }
+           
+           int c = 0;
+           for (int i = 0; i < 4; i++) {
+               int xx = x + dx[i], yy = y + dy[i];
+               if (a[xx][yy] == -1) continue;
+               if (a[xx][yy] != -1 && c == 0) c = a[xx][yy];
+               else if (c != 0 && a[xx][yy] != c) {
+                   return false;
+               }
+               //c = a[xx][yy];
+           }
  
-   		return true;
-   	};
+           return true;
+       };
  
-   	auto paint = [&](int x, int y) {
-   		a[x][y] = -1;
-   		a[x][y + 1] = -1;
-   		a[x + 1][y] = -1;
-   		a[x + 1][y + 1] = -1;
-   	};
+       auto paint = [&](int x, int y) {
+           a[x][y] = -1;
+           a[x][y + 1] = -1;
+           a[x + 1][y] = -1;
+           a[x + 1][y + 1] = -1;
+       };
  
-   	auto checkcol = [&](int x, int y) {
-   		for (int i = 0; i < 4; i++) {
-   			int xx = x + dx[i], yy = y + dy[i];
-   			if (a[xx][yy] != -1) return a[xx][yy];
-   		}
+       auto checkcol = [&](int x, int y) {
+           for (int i = 0; i < 4; i++) {
+               int xx = x + dx[i], yy = y + dy[i];
+               if (a[xx][yy] != -1) return a[xx][yy];
+           }
  
-   		return -1;
-   	};
+           return -1;
+       };
  
-   	for (int i = 1; i <= n; i++) {
-   		for (int j = 1; j <= m; j++) {
+       for (int i = 1; i <= n; i++) {
+           for (int j = 1; j <= m; j++) {
             int c = checkcol(i, j);
-   			if (c == -1) continue;
-   			if (equal(i, j)) {
-   				//cout << "i = " << i << " " << "j = " << j << "\n";
-   				q.push({i, j, c});
-   				paint(i, j);
-   			}
-   		}
-   	}
+               if (c == -1) continue;
+               if (equal(i, j)) {
+                   //cout << "i = " << i << " " << "j = " << j << "\n";
+                   q.push({i, j, c});
+                   paint(i, j);
+               }
+           }
+       }
  
  
  
-   	while (q.size()) {
-   		auto it = q.front();
-   		q.pop();
-   		//cout << x << " " << y << " " << color << "\n";
-   		res.push_back(it);
-   		
-   		int dxx[8] = {-1, -1, -1, 0, 1, 1, 1, 0}, dyy[8] = {-1, 0, 1, 1, 1, 0, -1, -1};
-   		for (int i = 0; i < 8; i++) {
-   			int a = get<0>(it) + dxx[i], b = get<1>(it) + dyy[i];
-   			if (a < 0 || a > n || b < 0 || b > m) break;
-   			//cout << a << " " << b << "\n";
-   			if (equal(a, b)) {
-   				int c = checkcol(a, b);
-   				if (c == -1) continue;
-   				q.push({a, b, c});
-   				paint(a, b);
-   			}
-   		}
-   		//cout << "\n";
-   	}
+       while (q.size()) {
+           auto it = q.front();
+           q.pop();
+           //cout << x << " " << y << " " << color << "\n";
+           res.push_back(it);
+           
+           int dxx[8] = {-1, -1, -1, 0, 1, 1, 1, 0}, dyy[8] = {-1, 0, 1, 1, 1, 0, -1, -1};
+           for (int i = 0; i < 8; i++) {
+               int a = get<0>(it) + dxx[i], b = get<1>(it) + dyy[i];
+               if (a < 0 || a > n || b < 0 || b > m) break;
+               //cout << a << " " << b << "\n";
+               if (equal(a, b)) {
+                   int c = checkcol(a, b);
+                   if (c == -1) continue;
+                   q.push({a, b, c});
+                   paint(a, b);
+               }
+           }
+           //cout << "\n";
+       }
  
-   	bool ok = true;
-  	for (int i = 1; i <= n; i++) {
-  		for (int j = 1; j <= m; j++) {
-  			if (a[i][j] != -1) {
-  				ok = false;
-  				break;
-  			}
-  		}
-  		if (!ok) break;
-  	}
+       bool ok = true;
+      for (int i = 1; i <= n; i++) {
+          for (int j = 1; j <= m; j++) {
+              if (a[i][j] != -1) {
+                  ok = false;
+                  break;
+              }
+          }
+          if (!ok) break;
+      }
  
-  	if (ok) {
-  		cout << res.size() << "\n";
-  		reverse(res.begin(), res.end());
-  		for (auto mytuple : res) {
-  			cout << get<0>(mytuple) << " " << get<1>(mytuple) << " " << get<2>(mytuple) << "\n";
-  		}
-  	} else cout << "-1" << "\n";
+      if (ok) {
+          cout << res.size() << "\n";
+          reverse(res.begin(), res.end());
+          for (auto mytuple : res) {
+              cout << get<0>(mytuple) << " " << get<1>(mytuple) << " " << get<2>(mytuple) << "\n";
+          }
+      } else cout << "-1" << "\n";
  
     return 0;
 }
@@ -2197,23 +2197,23 @@ int to[MAXN],x[MAXN],y[MAXN],z[MAXN],a[MAXN];
 
 inline void work(signed CASE=1,bool FINAL_CASE=false) {
     n=read();
-	for(int i=1;i<=n;i++){
+    for(int i=1;i<=n;i++){
         x[i]=read(); y[i]=read();
-		if(x[i]==2) {
+        if(x[i]==2) {
             z[i]=read();
         }
-	}
-	for(int i=1;i<MAXN;i++) {
+    }
+    for(int i=1;i<MAXN;i++) {
         to[i]=i;
     }
-	for(int i=n;i>=1;i--) {
+    for(int i=n;i>=1;i--) {
         if(x[i]==1) {
             a[i]=to[y[i]];
         } else {
             to[y[i]]=to[z[i]];
         }
     }
-	for(int i=1;i<=n;i++) {
+    for(int i=1;i<=n;i++) {
         if(a[i]) {
             printf("%d%c",a[i]," \n"[i==n]);
         }
@@ -2325,15 +2325,15 @@ vector<int> v[MAXN];
 
 inline bool check()
 {
-	if(!d[c[m]]) {
+    if(!d[c[m]]) {
         return false;
     }
-	for(int i=1; i<=n; i++) {
+    for(int i=1; i<=n; i++) {
         if(v[i].size()>num[i]) {
             return false;
         }
     }
-	return true;
+    return true;
 }
 
 inline void work(signed CASE=1,bool FINAL_CASE=false) {
@@ -2832,22 +2832,22 @@ using namespace std;
 
 void solve()
 {
-	long long n;
-	cin>>n;
-	for(long long i=2; i<=1000000; i++)
-		if(n%(i*i) == 0)
-		{
-			cout << "YES" << endl;
-			return;
-		}
-	cout << "NO" << endl;
+    long long n;
+    cin>>n;
+    for(long long i=2; i<=1000000; i++)
+        if(n%(i*i) == 0)
+        {
+            cout << "YES" << endl;
+            return;
+        }
+    cout << "NO" << endl;
 }
 
 int main()
 {
-	int t;
-	cin>>t;
-	while(t--) solve();	
+    int t;
+    cin>>t;
+    while(t--) solve();	
 }
 ```
 
