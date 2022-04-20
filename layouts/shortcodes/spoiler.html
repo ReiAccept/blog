@@ -1,0 +1,6 @@
+<details>
+    <summary>
+        {{ with .Get 0}}{{.}}{{else}}{{ T "click-to-expand" }}{{ end }}
+    </summary>
+    {{.Inner}}
+</details>

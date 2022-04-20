@@ -1,0 +1,14 @@
+{{ $link := (.Get "link") }}
+{{ $label := (.Get "label") }}
+{{ $style := (.Get "style") }}
+{{ $color := (.Get "color") }}
+{{ $message := (.Get "message") }}
+{{ $logo := (.Get "logo") }}
+
+{{ if $link }}
+    <a href="{{ $link }}" target="_blank" rel="noopener">
+        <img src="https://img.shields.io/static/v1?{{ (querify "label" $label "style" $style "color" $color "message" $message "logo" $logo) | safeURL }}">
+    </a>
+{{ else }}
+    <img src="https://img.shields.io/static/v1?{{ (querify "label" $label "style" $style "color" $color "message" $message "logo" $logo) | safeURL }}">
+{{ end }}

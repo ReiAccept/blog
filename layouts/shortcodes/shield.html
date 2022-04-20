@@ -1,0 +1,10 @@
+{{ $img := (.Get "img") }}
+{{ $link := (.Get "link") }}
+
+{{ if $link }}
+    <a href="{{ $link }}" target="_blank" rel="noopener">
+        <img src="{{ $img }}">
+    </a>
+{{ else }}
+    <img src="{{ $img }}">
+{{ end }}
