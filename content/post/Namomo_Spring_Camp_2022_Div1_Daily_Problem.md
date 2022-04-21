@@ -1292,7 +1292,69 @@ inline void work(signed CASE=1,bool FINAL_CASE=false) {
 
 ## Day26 [P611. 拆拆](http://oj.daimayuan.top/problem/611)
 
-不会，弃疗
+不会，只拿了42分，弃疗
+
+```cpp
+//2020420 贴一个不是我的代码，这位帮我 debug 后过了
+const int N=2e6+5;
+int pre[N],vis[N];
+int cnt=1;
+void get_pri() {
+	f(i,2,1e6+5) {
+		if(!vis[i])pre[cnt++]=i;
+		for(int j=i+i;j<=1e6+6;j=j+i) vis[j]=1;
+	}
+}
+int x,k;
+int ans[N];
+const int mod=1e9+7;
+int power(int a,int b) {
+	int ans1=1;
+	while(b) {
+		if(b&1) ans1=ans1*a%mod;
+		a=a*a%mod;
+		b>>=1;
+	}
+	return ans1;
+}
+int jc[N];
+void get_jc() {
+	int now=1;
+	jc[0]=1;
+	f(i,1,1e6)
+	{
+		now=now*i%mod;
+		jc[i]=now;
+	}
+}
+int C(int a,int b) {
+	return jc[a]*power(jc[a-b],mod-2)%mod*power(jc[b],mod-2)%mod;
+}
+int p[N],m,c[N];
+void divide(int n) {
+	m=0;
+	f(i,2,sqrt(n)) {
+		if(n%i==0) {
+			p[++m]=i,c[m]=0;
+			while(n%i==0)n/=i,c[m]++;
+		}
+	}
+	if(n>1)p[++m]=n,c[m]=1;
+}
+inline void solve() {
+	scanf("%lld%lld",&x,&k);
+	int temp=x;
+	divide(x);
+	int ansi=1;
+	f(i,1,m) {
+		if(!c[i])continue;
+		ansi=(ansi*C(c[i]+k-1,k-1))%mod;
+	}
+	ansi=ansi*power(2,k-1)%mod;
+	printf("%lld\n",ansi);
+	return;
+}
+```
 
 ## Day27 [P614. “Z”型矩阵](http://oj.daimayuan.top/problem/614)
 
@@ -3040,6 +3102,38 @@ inline void work(signed CASE=1,bool FINAL_CASE=false) {
         }
     }
     printf("%d\n",ans);
+    return;
+}
+```
+
+## Day55 [P813. 合法括号串](http://oj.daimayuan.top/problem/813)
+
+对每个右括号，其匹配的左括号是固定的，保存每个右括号匹配的左括号位置，对区间进行线扫描，标记扫描的区间右端点及其之前所有的右括号对应的左括号位置，查询区间的标记个数就是答案，这个可以用线段树/树状数组维护。
+
+当然这题也可以转化为 rmq 问题来 $O(nlogn)$ 预处理 $O(1)$查询，关键是代码更短
+
+```cpp
+int n,m;
+int c[MAXN],rmq[MAXN][28];
+char s[MAXN];
+
+inline void work(signed CASE=1,bool FINAL_CASE=false) {
+    n=read(); m=read();
+    for(int i=1;i<=n;i++) {
+        c[i]=c[i-1]+((s[i]=nc())==')');
+        rmq[i][0]=rmq[i-1][0]+(s[i]=='('?1:-1);
+    }
+    for(int j=1;(1<<j)<=n;j++) {
+        for(int i=1;i+(1<<j)-1<=n;i++) {
+            rmq[i][j]=min(rmq[i][j-1],rmq[i+(1<<(j-1))][j-1]);
+        }
+    }
+    while(m--)
+    {
+        int a=read(),b=read();
+        int k=log2(b-a+1);
+        printf("%d\n",((c[b]-c[a-1])+min(min(rmq[a][k],rmq[b-(1<<k)+1][k])-rmq[a-1][0],0))<<1);
+    }
     return;
 }
 ```

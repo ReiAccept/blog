@@ -17,7 +17,7 @@ menu:
 ## 关于我
 
 - 双非大三蒟蒻，退役废铜烂铁XCPCer
-- 星际2曾经到过国服宗师 战网ID:Spaceless#5104
+- 星际2曾经的国宗 战网ID:Spaceless#5104 | NS好友ID:SW-0298-7511-7319
 - [TZHSOJ](https://tzhsoj.com) 的维护者（为了节约CDN钱屏蔽了非中国大陆IP访问）
 - 正在考研，大概就是想续费一下寒暑假
 - 简历在 LinkedIn 上，如果有大佬内推一下校招就好了 qwq
