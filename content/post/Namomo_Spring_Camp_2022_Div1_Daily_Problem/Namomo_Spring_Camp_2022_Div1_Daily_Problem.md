@@ -2,37 +2,14 @@
 title: "Namomo Spring Camp 2022 Div1 每日一题"
 date: 2022-03-07T20:18:28+08:00
 math: true
-# weight: 1
-# aliases: ["/first"]
 tags: ["算法竞赛"]
 categories: ["XCPC"]
-# author: ["Me", "You"] # multiple authors
-# showToc: true
-# TocOpen: false
-# draft: false
-# hidemeta: false
-# comments: false
+image: http://oj.daimayuan.top/images/logo_big.png
 description: "预计会周更题解（不排除我会咕咕的可能性）"
-# canonicalURL: "https://canonical.url/to/page"
-# disableHLJS: true # to disable highlightjs
-# disableShare: false
-# disableHLJS: false
-# hideSummary: false
-# searchHidden: true
-# ShowReadingTime: true
-# ShowBreadCrumbs: true
-# ShowPostNavLinks: true
-# cover:
-#     image: "<image path/url>" # image path/url
-#     alt: "<alt text>" # alt text
-#     caption: "<text>" # display caption under cover
-#     relative: false # when using page bundles set this to true
-#     hidden: true # only hide on current single page
-# editPost:
-#     URL: "https://github.com/<path_to_repo>/content"
-#     Text: "Suggest Changes" # edit text
-#     appendFilePath: true # to append file path to Edit link
 ---
+
+> 配合食用的起手板 https://github.com/ACRei/Algorithm/blob/master/DefaultCode.cpp
+
 ## Day1 P436. 子串的最大差
 
 ```cpp
@@ -3110,7 +3087,7 @@ inline void work(signed CASE=1,bool FINAL_CASE=false) {
 
 对每个右括号，其匹配的左括号是固定的，保存每个右括号匹配的左括号位置，对区间进行线扫描，标记扫描的区间右端点及其之前所有的右括号对应的左括号位置，查询区间的标记个数就是答案，这个可以用线段树/树状数组维护。
 
-当然这题也可以转化为 rmq 问题来 $O(nlogn)$ 预处理 $O(1)$查询，关键是代码更短
+当然这题也可以转化为 rmq 问题来 $O(nlogn)$ 预处理 $O(1)$ 查询，关键是代码更短
 
 ```cpp
 int n,m;
@@ -3134,6 +3111,46 @@ inline void work(signed CASE=1,bool FINAL_CASE=false) {
         int k=log2(b-a+1);
         printf("%d\n",((c[b]-c[a-1])+min(min(rmq[a][k],rmq[b-(1<<k)+1][k])-rmq[a-1][0],0))<<1);
     }
+    return;
+}
+```
+
+## Day56 [P804. 矩阵操作](http://oj.daimayuan.top/course/10/problem/804)
+
+```cpp
+int n,m,k,ans=INF; // INF忘记改LLINF WA了好几次
+int b[MAXN];
+int a[MAXN][MAXN];
+
+inline void work(signed CASE=1,bool FINAL_CASE=false) {
+    n=read();m=read();k=read();
+    for(int i=1;i<=n;i++) {
+        for(int j=1;j<=m;j++) {
+            a[i][j]=read();
+        }
+    }
+    for(int i=1;i<m;i++) {
+        b[i] = (a[1][i]-a[1][i+1]+k)%k;
+    }
+    for(int i=1;i<=n;i++) {
+        for(int j=1;j<m;j++) {
+            if(b[j]!=(a[i][j]-a[i][j+1]+k)%k ) {
+                puts("-1");
+                return;
+            }
+        }
+    }
+    for(int i=1;i<=n;i++) {
+        int res=0;
+        for(int j=1;j<=m;j++) {
+            res+=(k-a[i][j])%k;
+        }
+        for(int j=1;j<=n;j++) {
+            res+=(a[i][1]-a[j][1]+k)%k;
+        }
+        ans=min(ans,res);
+    }
+    printf("%lld\n",ans);
     return;
 }
 ```

@@ -3,6 +3,9 @@ title: 关于本站
 slug: about
 comments: false
 toc: false
+params:
+  article:
+    readingTime: false
 menu:
   main:
     name: 关于
