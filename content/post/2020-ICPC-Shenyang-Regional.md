@@ -5,6 +5,7 @@ tags = ["算法竞赛"]
 categories = ["XCPC"]
 math = true
 description = "打铁实录"
+image = "https://upload.wikimedia.org/wikipedia/zh/e/e8/Icpc_logo.png"
 +++
 
 CF Gym : [Dashboard - The 2020 ICPC Asia Shenyang Regional Programming Contest - Codeforces](https://codeforces.com/gym/103202)

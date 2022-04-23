@@ -18,7 +18,7 @@ image: https://gw.alicdn.com/tfs/TB1T9YCeVYqK1RjSZLeXXbXppXa-189-189.png
 
 https://codeforces.com/gym/102801
 
-虽然但是，我已经是第四次写这套东北CCPC考研英语了
+虽然但是，我已经是第四次写这套东北CCPC考研英语了，第一次是打星参赛，第二次是补题，第三次是15th四省赛前
 
 ~~即使写第四次了还是难免感叹[凯爷](https://kaizynx.github.io/)的 **PepperLa** 系列题出的真的是蛋疼，属于东北CCPC考研英语了~~
 

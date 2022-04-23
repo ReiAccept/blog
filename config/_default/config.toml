@@ -15,3 +15,5 @@ hasCJKLanguage = true
 
 # Change it to your Disqus shortname before using
 disqusShortname = "hugo-theme-stack"
+
+googleAnalytics = "UA-97060993-1"
