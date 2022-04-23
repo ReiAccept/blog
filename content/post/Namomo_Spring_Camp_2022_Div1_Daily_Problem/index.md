@@ -3158,7 +3158,7 @@ inline void work(signed CASE=1,bool FINAL_CASE=false) {
 
 ## Day57 [P811. 最小生成数](http://oj.daimayuan.top/course/10/problem/811)
 
-Namo，这就是合数是自身，质数与 $2$ 合并
+Namo，这就是合数是自身，质数与 $2$ 合并，最后的 $-4$ 是，$2$ 不能和 $2$ 自己合并，然后计算质数的时候 $2$ 又加了一次
 
 ```cpp
 namespace Euler { //线性筛（欧拉筛）复杂度为 O(N),1e8可用，基本上取代了埃氏筛
