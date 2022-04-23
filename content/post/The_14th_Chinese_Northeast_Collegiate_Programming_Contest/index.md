@@ -198,37 +198,37 @@ bool chk(int x) {
 
 inline void work(signed CASE=1,bool FINAL_CASE=false) {
     while(~scanf("%s",s+1)) {
-		int now=1,cnt=0,pos=0;
-		int len=strlen(s+1); s[len+1]=0x7f;
-		for(int i=2;i<=len+1;i++) {
-			if(s[i]!=s[i-1]) {
-				c[cnt]=s[i-1];
-				num[cnt++]=now;
-				now=1;
-			} else {
+        int now=1,cnt=0,pos=0;
+        int len=strlen(s+1); s[len+1]=0x7f;
+        for(int i=2;i<=len+1;i++) {
+            if(s[i]!=s[i-1]) {
+                c[cnt]=s[i-1];
+                num[cnt++]=now;
+                now=1;
+            } else {
                 now++;
             }
-		}
+        }
         c[cnt]=0x7f;
-		for(int i=0;i<cnt;i++) {
-			if(num[i]==1) {
-				pos=i;
-				if(c[i]>c[i+1]) {
+        for(int i=0;i<cnt;i++) {
+            if(num[i]==1) {
+                pos=i;
+                if(c[i]>c[i+1]) {
                     break;
                 }
-			}
-			if(num[i]==2 || chk(num[i])) {
+            }
+            if(num[i]==2 || chk(num[i])) {
                 pos=i;
             }
-		}
-		num[pos]--;
-		for(int i=0;i<cnt;i++) {
-			if(num[i]) {
+        }
+        num[pos]--;
+        for(int i=0;i<cnt;i++) {
+            if(num[i]) {
                 printf("%c",c[i]);
                 if(num[i]!=1)
                     printf("%X",num[i]);
                 }
-		}
+        }
         puts("");
     }
     return;
