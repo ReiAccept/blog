@@ -4,7 +4,8 @@ date: 2022-03-07T20:18:28+08:00
 math: true
 tags: ["算法竞赛"]
 categories: ["XCPC"]
-image: http://oj.daimayuan.top/images/logo_big.png
+# image: https://nwzimg.wezhan.cn/contents/sitefiles2048/10243973/images/23753065.jpg
+image: "wls.jpg"
 description: "预计会周更题解（不排除我会咕咕的可能性）"
 ---
 
@@ -3151,6 +3152,46 @@ inline void work(signed CASE=1,bool FINAL_CASE=false) {
         ans=min(ans,res);
     }
     printf("%lld\n",ans);
+    return;
+}
+```
+
+## Day57 [P811. 最小生成数](http://oj.daimayuan.top/course/10/problem/811)
+
+Namo，这就是合数是自身，质数与 $2$ 合并
+
+```cpp
+namespace Euler { //线性筛（欧拉筛）复杂度为 O(N),1e8可用，基本上取代了埃氏筛
+    int prime[MAXN+3],pcnt;
+    bool siv[MAXN+3];
+
+    int work()  {
+        for(int i=2;i<=MAXN;i++) {
+            if(!siv[i]) {
+                prime[++pcnt]=i;
+            }
+            for(int j=1;j<=pcnt && i*prime[j]<=MAXN;j++) { //注意这个不是写在 if(!siv[i]) 里面的
+                siv[i*prime[j]]=true;
+                if(i%prime[j]==0) {
+                    break;
+                }
+            }
+        }
+        return -1;
+    }
+}
+
+inline void work(signed CASE=1,bool FINAL_CASE=false) {
+    int n=read();
+    int ans=((2+n)*(n-1))>>1;
+    for(int i=1;i<=Euler::pcnt;i++) {
+        if(Euler::prime[i]>n) {
+            break;
+        } else {
+            ans+=Euler::prime[i];
+        }
+    }
+    printf("%lld\n",ans-4);
     return;
 }
 ```
