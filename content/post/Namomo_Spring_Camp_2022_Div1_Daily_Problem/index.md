@@ -3195,3 +3195,32 @@ inline void work(signed CASE=1,bool FINAL_CASE=false) {
     return;
 }
 ```
+
+## Day58 [P664. 数列](http://oj.daimayuan.top/course/10/problem/664)
+
+```cpp
+int d,m;
+
+inline void work(signed CASE=1,bool FINAL_CASE=false) {
+    d=read(); m=read();
+    int x=1,ans=1;
+    while ((x<<1)<=d) {
+        ans=ans*(x+1)%m;
+        x<<=1;
+    }
+    ans=ans*(d-x+2)%m;
+    printf("%lld\n",ans?ans-1:m-1);
+    return;
+}
+
+signed main() {
+    // ios::sync_with_stdio(false); cin.tie(nullptr); cout.tie(nullptr); //freopen(".in", "r", stdin);//freopen(".out", "w", stdout);
+    signed T=(signed)read();//scanf("%d",&T);//cin>>T;
+    for(signed CASE=1; CASE<=T; CASE++) { //
+        //printf("Case #%d: ",CASE); //printf("Case %d: ",CASE); //printf("Case #%d: \n",CASE); //printf("Case %d: \n",CASE);
+        work(CASE,CASE==T);
+        if(CASE!=T) {}
+    }
+    return 0;
+}
+```
