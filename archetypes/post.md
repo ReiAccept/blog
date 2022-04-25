@@ -2,6 +2,7 @@
 title: "{{ replace .Name "-" " " | title }}"
 date: {{ .Date }}
 math: true
+# slug: slug
 # weight: 1
 # aliases: ["/first"]
 # tags: ["Tag1","Tag2"]
@@ -13,5 +14,5 @@ math: true
 # hidemeta: false
 # comments: false
 # description: "Desc Text."
-# image: 
+image: "https://api.ixiaowai.cn/api/api.php"
 ---

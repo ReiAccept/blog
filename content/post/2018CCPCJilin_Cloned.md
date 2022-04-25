@@ -6,7 +6,7 @@ description = ""
 +++
 
 
-# 过程
+## 过程
 
 开局一眼秒掉A，看了B发现就是个时区转换的语法题，张峻豪自告奋勇写B题，然后我就开始和ZJQ去看C题了。大概四十分钟之后约莫是做出C了，就是个优先队列的水题==然后问ZJH有没有写好B，然后发现他写了四十分钟的时区转换语法题WA了。。。。。然后叫停ZJH，我自己来写时区转换，语法题一遍过。然后C思路和ZJQ已经论证完成，按思路写下来，在调样例的时候把Bug找到了，AC C题。写的时候ZJQ把概率DP推出来了，AC D题。接下来F发现自己以前做过了，全xor一起就行。
 
@@ -14,7 +14,7 @@ description = ""
 
 推I题，三个人就我玩过完整的游戏王卡片，然后解释题面，发现是个分两种情况讨论的贪心，最后取max(ans1,ans2)。让ZJQ给我造了组特殊的测试数据。然后思路对了就过了。
 
-# A
+## A
 
 ```cpp
 #include<bits/stdc++.h>
@@ -56,7 +56,7 @@ signed main()
 }
 ```
 
-# B
+## B
 
 ```cpp
 #include<bits/stdc++.h>
@@ -121,7 +121,7 @@ signed main()
 }
 ```
 
-# C
+## C
 
 ```cpp
 #include<bits/stdc++.h>
@@ -212,7 +212,7 @@ signed main()
 }
 ```
 
-# D
+## D
 
 ```cpp
 #include<bits/stdc++.h>
@@ -258,7 +258,7 @@ signed main()
 }
 ```
 
-# E
+## E
 
 ```cpp
 #include<bits/stdc++.h>
@@ -293,7 +293,7 @@ int main()
 }
 ```
 
-# F
+## F
 
 ```cpp
 #include<bits/stdc++.h>
@@ -335,7 +335,7 @@ signed main()
 }
 ```
 
-# H
+## H
 
 ```cpp
 #include<bits/stdc++.h>
@@ -459,7 +459,7 @@ int main() {
 }
 ```
 
-# I
+## I
 
 ```cpp
 #include<bits/stdc++.h>

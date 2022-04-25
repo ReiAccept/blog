@@ -36,6 +36,6 @@ menu:
 - 转载请同时需要注明原文链接和作者名字。
 - 本博客运行于白嫖的 [Azure Static Web Apps](https://azure.microsoft.com/en-us/services/app-service/static/) 服务，源代码位于 [Github 仓库](https://github.com/ACRei/blog)
 
-## 赞赏
+## 投喂
 
 好像没啥值得您打钱的
