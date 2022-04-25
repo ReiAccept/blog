@@ -3224,3 +3224,29 @@ signed main() {
     return 0;
 }
 ```
+
+## Day59 [P806. 宝箱](http://oj.daimayuan.top/problem/806)
+
+> 原题 https://atcoder.jp/contests/kupc2021/tasks/kupc2021_c
+
+```cpp
+int n,sum=-INF,cur,pre,ans=INF;
+map<int,int> pos;
+
+inline void work(signed CASE=1,bool FINAL_CASE=false) {
+    n=read();
+    for(int i=1;i<=(n<<1);i++) {
+        int in=read();
+        pos[in]+=(i<=n?-1:1);
+        sum=max(sum,in<<1);
+    }
+    for(auto [xfi,xse] : pos) {
+        sum+=(xfi-pre)*(cur<0?1:-1);
+        ans=min(ans,sum);
+        cur+=xse;
+        pre=xfi;
+    }
+    printf("%lld\n",ans);
+    return;
+}
+```
