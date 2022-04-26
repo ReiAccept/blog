@@ -15,7 +15,10 @@ menu:
 ---
 
 - 就是记录一下摸鱼的日常
-- 本博客可以通过以下三个域名访问 [rei.ac](https://rei.ac) | [spaceless.me](https://spaceless.me) | [reiac.cn(中国大陆镜像,24H延迟)](https://reiac.cn)
+- 本博客可以通过以下三个域名访问
+  - AzureCDN 主域名：[rei.ac](https://rei.ac)
+  - Azure CDN原域名：[spaceless.me](https://spaceless.me)
+  - 大陆CDN，6H延迟：[reiac.cn](https://reiac.cn)
 
 ## 关于我
 

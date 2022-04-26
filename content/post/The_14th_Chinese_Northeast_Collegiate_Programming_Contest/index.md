@@ -13,6 +13,7 @@ categories: ["XCPC"]
 # hidemeta: false
 # comments: false
 description: "虽然但是，我已经是第四次写这套东北CCPC考研英语了"
+slug: "The_14th_Chinese_Northeast_Collegiate_Programming_Contest"
 image: https://gw.alicdn.com/tfs/TB1T9YCeVYqK1RjSZLeXXbXppXa-189-189.png
 ---
 

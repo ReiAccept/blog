@@ -7,6 +7,7 @@ categories: ["XCPC"]
 # image: https://nwzimg.wezhan.cn/contents/sitefiles2048/10243973/images/23753065.jpg
 # image: "wls.jpg"
 image: "https://api.ixiaowai.cn/api/api.php"
+slug: "namomo_spring_camp_2022_div1_daily_problem"
 description: "预计会周更题解（不排除我会咕咕的可能性）"
 ---
 
