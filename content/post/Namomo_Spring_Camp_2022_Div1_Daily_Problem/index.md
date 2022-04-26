@@ -3251,3 +3251,123 @@ inline void work(signed CASE=1,bool FINAL_CASE=false) {
     return;
 }
 ```
+
+## Day60 [P805. 【模板】最小瓶颈生成树（数据加强版）](http://oj.daimayuan.top/problem/805)
+
+```cpp
+int n,m,q,cnt;
+struct Edge {
+    int u,v,w;
+} e[MAXN];
+int val[MAXN],maxv[MAXN<<1],preMaxv[MAXN];
+
+int dep[MAXN],siz[MAXN],son[MAXN],top[MAXN],fa[MAXN],dfn[MAXN],rnk[MAXN];
+vector<PII> grap[MAXN];
+
+int dfs1(int u) {
+    son[u]=-1; siz[u]=1; dep[u]=dep[fa[u]]+1;
+    for(auto [v,w]:grap[u]) {
+        if(v==fa[u]) continue;
+        fa[v]=u;  siz[u]+=dfs1(v); val[v]=w; 
+        if(son[u]==-1 || siz[son[u]]<siz[v])
+            son[u]=v;
+    }
+    return siz[u];
+}
+
+inline int getIdx(int l, int r) {
+    return l + r | l != r;
+}
+
+void dfs2(int u,int t) {
+    top[u]=t;  dfn[u]=++cnt; rnk[cnt]=u;
+    maxv[getIdx(dfn[u], dfn[u])] = val[u];
+    if (son[u] == -1) return;
+    preMaxv[son[u]]=max(preMaxv[u],val[son[u]]);
+    dfs2(son[u],t); 
+    // 优先对重儿子进行 DFS，可以保证同一条重链上的点 DFS 序连续
+    for(auto [v,w] : grap[u]) {
+        if(v!=fa[u] && v!=son[u]) {
+            preMaxv[v] = val[v];
+            dfs2(v,v);
+        }
+    }
+}
+
+int build(int l, int r) {
+    if (l == r) {
+        return maxv[getIdx(l, r)];
+    }
+    int mid = (l + r) / 2;
+    return maxv[getIdx(l, r)] = max(build(l, mid), build(mid+1, r));
+}
+
+int query(int l, int r, int L, int R) {
+    if(L <= l && r <= R) return maxv[getIdx(l, r)];
+    int mid = (l + r) / 2;
+    if(R <= mid) return query(l, mid, L, R);
+    if(mid < L) return query(mid+1, r, L, R);
+    return max(query(l, mid, L, R), query(mid+1, r, L, R));
+}
+
+// int lca(int u, int v) {
+//     while (top[u] != top[v]) {
+//         if (dep[top[u]] > dep[top[v]]) u = fa[top[u]];
+//         else v = fa[top[v]];
+//     }
+//     return dep[u] > dep[v] ? v : u;
+// }
+
+int uffa[MAXN];
+int findx(int x) {
+    return x==uffa[x]?x:uffa[x]=findx(uffa[x]);
+}
+
+void merge(int u,int v) {
+    u=findx(u),v=findx(v);
+    uffa[u]=v;
+}
+
+int query(int x,int y) {
+    int ans = 0;
+    while(top[x] != top[y]) {
+        if(dep[top[x]] < dep[top[y]]) swap(x, y);
+        ans = max(ans, preMaxv[x]);
+        x = fa[top[x]];
+    }
+    if(x == y) {
+        return ans;
+    }
+    if(dep[x] > dep[y]) swap(x, y);
+    ans = max(ans, query(1, n, dfn[son[x]], dfn[y]));
+    return ans;
+}
+
+inline void work(signed CASE=1,bool FINAL_CASE=false) {
+    n=read(); m=read();
+    for(int i=1;i<=n;i++) {
+        uffa[i]=i;
+    }
+    for(int i=1;i<=m;i++) {
+        e[i].u=read(); e[i].v=read(); e[i].w=read();
+    }
+    sort(e+1,e+1+m,[](Edge a,Edge b){
+        return a.w<b.w;
+    });
+    for(int i=1;i<=m;i++) {
+        if(findx(e[i].u)!=findx(e[i].v)){
+            grap[e[i].u].pb(mkp(e[i].v,e[i].w));
+            grap[e[i].v].pb(mkp(e[i].u,e[i].w));
+            merge(e[i].u,e[i].v);
+        }
+    }
+    dfs1(1);  dfs2(1,1);
+    build(1, n);
+    q=read();
+    for(int i=1;i<=q;i++) {
+        int s=read(),t=read();
+        printf("%d\n",query(s,t));
+    }
+    return;
+}
+```
