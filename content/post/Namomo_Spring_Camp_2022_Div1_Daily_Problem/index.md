@@ -3372,3 +3372,45 @@ inline void work(signed CASE=1,bool FINAL_CASE=false) {
     return;
 }
 ```
+
+## Day61 [P848. Mouse Hunt](http://oj.daimayuan.top/problem/848)
+
+> 原题 https://codeforces.com/problemset/problem/1027/D
+> 
+> Mouse jumps on a cycle at some point, no matter the starting vertex, thus it's always the most profitable to set traps on cycles. The structure of the graph implies that there are no intersecting cycles. Moreover, mouse will visit each vertex of the cycle, so it's enough to set exactly one trap on each cycle. The only thing left is to find the cheapest vertex of each cycle. This can be done by a simple dfs.
+> 
+> Overall complexity: $O(n)$.
+
+实际上没必要 dfs
+
+```cpp
+int n,ans;
+int w[MAXN],p[MAXN],vis[MAXN];
+
+inline void work(signed CASE=1,bool FINAL_CASE=false) {
+    n=read();
+    for(int i=1;i<=n;i++) {
+        w[i]=read();
+    }
+    for(int i=1;i<=n;i++) {
+        p[i]=read();
+    }
+    for(int i=1;i<=n;i++) {
+        int cur=i;
+        while(!vis[cur]) {
+            vis[cur]=i;
+            cur=p[cur];
+        }
+        if(vis[cur]==i) {
+            int pre=cur,minw=w[cur];
+            while(p[cur]!=pre) {
+                cur=p[cur];
+                minw=min(minw,w[cur]);
+            }
+            ans+=minw;
+        }
+    }
+    printf("%lld\n",ans);
+    return;
+}
+```
