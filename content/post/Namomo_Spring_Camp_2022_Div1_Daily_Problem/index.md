@@ -3414,3 +3414,50 @@ inline void work(signed CASE=1,bool FINAL_CASE=false) {
     return;
 }
 ```
+
+## Day62 [P853. 矩形划分](http://oj.daimayuan.top/problem/853)
+
+```cpp
+int n,m,x,y,ans;
+PII p[MAXN];
+
+void mergesort(int l, int r) {
+    static int tmp[MAXN];
+    if(l>=r) {
+        return;
+    }
+    int mid=(l+r)>>1,j=mid+1,tail=0;
+    mergesort(l, mid); mergesort(j, r);
+    for(int i=l;i<=mid;i++) {
+        int k=(mid-i+1);
+        while (j<=r && p[j].se<p[i].se) {
+            tmp[++tail]=p[j++].se;
+            ans+=k;
+        }
+        tmp[++tail]=p[i].se;
+    }
+    while(j<=r) {
+        tmp[++tail]=p[j++].se;
+    }
+    for (int i=1;i<=tail;i++) {
+        p[l+i-1].se=tmp[i];
+    }
+}
+
+inline void work(signed CASE=1,bool FINAL_CASE=false) {
+    n=read(); m=read(); x=read(); y=read();
+    ans=(x+1)*(y+1);
+    for(int i=1;i<=x;i++) {
+        p[i].fi=read(); p[i].se=read();
+    }
+    sort(p+1,p+1+x);
+    mergesort(1, x);
+    for(int i=1;i<=y;i++) {
+        p[i].fi=read(); p[i].se=read();
+    }
+    sort(p+1,p+1+y);
+    mergesort(1, y);
+    printf("%lld\n",ans);
+    return;
+}
+```
