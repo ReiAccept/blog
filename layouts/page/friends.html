@@ -4,7 +4,7 @@
     {{ range .Site.Data.friends.friend }}
     <a class="friends-list" href="{{ .url }}" target="_blank">
         <div class=friend-avatar>
-            <img src="{{ .avatar }}" class="friend-avatar-img" alt="{{ .name }}"/>
+            <img src="{{ .avatar }}" class="lazyload friend-avatar-img" loading="lazy" alt="{{ .name }}"/>
         </div>
         <div class="friend-info">
             <h2 class="friend-name">

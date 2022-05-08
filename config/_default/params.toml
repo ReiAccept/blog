@@ -19,8 +19,8 @@ subtitle = "卖个萌，摸摸头"
 
 [sidebar.avatar]
 enabled = true
-local = false
-src = "https://cdn.jsdelivr.net/gh/ACRei/picBed/noeru_compressd.png"
+local = true
+src = "img/avatar.png"
 
 [article]
 math = false
