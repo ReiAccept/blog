@@ -1,5 +1,5 @@
 ---
-title: "第14届CCPC东北四省赛"
+title: "2020第14届CCPC东北四省赛"
 date: 2022-04-23T16:45:16+08:00
 math: true
 # weight: 1
@@ -13,13 +13,13 @@ categories: ["XCPC"]
 # hidemeta: false
 # comments: false
 description: "虽然但是，我已经是第四次写这套东北CCPC考研英语了"
-slug: "The_14th_Chinese_Northeast_Collegiate_Programming_Contest"
+slug: "NECPC2020"
 image: https://gw.alicdn.com/tfs/TB1T9YCeVYqK1RjSZLeXXbXppXa-189-189.png
 ---
 
 https://codeforces.com/gym/102801
 
-虽然但是，我已经是第四次写这套东北CCPC考研英语了，第一次是打星参赛，第二次是补题，第三次是15th四省赛前
+虽然但是，我已经是第四次写这套东北CCPC考研英语了，第一次是打星参赛，第二次是补题，第三次是15th四省赛前，第四次是现在，2022年
 
 ~~即使写第四次了还是难免感叹[凯爷](https://kaizynx.github.io/)的 **PepperLa** 系列题出的真的是蛋疼，属于东北CCPC考研英语了~~
 

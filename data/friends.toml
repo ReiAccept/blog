@@ -2,50 +2,50 @@
 name = "王神仙"
 url = "https://www.cnblogs.com/onglublog/"
 avatar = "https://q1.qlogo.cn/g?b=qq&nk=632599557&s=640"
-desc = "无敌WSX"
+desc = "WSX%%%，XCPC金牌爷"
 
 [[friend]]
 name = "凯爷"
 url = "https://kaizynx.github.io/"
-avatar = "https://q1.qlogo.cn/g?b=qq&nk=2291443901&s=640"
-desc = "无敌凯爷的博客"
+avatar = "https://cdn.jsdelivr.net/gh/KaizynX/cdn/img/custom/avatar.gif"
+desc = "凯爷%%%，我的爱豆，WF选手，我ACM板子都是学他的"
 
 [[friend]]
 name = "嘤嘤嘤嘤嘤"
 url = "https://withghost.github.io/"
 avatar = "https://q1.qlogo.cn/g?b=qq&nk=1023461968&s=640"
-desc = "可爱！"
+desc = "超可爱！"
 
 
 [[friend]]
 name = "蓝天天"
 url = "http://fubluesky.github.io/"
 avatar = "https://q1.qlogo.cn/g?b=qq&nk=936992197&s=640"
-desc = ""
+desc = "挺可爱的，就是有点傻，是鲍鲍的女朋友哦"
 
 [[friend]]
 name = "文哥"
 url = "https://sakurayu.top/"
 avatar = "https://q1.qlogo.cn/g?b=qq&nk=578329240&s=640"
-desc = ""
+desc = "强力学长"
 
 [[friend]]
-name = "松鼠妹妹"
+name = "松鼠姐姐的小站"
 url = "https://sosusosu.icu/"
-avatar = "https://q1.qlogo.cn/g?b=qq&nk=3308395526&s=640"
-desc = "松鼠酱实在是可爱辣"
+avatar = "https://raw.githubusercontent.com/sosupro/sosupro.github.io/main/images/avatar.webp"
+desc = "优质坚果提供地"
 
 [[friend]]
 name = "ssr"
 url = "https://leanhe.dev/"
-avatar = "https://q1.qlogo.cn/g?b=qq&nk=2629936804&s=640"
+avatar = "https://leanhe.dev/favicon.ico"
 desc = ""
 
 [[friend]]
 name = "无限ucw"
 url = "https://ucw.moe/"
 avatar = "https://q1.qlogo.cn/g?b=qq&nk=1840214768&s=640"
-desc = ""
+desc = "Eloim Essaim Eloim Essaim、我は求め诉えたり。"
 
 [[friend]]
 name = "珺妍"
@@ -54,9 +54,9 @@ avatar = "https://q1.qlogo.cn/g?b=qq&nk=2652088766&s=640"
 desc = ""
 
 [[friend]]
-name = "涩队CSL"
+name = "涩队CSL's blog"
 url = "https://cubercsl.site/"
-avatar = "https://q1.qlogo.cn/g?b=qq&nk=944293977&s=640"
+avatar = "https://blog.cubercsl.site/avatar-120.png"
 desc = "The end is always near."
 
 [[friend]]
@@ -69,7 +69,7 @@ desc = "QwQ"
 name = "Hiromi Yuasa"
 url = "https://hiromi.eu.org/"
 avatar = "https://avatars.githubusercontent.com/u/72242390"
-desc = "涩涩！"
+desc = "涩涩！（需梯子）"
 
 [[friend]]
 name = "koto-k"
@@ -88,3 +88,9 @@ name = "Mauve"
 url = "https://hukeqing.github.io/"
 avatar = "https://hukeqing.github.io/image/about/avatar.png"
 desc = "欢迎，许久不见，甚是想念"
+
+[[friend]]
+name = "鲍鲍"
+url = "https://zning-b.github.io/"
+avatar = "https://q1.qlogo.cn/g?b=qq&nk=1026106774&s=640"
+desc = "是蓝天天的男朋友哦"
