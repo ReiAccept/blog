@@ -53,7 +53,7 @@ description = "2021年末的家庭网络折腾"
 
 G-010S-A 这个猫棒，要按照上面给出的 [Nokia G-010S-A Pin 6 Issue (rsaxvc.net)](https://rsaxvc.net/blog/2020/8/15/Nokia_G-010S-A_Pin_6_Issue.html) 这篇里面进行一个改造，才能兼容我的 Intel X520-DA2 网卡，改完之后是这样的
 
-![](G-010S-A_mod.png)
+![](G-010S-A_mod.jpg)
 
 然后……然后就直接按 [hwti/G-010S-A](https://github.com/hwti/G-010S-A) 上直接配好 SN 和 Password 就行了，家里宽带光猫装机的时候我直接问师傅要了全部接入数据，也就没有破解光猫这种问题了捏
 

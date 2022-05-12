@@ -24,7 +24,7 @@ menu:
 
 - 双非大三蒟蒻，退役废铜烂铁XCPCer
 - 星际2曾经的国宗 战网ID:Spaceless#5104 | NS好友ID:SW-0298-7511-7319 | Steam好友ID:138379332
-- [TZHSOJ](https://tzhsoj.com) 的维护者（为了节约CDN钱屏蔽了非中国大陆IP访问）
+- [TZHSOJ](https://tzhsoj.com) 的维护者
 - 正在考研，大概就是想续费一下寒暑假
 - 简历可以在 LinkedIn 上找到，如果有大佬内推一下校招就好了qwq
 - [![Codeforces Rating](https://api.cubercsl.site/api/codeforces?user=ReiAC)](https://codeforces.com/profile/ReiAC) [![Codeforces Rating](https://api.cubercsl.site/api/codeforces?user=ACMagic)](https://codeforces.com/profile/ACMagic)

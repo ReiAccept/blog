@@ -43,4 +43,4 @@ https://github.com/ventoy/Ventoy
 > - Data nondestructive during version upgrade
 > - No need to update Ventoy when a new distro is released
 
-![avatar](ventoy.png)
+![avatar](ventoy.jpg)
