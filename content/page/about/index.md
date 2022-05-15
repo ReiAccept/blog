@@ -17,7 +17,7 @@ menu:
 - 就是记录一下摸鱼的日常
 - 本博客可以通过以下三个域名访问
   - 主域名 (Azure CDN) : [rei.ac](https://rei.ac)
-  - 旧域名 (Azure CDN) : [spaceless.me](https://spaceless.me)
+  - 旧域名 (CloudFlare) : [spaceless.me](https://spaceless.me)
   - cn域名 (腾讯云CDN) : [reiac.cn](https://reiac.cn)
 
 ## 关于我
