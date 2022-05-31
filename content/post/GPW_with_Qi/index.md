@@ -4,6 +4,7 @@ date = "2020-12-25T12:36:51+08:00"
 tags = ["折腾"]
 image = "gpwqi2.jpg"
 description = ""
+categories = ["buytrash"]
 +++
 
 整了一个罗技自家的PowerPlay,然而用下来之后感觉这玩意鼠标垫面积太小了,打星际的时候拉不开(DPI 1650 游戏内速度49%)

@@ -14,7 +14,7 @@ categories: ["XCPC"]
 # comments: false
 description: "虽然但是，我已经是第四次写这套东北CCPC考研英语了"
 slug: "NECPC2020"
-image: https://acg.toubiec.cn/random.php
+image: pic.jpg
 ---
 
 https://codeforces.com/gym/102801
