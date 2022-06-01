@@ -2,6 +2,7 @@
 title = "TzhsOJ P1253 仙人掌"
 date = "2018-07-15T13:52:35+08:00"
 tags = ["算法竞赛"]
+categories = ["XCPC"]
 description = ""
 +++
 

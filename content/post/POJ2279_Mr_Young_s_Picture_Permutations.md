@@ -2,6 +2,7 @@
 title = "POJ2279 Mr. Young's Picture Permutations"
 date = "2021-01-13T02:21:29+08:00"
 tags = ["算法竞赛"]
+categories = ["XCPC"]
 description = ""
 +++
 

@@ -2,6 +2,7 @@
 title = "ICPC2020上海游记"
 date = "2020-12-13T20:57:45+08:00"
 tags = ["算法竞赛"]
+categories = ["XCPC"]
 description = ""
 +++
 

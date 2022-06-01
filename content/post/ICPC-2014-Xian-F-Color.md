@@ -3,6 +3,7 @@ author: Rei
 title: "ICPC2014西安 F Color"
 date: "2021-05-27T18:27:46+08:00"
 tags: ["算法竞赛"]
+categories: ["XCPC"]
 math: true
 ShowBreadCrumbs: false
 ---
