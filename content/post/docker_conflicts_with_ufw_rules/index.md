@@ -14,7 +14,7 @@ tags: ["折腾"]
 # hidemeta: false
 # comments: false
 # description: "Desc Text."
-image: "https://api.ixiaowai.cn/api/api.php"
+image: "cover_image.jpg"
 ---
 
 ## 起因
