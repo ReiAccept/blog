@@ -2,7 +2,7 @@
 title: "{{ replace .Name "-" " " | title }}"
 date: {{ .Date }}
 math: true
-slug: "{{ replace .Name "_" " " | title }}"
+slug: "{{ replace .Name " " "_" | title }}"
 # weight: 1
 # aliases: ["/first"]
 # tags: ["Tag1","Tag2"]

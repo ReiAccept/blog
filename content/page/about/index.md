@@ -17,19 +17,19 @@ menu:
 - 记录摸鱼的日常
 - 本博客可以通过以下三个域名访问
   - 主域名 (CloudFlare Pages) : [rei.ac](https://rei.ac)
-  - 旧域名 (Azure Static Website) : [spaceless.me](https://spaceless.me)
+  - ~~旧域名 (Azure Static Website) : [spaceless.me](https://spaceless.me)~~ 于2022年过期不续
   - cn域名 (腾讯云CDN，一周延迟) : [reiac.cn](https://reiac.cn)
 
 ## 关于我
 
-- 双非大三蒟蒻，退役废铜烂铁XCPCer
+- 双非大四蒟蒻，退役废铜烂铁XCPCer，托福准备中
 - 星际2曾经的国宗 战网ID:Spaceless#5104 | NS好友ID:SW-0298-7511-7319 | Steam好友ID:138379332
 - [TZHSOJ](https://tzhsoj.com) 的维护者
-- 正在考研，大概就是想续费一下寒暑假
 - 简历可以在 LinkedIn 上找到，如果有大佬内推一下校招就好了qwq
 - [![Codeforces Rating](https://api.cubercsl.site/api/codeforces?user=ReiAC)](https://codeforces.com/profile/ReiAC) [![Codeforces Rating](https://api.cubercsl.site/api/codeforces?user=ACMagic)](https://codeforces.com/profile/ACMagic)
 - ~~梦想大概是变成猫娘，可以在[Dress](https://github.com/komeiji-satori/Dress)以及[Twitter](https://twitter.com/ReiAccept)找到我的女装照~~
 - 头像是[诺艾尔(天体的秩序)](https://zh.moegirl.org.cn/诺艾尔(天体的秩序))不是[珂朵莉](https://zh.moegirl.org.cn/珂朵莉)
+- 私聊：dC5tZS9BQ1JlaQ==
 
 ### Platform
 
