@@ -1,7 +1,7 @@
 +++
 title = "折腾Win10寨板"
 date = "2018-12-08T15:37:03+08:00"
-tags = ["折腾"]
+tags = ["寄术"]
 categories = ["buytrash"]
 description = ""
 +++

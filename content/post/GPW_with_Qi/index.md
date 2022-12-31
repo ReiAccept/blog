@@ -1,7 +1,7 @@
 +++
 title = "为GPW DIY一个Qi充电模块"
 date = "2020-12-25T12:36:51+08:00"
-tags = ["折腾"]
+tags = ["寄术"]
 image = "gpwqi2.jpg"
 description = ""
 categories = ["buytrash"]

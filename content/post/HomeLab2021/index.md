@@ -1,7 +1,7 @@
 +++
 title = "魔改华为 MA5671A 和 Nokia G-010S-A"
 date = "2021-12-27T00:05:52+08:00"
-tags = ["折腾"]
+tags = ["寄术"]
 image = "G-010S-A.jpg"
 slug = "mod_HUAWEI_MA5671A_and_Nokia_G_010S_A"
 description = "2021年末的家庭网络折腾"

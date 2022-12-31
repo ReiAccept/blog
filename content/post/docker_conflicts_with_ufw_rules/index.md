@@ -1,11 +1,11 @@
 ---
-title: "记一次docker与ufw规则冲突问题"
+title: "一次docker与ufw规则冲突问题"
 date: 2022-07-26T19:15:07+08:00
 math: true
 slug: "docker_conflicts_with_ufw_rules"
 # weight: 1
 # aliases: ["/first"]
-tags: ["折腾"]
+tags: ["寄术"]
 # categories: ["XCPC"]
 # author: ["Me", "You"] # multiple authors
 # showToc: true

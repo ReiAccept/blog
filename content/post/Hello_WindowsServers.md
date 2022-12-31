@@ -1,7 +1,7 @@
 +++
 title = "你好啊,WindowsServer"
 date = "2017-10-01T16:57:45+08:00"
-tags = ["折腾"]
+tags = ["寄术"]
 description = ""
 +++
 

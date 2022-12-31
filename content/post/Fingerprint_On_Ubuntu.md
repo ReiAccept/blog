@@ -1,7 +1,7 @@
 +++
 title = "在Ubuntu上启用指纹识别"
 date = "2019-10-27T22:07:10+08:00"
-tags = ["折腾"]
+tags = ["寄术"]
 description = ""
 +++
 

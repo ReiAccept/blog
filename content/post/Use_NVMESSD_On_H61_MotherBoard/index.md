@@ -1,7 +1,7 @@
 +++
 title = "在凄惨红H61主板上用NVMESSD"
 date = "2019-08-18T14:25:31+08:00"
-tags = ["折腾"]
+tags = ["寄术"]
 description = ""
 categories = ["buytrash"]
 +++
