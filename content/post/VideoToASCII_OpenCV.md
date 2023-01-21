@@ -1,12 +1,11 @@
-+++
-title = "使用OpenCV将视频转换为Terminal中的字符画"
-date = "2020-03-18T21:25:04+08:00"
-tags = ["OpenCV"]
-description = ""
-+++
+---
+title : "使用OpenCV将视频转换为Terminal中的字符画"
+date : "2020-03-18T21:25:04+08:00"
+tags : ["寄术"]
+---
 
 
-很简单的OpenCV入门练习小项目  
+很简单的OpenCV入门练习小项目
 
 ```python
 import cv2 #OpenCV

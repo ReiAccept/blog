@@ -106,3 +106,9 @@ name = "残城三梦 / Livinfly"
 url = "https://livinfly.top/"
 avatar = "https://q1.qlogo.cn/g?b=qq&nk=2756436359&s=640"
 desc = "坏了，我成学妹了"
+
+[[friend]]
+name = "kernel.bin"
+url = "https://kernelbin.cn/"
+avatar = "https://q1.qlogo.cn/g?b=qq&nk=1160386205&s=640"
+desc = "OIer / ACMer / Win32 dev"
