@@ -112,3 +112,9 @@ name = "kernel.bin"
 url = "https://kernelbin.cn/"
 avatar = "https://q1.qlogo.cn/g?b=qq&nk=1160386205&s=640"
 desc = "OIer / ACMer / Win32 dev"
+
+[[friend]]
+name = "浅梦"
+url = "https://shallowdream.site"
+avatar = "http://shallowdream.site/img/head.png"
+desc = "浅梦の博客"
