@@ -3,7 +3,7 @@ mainSections = ["post"]
 # Output page's full content in RSS.
 rssFullContent = true
 
-favicon = "https://cdn.jsdelivr.net/gh/ACRei/picBed/noeru_compressd.png"
+favicon = "https://avatars.githubusercontent.com/u/17238215"
 
 [footer]
 since = 2015
