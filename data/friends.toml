@@ -16,7 +16,6 @@ url = "https://withghost.github.io/"
 avatar = "https://q1.qlogo.cn/g?b=qq&nk=1023461968&s=640"
 desc = "超可爱！"
 
-
 [[friend]]
 name = "蓝天天"
 url = "http://fubluesky.github.io/"
@@ -64,12 +63,6 @@ name = "BruceChen"
 url = "https://brucec.cn/"
 avatar = "https://static.brucec.cn/image/avatar/my/avatar_1080w.webp"
 desc = "QwQ"
-
-[[friend]]
-name = "Hiromi Yuasa"
-url = "https://hiromi.eu.org/"
-avatar = "https://avatars.githubusercontent.com/u/72242390"
-desc = "涩涩！（需梯子）"
 
 [[friend]]
 name = "koto-k"
