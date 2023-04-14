@@ -14,5 +14,5 @@ slug: "{{ replace .Name " " "_" | title }}"
 # hidemeta: false
 # comments: false
 # description: "Desc Text."
-image: "https://api.ixiaowai.cn/api/api.php"
+image: "https://www.dmoe.cc/random.php"
 ---
