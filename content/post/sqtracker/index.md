@@ -170,7 +170,7 @@ server {
     }
 
     location ^~ /sq/ {
-        proxy_pass http://localhost:3001/;
+        proxy_pass http://localhost:3001;
         proxy_http_version                1.1;
 
         # Proxy Headers
@@ -184,5 +184,6 @@ server {
 
 }
 
-
 ```
+
+注意这里的 `/sq/` 反代位置是不需要反斜杠的
