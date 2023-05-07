@@ -14,35 +14,33 @@ menu:
       icon: user
 ---
 
-- 记录摸鱼的日常
-- 本博客可以通过以下三个域名访问
-  - 主域名 (CloudFlare Pages) : [rei.ac](https://rei.ac)
-  - ~~旧域名 (Azure Static Website) : [spaceless.me](https://spaceless.me)~~ 于2022年过期不续
-  - cn域名 (腾讯云CDN，一周延迟) : [reiac.cn](https://reiac.cn)
+- 记录摸鱼的日常流水帐
+- 如果博客里的东西帮到您了，那真是太好了
 
 ## 关于我
 
-- 双非大四蒟蒻，退役废铜烂铁XCPCer，托福准备中
+- 双非大四蒟蒻，退役废铜烂铁 XCPCer，IELTS 准备中
 - 星际2曾经的国宗 战网ID:Spaceless#5104 | NS好友ID:SW-0298-7511-7319 | Steam好友ID:138379332
-- [TZHSOJ](https://tzhsoj.com) 的维护者
+- 有个自己的小OJ，主要是提供给高中老师上课用 [TZHSOJ](https://tzhsoj.com)
 - 简历可以在 LinkedIn 上找到
-- [![Codeforces Rating](https://api.cubercsl.site/api/codeforces?user=ReiAC)](https://codeforces.com/profile/ReiAC)
 - 头像是[诺艾尔(天体的秩序)](https://zh.moegirl.org.cn/诺艾尔(天体的秩序))不是[珂朵莉](https://zh.moegirl.org.cn/珂朵莉)
-- 私聊：dC5tZS9BQ1JlaQ==
+
+### Codeforces
+[![Codeforces Rating](https://api.cubercsl.site/api/codeforces?user=ReiAC&style=for-the-badge)](https://codeforces.com/profile/ReiAC)
 
 ### Platform
 
 ![Microsoft Surface](https://img.shields.io/static/v1?style=for-the-badge&message=Surface%20Pro7&color=5E5E5E&logo=Microsoft&logoColor=FFFFFF&label=)
-![Arch Linux](https://img.shields.io/badge/Arch_Linux-1793D1?style=for-the-badge&logo=arch-linux&logoColor=white)
+![Windows 11](https://img.shields.io/static/v1?style=for-the-badge&message=Windows%2011&color=0078D6&logo=Windows&logoColor=FFFFFF&label=)
 
 ![OMEN by HP Laptop 17-cb0xxx](https://img.shields.io/static/v1?style=for-the-badge&message=HP%2017-cb0xxx&color=0096D6&logo=HP&logoColor=FFFFFF&label=)
-![Windows 11](https://img.shields.io/static/v1?style=for-the-badge&message=Windows%2011&color=0078D6&logo=Windows&logoColor=FFFFFF&label=)
+![Arch Linux](https://img.shields.io/badge/Arch_Linux-1793D1?style=for-the-badge&logo=arch-linux&logoColor=white)
 
 ![MacBookPro 2017](https://img.shields.io/static/v1?style=for-the-badge&message=MacBookPro%202017&color=000000&logo=Apple&logoColor=FFFFFF&label=)
 ![macOS Monterey](https://img.shields.io/static/v1?style=for-the-badge&message=macOS%20Monterey&color=000000&logo=macOS&logoColor=FFFFFF&label=)
 
 ![Xiaomi 10 Pro](https://img.shields.io/static/v1?style=for-the-badge&message=Xiaomi%2010%20Pro&color=FF6900&logo=Xiaomi&logoColor=FFFFFF&label=)
-![iPhone SE3](https://img.shields.io/static/v1?style=for-the-badge&message=iPhone%20SE3&color=000000&logo=iOS&logoColor=FFFFFF&label=)
+![iPhone 13mini](https://img.shields.io/static/v1?style=for-the-badge&message=iPhone%2013mini&color=000000&logo=iOS&logoColor=FFFFFF&label=)
 
 ### Tools
 
@@ -62,6 +60,7 @@ menu:
 ![C](https://img.shields.io/static/v1?style=for-the-badge&message=C&color=222222&logo=C&logoColor=A8B9CC&label=)
 ![C++](https://img.shields.io/static/v1?style=for-the-badge&message=C%2B%2B&color=00599C&logo=C%2B%2B&logoColor=FFFFFF&label=)
 ![Python](https://img.shields.io/static/v1?style=for-the-badge&message=Python&color=3776AB&logo=Python&logoColor=FFFFFF&label=)
+![JavaScript](https://img.shields.io/badge/JavaScript-F7DF1E?style=for-the-badge&logo=javascript&logoColor=black)
 ![Vim Script](https://img.shields.io/static/v1?style=for-the-badge&message=Vim%20Script&color=019733&logo=Vim&logoColor=FFFFFF&label=)
 
 ## 版权说明
