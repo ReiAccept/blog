@@ -25,9 +25,8 @@ menu:
 - 双非大四蒟蒻，退役废铜烂铁XCPCer，托福准备中
 - 星际2曾经的国宗 战网ID:Spaceless#5104 | NS好友ID:SW-0298-7511-7319 | Steam好友ID:138379332
 - [TZHSOJ](https://tzhsoj.com) 的维护者
-- 简历可以在 LinkedIn 上找到，如果有大佬内推一下校招就好了qwq
-- [![Codeforces Rating](https://api.cubercsl.site/api/codeforces?user=ReiAC)](https://codeforces.com/profile/ReiAC) [![Codeforces Rating](https://api.cubercsl.site/api/codeforces?user=ACMagic)](https://codeforces.com/profile/ACMagic)
-- ~~梦想大概是变成猫娘，可以在[Dress](https://github.com/komeiji-satori/Dress)以及[Twitter](https://twitter.com/ReiAccept)找到我的女装照~~
+- 简历可以在 LinkedIn 上找到
+- [![Codeforces Rating](https://api.cubercsl.site/api/codeforces?user=ReiAC)](https://codeforces.com/profile/ReiAC)
 - 头像是[诺艾尔(天体的秩序)](https://zh.moegirl.org.cn/诺艾尔(天体的秩序))不是[珂朵莉](https://zh.moegirl.org.cn/珂朵莉)
 - 私聊：dC5tZS9BQ1JlaQ==
 
