@@ -72,4 +72,4 @@ menu:
 
 ## 投喂
 
-好像没啥值得您打钱的
+这是一个Vultr的AFF链接如果您要买VPS的话也许可以点一下 https://www.vultr.com/?ref=9464460-8H
