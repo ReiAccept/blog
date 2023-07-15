@@ -14,8 +14,10 @@ tags: ["寄术"]
 # hidemeta: false
 # comments: false
 # description: "Desc Text."
-image: "https://www.dmoe.cc/random.php"
+image: "pic.webp"
 ---
+
+# 警告：发现了这东西在安全性上的一些隐患
 
 ## 起因
 
