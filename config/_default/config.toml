@@ -1,5 +1,5 @@
 # Change baseurl before deploy
-baseurl = "https://rei.ac"
+baseurl = "https://blog.rei.ac"
 languageCode = "zh-hans"
 theme = "hugo-theme-stack"
 paginate = 8
