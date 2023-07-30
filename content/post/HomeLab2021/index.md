@@ -5,7 +5,7 @@ tags = ["寄术"]
 image = "G-010S-A.jpg"
 slug = "mod_HUAWEI_MA5671A_and_Nokia_G_010S_A"
 description = "2021年末的家庭网络折腾"
-categories = ["buytrash"]
+categories = ["Hardware"]
 +++
 
 2021-12-27 更新

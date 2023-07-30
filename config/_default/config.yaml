@@ -1,0 +1,10 @@
+baseurl: "https://blog.rei.ac"
+languageCode: "zh-hans"
+theme: "hugo-theme-stack"
+paginate: 8
+title: "ReiAC's Blog"
+
+DefaultContentLanguage: "zh-hans"
+hasCJKLanguage: true
+
+googleAnalytics: "UA-97060993-1"

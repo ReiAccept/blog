@@ -6,7 +6,7 @@ slug: "Inspur_X540_AT2"
 # weight: 1
 # aliases: ["/first"]
 tags: ["寄术"]
-categories: ["buytrash"]
+categories: ["Hardware"]
 # author: ["Me", "You"] # multiple authors
 # showToc: true
 # TocOpen: false

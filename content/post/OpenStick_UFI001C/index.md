@@ -6,7 +6,7 @@ slug: "OpenStick_UFI001C"
 # weight: 1
 # aliases: ["/first"]
 tags: ["捡垃圾"]
-categories: ["buytrash"]
+categories: ["Hardware"]
 # author: ["Me", "You"] # multiple authors
 # showToc: true
 # TocOpen: false
