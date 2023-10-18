@@ -13,7 +13,7 @@ categories: ["硬件产品"]
 # draft: false
 # hidemeta: false
 # comments: false
-# description: "Desc Text."
+description: "这玩意感觉还是缺几个2.5G网口，但是当AP差不多得了"
 image: "cover.jpg"
 ---
 
