@@ -4,7 +4,7 @@ theme: "hugo-theme-stack"
 paginate: 8
 title: "ReiAC's Blog"
 
-DefaultContentLanguage: "zh-hans"
+DefaultContentLanguage: "zh"
 hasCJKLanguage: true
 
 googleAnalytics: "UA-97060993-1"

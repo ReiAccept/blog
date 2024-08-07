@@ -40,3 +40,8 @@ image: "pic.jpg"
 等下次回台州把猫棒什么都拿来，淘汰掉联通的垃圾光猫
 
 ![](pic4.jpg)
+
+
+Tips: 如果您要将 RB5009 与 RTL960x 系列 SFP 猫棒协商 2.5G 速率
+
+首先需要 SSH到猫棒上执行 `flash set LAN_SDS_MODE 6` 然后回到 winbox，关闭自动协商，设置速率为 2.5G baseX，然后需要等待第一次重协商的时间会比较长，[参考资料](https://github.com/Anime4000/RTL960x)
