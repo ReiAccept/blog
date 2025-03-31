@@ -19,10 +19,8 @@ menu:
 
 ## 关于我
 
-- 双非大四蒟蒻，退役废铜烂铁 XCPCer，IELTS 准备中
-- 星际2曾经的国宗 战网ID:Spaceless#5104 | NS好友ID:SW-0298-7511-7319 | Steam好友ID:138379332
-- 有个自己的小OJ，主要是提供给高中老师上课用 [TZHSOJ](https://tzhsoj.com)
-- 简历可以在 LinkedIn 上找到
+- 什么都写一点工程师, 简历可以在 LinkedIn 上找到
+- 星际2国服宗师（但是国服没了） 战网ID:Spaceless#5104 | NS好友ID:SW-0298-7511-7319 | Steam好友ID:138379332
 - 头像是[诺艾尔(天体的秩序)](https://zh.moegirl.org.cn/诺艾尔(天体的秩序))不是[珂朵莉](https://zh.moegirl.org.cn/珂朵莉)
 
 ### Codeforces
@@ -30,17 +28,18 @@ menu:
 
 ### Platform
 
-![Microsoft Surface](https://img.shields.io/static/v1?style=for-the-badge&message=Surface%20Pro7&color=5E5E5E&logo=Microsoft&logoColor=FFFFFF&label=)
+![AMD 7800X3D](https://img.shields.io/badge/7800X3D-red?style=for-the-badge&logo=AMD)
+![NVIDIA RTX4070](https://img.shields.io/badge/RTX4070-76B900?style=for-the-badge&logo=nvidia&logoColor=FFFFFF)
 ![Windows 11](https://img.shields.io/static/v1?style=for-the-badge&message=Windows%2011&color=0078D6&logo=Windows&logoColor=FFFFFF&label=)
 
-![OMEN by HP Laptop 17-cb0xxx](https://img.shields.io/static/v1?style=for-the-badge&message=HP%2017-cb0xxx&color=0096D6&logo=HP&logoColor=FFFFFF&label=)
+![Static Badge](https://img.shields.io/badge/HP%20Chromebook%20c1030-0096D6?style=for-the-badge&logo=HP&logoColor=FFFFFF)
 ![Arch Linux](https://img.shields.io/badge/Arch_Linux-1793D1?style=for-the-badge&logo=arch-linux&logoColor=white)
 
-![MacBookPro 2017](https://img.shields.io/static/v1?style=for-the-badge&message=MacBookPro%202017&color=000000&logo=Apple&logoColor=FFFFFF&label=)
+![MacBookPro 2021](https://img.shields.io/static/v1?style=for-the-badge&message=MacBookPro%202021&color=000000&logo=Apple&logoColor=FFFFFF&label=)
 ![macOS Monterey](https://img.shields.io/static/v1?style=for-the-badge&message=macOS%20Monterey&color=000000&logo=macOS&logoColor=FFFFFF&label=)
 
-![Xiaomi 10 Pro](https://img.shields.io/static/v1?style=for-the-badge&message=Xiaomi%2010%20Pro&color=FF6900&logo=Xiaomi&logoColor=FFFFFF&label=)
-![iPhone 13mini](https://img.shields.io/static/v1?style=for-the-badge&message=iPhone%2013mini&color=000000&logo=iOS&logoColor=FFFFFF&label=)
+![Xiaomi 14](https://img.shields.io/static/v1?style=for-the-badge&message=Xiaomi%2014&color=FF6900&logo=Xiaomi&logoColor=FFFFFF&label=)
+![iPhone 16 Pro](https://img.shields.io/static/v1?style=for-the-badge&message=iPhone%2016%20Pro&color=000000&logo=iOS&logoColor=FFFFFF&label=)
 
 ### Tools
 
@@ -57,11 +56,12 @@ menu:
 
 ### Languages
 
-![C](https://img.shields.io/static/v1?style=for-the-badge&message=C&color=222222&logo=C&logoColor=A8B9CC&label=)
-![C++](https://img.shields.io/static/v1?style=for-the-badge&message=C%2B%2B&color=00599C&logo=C%2B%2B&logoColor=FFFFFF&label=)
-![Python](https://img.shields.io/static/v1?style=for-the-badge&message=Python&color=3776AB&logo=Python&logoColor=FFFFFF&label=)
+![C](https://img.shields.io/badge/C-222222?style=for-the-badge&logo=C&logoColor=A8B9CC)
+![C++](https://img.shields.io/badge/C%2B%2B-00599C?style=for-the-badge&logo=C%2B%2B&logoColor=FFFFFF)
+![Python](https://img.shields.io/badge/Python-3776AB?style=for-the-badge&logo=Python&logoColor=FFFFFF)
 ![JavaScript](https://img.shields.io/badge/JavaScript-F7DF1E?style=for-the-badge&logo=javascript&logoColor=black)
-![Vim Script](https://img.shields.io/static/v1?style=for-the-badge&message=Vim%20Script&color=019733&logo=Vim&logoColor=FFFFFF&label=)
+![TypeScript](https://img.shields.io/badge/TypeScript-3178C6?style=for-the-badge&logo=typescript&logoColor=black)
+![Vim Script](https://img.shields.io/badge/Vim%20Script-019733?style=for-the-badge&logo=Vim&logoColor=FFFFFF)
 
 ## 版权说明
 
