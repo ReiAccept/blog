@@ -1,0 +1,9 @@
+baseurl = "https://blog.rei.ac"
+languageCode = "zh-cn"
+theme = "hugo-theme-stack"
+title = "ReiAC's Blog"
+
+DefaultContentLanguage = "zh-cn"
+hasCJKLanguage = true
+
+googleAnalytics = "UA-97060993-1"
