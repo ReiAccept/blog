@@ -4,7 +4,6 @@ date = "2019-11-04T22:03:39+08:00"
 tags = ["寄术"]
 description = ""
 slug = "BCM20702A1_on_Ubuntu"
-categories = "Hardware"
 +++
 
 
