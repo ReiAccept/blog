@@ -80,7 +80,7 @@ enabled = true
 provider = "giscus"
 
 [comments.giscus]
-repo = "ACRei/blog"
+repo = "ReiAccept/blog"
 repoID = "R_kgDOGu8RsA"
 category = "Announcements"
 categoryID = "DIC_kwDOGu8RsM4COrU-"
