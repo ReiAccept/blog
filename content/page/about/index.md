@@ -20,7 +20,6 @@ menu:
 ## 关于我
 
 - 什么都写一点工程师, 简历可以在 LinkedIn 上找到
-- 星际2国服宗师（但是国服没了） 战网ID:Spaceless#5104 | NS好友ID:SW-0298-7511-7319 | Steam好友ID:138379332
 - 头像是[诺艾尔(天体的秩序)](https://zh.moegirl.org.cn/诺艾尔(天体的秩序))不是[珂朵莉](https://zh.moegirl.org.cn/珂朵莉)
 
 ### Codeforces
@@ -62,6 +61,18 @@ menu:
 ![JavaScript](https://img.shields.io/badge/JavaScript-F7DF1E?style=for-the-badge&logo=javascript&logoColor=black)
 ![TypeScript](https://img.shields.io/badge/TypeScript-3178C6?style=for-the-badge&logo=typescript&logoColor=black)
 ![Vim Script](https://img.shields.io/badge/Vim%20Script-019733?style=for-the-badge&logo=Vim&logoColor=FFFFFF)
+
+### Games
+- 暴雪系
+  - 星际争霸2 国服 宗师
+  - 好友ID: Spaceless#5104
+- Steam
+  - DOTA2 超凡入圣
+  - 好友ID:138379332
+- NS
+  - 独占游戏玩的比较多
+  - 好友ID:SW-0298-7511-7319
+
 
 ## 版权说明
 
