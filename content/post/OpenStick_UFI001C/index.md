@@ -1,5 +1,5 @@
 ---
-title: "4G 随身 WIFI UFI001C"
+title: "UFI001C (杂牌4G 随身 WIFI)"
 date: 2022-06-11T12:43:16+08:00
 math: true
 slug: "OpenStick_UFI001C"

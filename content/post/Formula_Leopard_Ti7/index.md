@@ -1,5 +1,5 @@
 ---
-title: "方程豹钛7"
+title: "方程豹 钛7"
 date: 2025-12-03T23:09:39+08:00
 math: true
 slug: "Formula_Leopard_Ti7"

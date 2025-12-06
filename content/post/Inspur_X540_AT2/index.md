@@ -1,5 +1,5 @@
 ---
-title: "年轻人的第一块双电口万兆卡 浪潮 X540 AT2"
+title: "浪潮 X540 AT2"
 date: 2023-03-04T13:24:22+08:00
 math: true
 slug: "Inspur_X540_AT2"
@@ -13,7 +13,7 @@ categories: ["Hardware"]
 # draft: false
 # hidemeta: false
 # comments: false
-description: "大黄鱼60包邮，网卡比网线还便宜"
+description: "年轻人的第一块双电口万兆卡, 大黄鱼60包邮, 网卡比网线还便宜"
 image: "pic.jpg"
 ---
 

@@ -1,8 +1,8 @@
 ---
-title: "MikroTik RB5009 开箱"
+title: "MikroTik RB5009"
 date: 2023-07-30T10:30:00+08:00
 math: true
-slug: "RB5009_Unboxing"
+slug: "Mikrotik_RB5009"
 # weight: 1
 # aliases: ["/first"]
 tags: ["寄术"]
