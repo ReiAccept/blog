@@ -1,8 +1,8 @@
 ---
-title: "银欣 CS382 装机"
+title: "银欣 CS382"
 date: 2025-04-06T05:36:06+08:00
 math: true
-slug: "Build_SilverStone_CS382"
+slug: "SilverStone_CS382"
 # weight: 1
 # aliases: ["/first"]
 # tags: ["Tag1","Tag2"]
@@ -13,7 +13,7 @@ categories: ["Hardware"]
 # draft: false
 # hidemeta: false
 # comments: false
-description: "十年老兵迎广 MS04 光荣退役"
+description: "新的 8 盘位 NAS, 十年老兵迎广 MS04 光荣退役"
 image: "cover.png"
 ---
 

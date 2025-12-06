@@ -21,21 +21,21 @@ menu:
 
 - 什么都写一点工程师, 简历可以在 LinkedIn 上找到
 - 头像是[诺艾尔(天体的秩序)](https://zh.moegirl.org.cn/诺艾尔(天体的秩序))不是[珂朵莉](https://zh.moegirl.org.cn/珂朵莉)
+- 曾经是算法竞赛选手
 
 ### Codeforces
 [![Codeforces Rating](https://api.cubercsl.site/api/codeforces?user=ReiAC&style=for-the-badge)](https://codeforces.com/profile/ReiAC)
 
-### Platform
-
+### 设备
 ![AMD 7800X3D](https://img.shields.io/badge/7800X3D-red?style=for-the-badge&logo=AMD)
 ![NVIDIA RTX4070](https://img.shields.io/badge/RTX4070-76B900?style=for-the-badge&logo=nvidia&logoColor=FFFFFF)
 ![Windows 11](https://img.shields.io/static/v1?style=for-the-badge&message=Windows%2011&color=0078D6&logo=Windows&logoColor=FFFFFF&label=)
 
-![Static Badge](https://img.shields.io/badge/HP%20Chromebook%20c1030-0096D6?style=for-the-badge&logo=HP&logoColor=FFFFFF)
+![ThinkPad T14P](https://img.shields.io/badge/ThinkPad%20T14P-000000?style=for-the-badge&logo=Lenovo&logoColor=FFFFFF)
 ![Arch Linux](https://img.shields.io/badge/Arch_Linux-1793D1?style=for-the-badge&logo=arch-linux&logoColor=white)
 
 ![MacBookPro 2021](https://img.shields.io/static/v1?style=for-the-badge&message=MacBookPro%202021&color=000000&logo=Apple&logoColor=FFFFFF&label=)
-![macOS Monterey](https://img.shields.io/static/v1?style=for-the-badge&message=macOS%20Monterey&color=000000&logo=macOS&logoColor=FFFFFF&label=)
+![macOS Sequoia](https://img.shields.io/static/v1?style=for-the-badge&message=macOS%20Sequoia&color=000000&logo=macOS&logoColor=FFFFFF&label=)
 
 ![Xiaomi 14](https://img.shields.io/static/v1?style=for-the-badge&message=Xiaomi%2014&color=FF6900&logo=Xiaomi&logoColor=FFFFFF&label=)
 ![iPhone 16 Pro](https://img.shields.io/static/v1?style=for-the-badge&message=iPhone%2016%20Pro&color=000000&logo=iOS&logoColor=FFFFFF&label=)
@@ -79,7 +79,7 @@ menu:
 - 除非注明，本博客所有文章皆为原创。
 - 除非另有声明，本博客之原创文章采用 [CC BY-NC-SA 4.0](https://creativecommons.org/licenses/by-nc-sa/4.0/deed.zh) 进行许可。
 - 转载请同时需要注明原文链接和作者名字。
-- 本博客运行于 [Azure Static Web Apps](https://azure.microsoft.com/en-us/services/app-service/static/) 与 [CloudFlare Pages](https://pages.cloudflare.com/)，源代码位于 [Github 仓库](https://github.com/ACRei/blog)
+- 本博客运行于 [Azure Static Web Apps](https://azure.microsoft.com/en-us/services/app-service/static/) / [CloudFlare Pages](https://pages.cloudflare.com/) / [Github Pages](https://pages.github.io/)，源代码位于 [Github 仓库](https://github.com/ReiAccept/blog)
 
 ## 投喂
 
