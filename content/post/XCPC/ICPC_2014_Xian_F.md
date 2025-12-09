@@ -1,5 +1,5 @@
 ---
-title: "ICPC2014西安 F Color"
+title: "ICPC 2014 Xian F Color"
 date: 2021-05-27T18:27:46+08:00
 math: true
 slug: "ICPC_2014_Xian_F"

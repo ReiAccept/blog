@@ -1,10 +1,10 @@
 +++
-title = "2018第12届吉林省大学生程序设计竞赛（训练）"
+title = "JLCPC 2018 (第12届吉林省大学生程序设计竞赛)"
 date = "2021-01-13T17:34:26+08:00"
 tags = ["算法竞赛"]
 categories = ["XCPC"]
 slug = "JLCPC2018"
-description = ""
+# description = ""
 image = "img.jpg"
 +++
 

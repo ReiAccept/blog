@@ -1,5 +1,5 @@
 ---
-title: "2020第14届CCPC东北四省赛"
+title: "NECPC 2020 (第14届CCPC东北四省赛)"
 date: 2022-04-23T16:45:16+08:00
 math: true
 # weight: 1

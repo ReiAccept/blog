@@ -1,10 +1,10 @@
 +++
-title = "ICPC2020济南A Matrix Equation"
+title = "ICPC 2020 Jinan A Matrix Equation"
 date = "2020-12-31T20:43:53+08:00"
 tags = ["算法竞赛"]
 categories = ["XCPC"]
-description = ""
-slug = "2020_ICPC_Jinan_A_Matrix_Equation"
+# description = ""
+slug = "ICPC_2020_Jinan_A"
 +++
 
 

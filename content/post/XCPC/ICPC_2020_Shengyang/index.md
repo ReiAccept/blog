@@ -1,11 +1,12 @@
 +++
-title = "ICPC 2020 Shenyang Regional"
+title = "ICPC 2020 Shenyang"
 date = "2021-09-06T20:35:24+08:00"
 tags = ["算法竞赛"]
 categories = ["XCPC"]
 math = true
 description = "打铁实录"
 image = "ICPC_Challenge.png"
+slug = "ICPC_2020_Shengyang"
 +++
 
 CF Gym : [Dashboard - The 2020 ICPC Asia Shenyang Regional Programming Contest - Codeforces](https://codeforces.com/gym/103202)

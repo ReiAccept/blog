@@ -1,9 +1,10 @@
 +++
-title = "ICPC2020上海游记"
+title = "ICPC 2020 Shangahi"
 date = "2020-12-13T20:57:45+08:00"
 tags = ["算法竞赛"]
 categories = ["XCPC"]
 description = ""
+slug = "ICPC_2020_Shanghai"
 +++
 
 嘛，没想到我的ICPC之旅的第一站就那么卷,开局南师大6S AC最速传说，然后被dq了，开场签到很稳，和文哥直接推出了公式，和黄总写的暴力程序直接对拍正确A掉签到题

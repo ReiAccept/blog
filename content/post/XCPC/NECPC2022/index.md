@@ -1,5 +1,5 @@
 ---
-title: "2022第16届CCPC东北四省赛"
+title: "NECPC 2022 (第16届CCPC东北四省赛)"
 date: 2022-06-01T15:42:59+08:00
 math: true
 slug: "NECPC2022"
