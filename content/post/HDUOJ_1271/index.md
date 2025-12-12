@@ -1,10 +1,10 @@
-+++
-title = "HDUOJ 1271"
-date = "2021-01-08T18:22:46+08:00"
-tags = ["算法竞赛"]
-categories = ["XCPC"]
-description = ""
-+++
+---
+title: "HDUOJ 1271"
+date: "2021-01-08T18:22:46+08:00"
+tags: ["算法竞赛"]
+categories: ["XCPC"]
+description: ""
+---
 
 
 其实是一道大水题,但是自己写的时候一开始居然没想到去枚举k就可以了,确实不擅长做数学题

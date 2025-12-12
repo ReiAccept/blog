@@ -1,9 +1,9 @@
-+++
-title = "ACM Steps 1-3"
-date = "2021-01-05T00:52:51+08:00"
-tags = ["算法竞赛"]
-description = ""
-+++
+---
+title: "ACM Steps 1-3"
+date: "2021-01-05T00:52:51+08:00"
+tags: ["算法竞赛"]
+description: ""
+---
 
 ACM Steps 不能跳着刷好蛋疼啊，非要去写水题
 

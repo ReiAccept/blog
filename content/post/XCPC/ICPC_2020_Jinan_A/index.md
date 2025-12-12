@@ -1,11 +1,11 @@
-+++
-title = "ICPC 2020 Jinan A Matrix Equation"
-date = "2020-12-31T20:43:53+08:00"
-tags = ["算法竞赛"]
-categories = ["XCPC"]
-# description = ""
-slug = "ICPC_2020_Jinan_A"
-+++
+---
+title: "ICPC 2020 Jinan A Matrix Equation"
+date: "2020-12-31T20:43:53+08:00"
+tags: ["算法竞赛"]
+categories: ["XCPC"]
+# description: ""
+slug: "ICPC_2020_Jinan_A"
+---
 
 
 这个题算是个翻车题，做出来可以铁翻银的，燃鹅翻车在这个题上了

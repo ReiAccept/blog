@@ -1,8 +1,8 @@
-+++
-title = "Hello World"
-date = "2015-04-03T16:57:45+08:00"
-tags = ["博客历程"]
-+++
+---
+title: "Hello World"
+date: "2015-04-03T16:57:45+08:00"
+tags: ["博客历程"]
+---
 
 
 趁着清明长假，把blog发布到了Github上

@@ -1,11 +1,11 @@
-+++
-title = "牛客 1041D MobileService"
-date = "2021-01-31T00:43:49+08:00"
-tags = ["算法竞赛"]
-categories = ["XCPC"]
-math = true
-description = ""
-+++
+---
+title: "牛客 1041D MobileService"
+date: "2021-01-31T00:43:49+08:00"
+tags: ["算法竞赛"]
+categories: ["XCPC"]
+math: true
+description: ""
+---
 
 
 题目链接:[Mobile Service](https://ac.nowcoder.com/acm/contest/1041/D)

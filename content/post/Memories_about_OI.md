@@ -1,11 +1,11 @@
-+++
-title = "迷茫之路"
-date = "2019-11-19T22:29:36+08:00"
-tags = ["闲言碎语"]
-categories = ["XCPC"]
-description = "前路迷茫，但是我们依旧会一往直前。"
-slug = "Memories_about_OI"
-+++
+---
+title: "迷茫之路"
+date: "2019-11-19T22:29:36+08:00"
+tags: ["闲言碎语"]
+categories: ["XCPC"]
+description: "前路迷茫，但是我们依旧会一往直前。"
+slug: "Memories_about_OI"
+---
 
 **致来自2022年后来的你**：这篇文章狗屁不通，请寄存脑子之后再看
 

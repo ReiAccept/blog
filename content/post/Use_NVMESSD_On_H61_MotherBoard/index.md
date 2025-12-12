@@ -1,10 +1,10 @@
-+++
-title = "在凄惨红H61主板上用NVMESSD"
-date = "2019-08-18T14:25:31+08:00"
-tags = ["寄术"]
-description = ""
-categories = ["Hardware"]
-+++
+---
+title: "在凄惨红H61主板上用NVMESSD"
+date: "2019-08-18T14:25:31+08:00"
+tags: ["寄术"]
+description: ""
+categories: ["Hardware"]
+---
 
 主要是垃圾NAS的系统U盘出问题了，然后买个个16G傲腾和PCIEx16 to M2接口的转接卡  
 然而H61并没有原生的NVME支持= =只能改BIOS来解决这个问题  

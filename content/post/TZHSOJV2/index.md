@@ -1,11 +1,11 @@
-+++
-title = "附中OJ从魔改HUSTOJ切换到Hydro啦！"
-date = "2021-03-06T20:36:18+08:00"
-tags = ["算法竞赛"]
-description = ""
-image = "img.png"
-slug = "TZHSOJV2"
-+++
+---
+title: "附中OJ从魔改HUSTOJ切换到Hydro啦！"
+date: "2021-03-06T20:36:18+08:00"
+tags: ["算法竞赛"]
+description: ""
+image: "img.png"
+slug: "TZHSOJV2"
+---
 
 
 直接放链接吧

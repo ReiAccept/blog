@@ -1,9 +1,9 @@
-+++
-title = "Ventoy:一个有趣的方式来制作USB启动U盘"
-date = "2020-04-30T00:02:21+08:00"
-tags = ["寄术"]
-description = ""
-+++
+---
+title: "Ventoy:一个有趣的方式来制作USB启动U盘"
+date: "2020-04-30T00:02:21+08:00"
+tags: ["寄术"]
+description: ""
+---
 
 
 先上GitHub链接:

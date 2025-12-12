@@ -1,9 +1,9 @@
-+++
-title = "在Ubuntu上启用指纹识别"
-date = "2019-10-27T22:07:10+08:00"
-tags = ["寄术"]
-description = ""
-+++
+---
+title: "在Ubuntu上启用指纹识别"
+date: "2019-10-27T22:07:10+08:00"
+tags: ["寄术"]
+description: ""
+---
 
 
 写着一篇的原因是中文网络上对于fprintd的教程已经严重与现在的Ubuntu脱节==  

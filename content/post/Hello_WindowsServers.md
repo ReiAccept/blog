@@ -1,9 +1,9 @@
-+++
-title = "你好啊,WindowsServer"
-date = "2017-10-01T16:57:45+08:00"
-tags = ["寄术"]
-description = ""
-+++
+---
+title: "你好啊,WindowsServer"
+date: "2017-10-01T16:57:45+08:00"
+tags: ["寄术"]
+description: ""
+---
 
 自从我的Windows各种崩溃之后  
 Ubuntu又是各种Silly的内部错误  
