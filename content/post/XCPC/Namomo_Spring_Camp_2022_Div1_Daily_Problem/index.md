@@ -2,7 +2,6 @@
 title: "Namomo Spring Camp 2022 Div1 每日一题"
 date: 2022-03-07T20:18:28+08:00
 math: true
-tags: ["算法竞赛"]
 categories: ["XCPC"]
 # image: https://nwzimg.wezhan.cn/contents/sitefiles2048/10243973/images/23753065.jpg
 # image: "wls.jpg"

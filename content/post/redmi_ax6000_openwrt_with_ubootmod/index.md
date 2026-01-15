@@ -5,7 +5,6 @@ math: true
 slug: "redmi_ax6000_openwrt_with_ubootmod"
 # weight: 1
 # aliases: ["/first"]
-tags: ["捡垃圾","寄术"]
 categories: ["Hardware"]
 # author: ["Me", "You"] # multiple authors
 # showToc: true

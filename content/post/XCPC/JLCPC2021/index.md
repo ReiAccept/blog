@@ -5,7 +5,6 @@ math: true
 slug: "JLCPC2021"
 # weight: 1
 # aliases: ["/first"]
-tags: ["算法竞赛"]
 categories: ["XCPC"]
 # author: ["Me", "You"] # multiple authors
 # showToc: true

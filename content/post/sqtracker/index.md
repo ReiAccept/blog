@@ -3,17 +3,6 @@ title: "用 Sqtracker 搭建PT站"
 date: 2023-04-14T16:38:43+08:00
 math: true
 slug: "Sqtracker"
-# weight: 1
-# aliases: ["/first"]
-tags: ["寄术"]
-# categories: ["XCPC"]
-# author: ["Me", "You"] # multiple authors
-# showToc: true
-# TocOpen: false
-# draft: false
-# hidemeta: false
-# comments: false
-# description: "Desc Text."
 image: "pic.webp"
 ---
 

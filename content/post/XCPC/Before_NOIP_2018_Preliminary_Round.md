@@ -1,7 +1,7 @@
 ---
 title: "写在NOIP2018初赛前"
 date: "2018-09-25T21:00:00+08:00"
-tags: ["算法竞赛"]
+categories: ["XCPC"]
 description: ""
 ---
 

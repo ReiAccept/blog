@@ -1,11 +1,10 @@
 ---
 title: "NOIP2018复赛前的随想"
 date: "2018-10-25T14:25:40+08:00"
-tags: ["算法竞赛"]
+categories: ["XCPC"]
 description: ""
 slug: "BeforeNOIP2018"
 image: "IDCard.jpg"
-categories: ["XCPC"]
 ---
 
 貌似初赛过了的样子……

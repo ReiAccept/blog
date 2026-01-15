@@ -21,7 +21,7 @@ menu:
 
 - 什么都写一点工程师, 简历可以在 LinkedIn 上找到
 - 头像是[诺艾尔(天体的秩序)](https://zh.moegirl.org.cn/诺艾尔(天体的秩序))不是[珂朵莉](https://zh.moegirl.org.cn/珂朵莉)
-- 曾经是算法竞赛选手
+
 
 ### Codeforces
 [![Codeforces Rating](https://api.cubercsl.site/api/codeforces?user=ReiAC&style=for-the-badge)](https://codeforces.com/profile/ReiAC)

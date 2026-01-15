@@ -1,7 +1,6 @@
 ---
 title: "ICPC 2020 Shangahi"
 date: "2020-12-13T20:57:45+08:00"
-tags: ["算法竞赛"]
 categories: ["XCPC"]
 description: ""
 slug: "ICPC_2020_Shanghai"

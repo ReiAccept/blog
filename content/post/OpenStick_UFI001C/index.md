@@ -3,16 +3,7 @@ title: "UFI001C (杂牌4G 随身 WIFI)"
 date: 2022-06-11T12:43:16+08:00
 math: true
 slug: "OpenStick_UFI001C"
-# weight: 1
-# aliases: ["/first"]
-tags: ["捡垃圾"]
 categories: ["Hardware"]
-# author: ["Me", "You"] # multiple authors
-# showToc: true
-# TocOpen: false
-# draft: false
-# hidemeta: false
-# comments: false
 description: "折腾这玩意也就图一乐，真好用还得5G CPE"
 image: "main.jpg"
 ---

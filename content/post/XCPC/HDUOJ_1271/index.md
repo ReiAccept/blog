@@ -1,7 +1,6 @@
 ---
 title: "HDUOJ 1271"
 date: "2021-01-08T18:22:46+08:00"
-tags: ["算法竞赛"]
 categories: ["XCPC"]
 description: ""
 ---

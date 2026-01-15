@@ -3,16 +3,6 @@ title: "RouterOSv7 泥头车与酒驾 BGP"
 date: 2023-06-13T17:14:44+08:00
 math: true
 slug: "RouterOSv7_BGP_on_Vultr"
-# weight: 1
-# aliases: ["/first"]
-tags: ["寄术"]
-# categories: ["XCPC"]
-# author: ["Me", "You"] # multiple authors
-# showToc: true
-# TocOpen: false
-# draft: false
-# hidemeta: false
-# comments: false
 description: "本文于酒后写成，若您按照本文将网络搞炸了，请致电美国迷失海岸啤酒酿造厂"
 image: "pic.webp"
 ---

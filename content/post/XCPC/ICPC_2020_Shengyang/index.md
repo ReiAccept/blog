@@ -1,7 +1,6 @@
 ---
 title: "ICPC 2020 Shenyang"
 date: "2021-09-06T20:35:24+08:00"
-tags: ["算法竞赛"]
 categories: ["XCPC"]
 math: true
 description: "打铁实录"

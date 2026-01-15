@@ -4,7 +4,6 @@ date: 2022-04-23T16:45:16+08:00
 math: true
 # weight: 1
 # aliases: ["/first"]
-tags: ["算法竞赛"]
 categories: ["XCPC"]
 # author: ["Me", "You"] # multiple authors
 # showToc: true

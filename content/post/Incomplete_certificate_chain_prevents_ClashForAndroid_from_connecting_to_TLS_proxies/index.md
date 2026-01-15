@@ -3,17 +3,6 @@ title: "Incomplete certificate chain prevents ClashForAndroid from connecting to
 date: 2023-01-01T04:18:13+08:00
 math: true
 slug: "Incomplete_certificate_chain_prevents_ClashForAndroid_from_connecting_to_TLS_proxies"
-# weight: 1
-# aliases: ["/first"]
-tags: ["寄术"]
-# categories: ["XCPC"]
-# author: ["Me", "You"] # multiple authors
-# showToc: true
-# TocOpen: false
-# draft: false
-# hidemeta: false
-# comments: false
-# description: "Desc Text."
 image: "pic.jpg"
 ---
 

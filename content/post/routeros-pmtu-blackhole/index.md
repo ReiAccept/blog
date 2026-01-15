@@ -3,17 +3,6 @@ title: "解决 RouterOSv7 中的 PMTU 黑洞问题"
 date: 2023-07-30T19:40:38+08:00
 math: true
 slug: "Routeros-PMTU-Blackhole"
-# weight: 1
-# aliases: ["/first"]
-tags: ["寄术"]
-# categories: ["XCPC"]
-# author: ["Me", "You"] # multiple authors
-# showToc: true
-# TocOpen: false
-# draft: false
-# hidemeta: false
-# comments: false
-# description: "Desc Text."
 image: "pic.webp"
 ---
 

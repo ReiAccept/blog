@@ -5,7 +5,7 @@ math: true
 slug: "Mikrotik_RB5009"
 # weight: 1
 # aliases: ["/first"]
-tags: ["寄术"]
+
 categories: ["Hardware"]
 # author: ["Me", "You"] # multiple authors
 # showToc: true
