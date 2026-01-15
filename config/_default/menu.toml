@@ -1,7 +1,7 @@
 # Configure main menu and social menu
 [[main]]
 identifier = "oldblog"
-name = "旧站"
+name = "旧版"
 url = "https://rei.meta.io"
 weight = 10000
     [main.params]
@@ -12,7 +12,7 @@ weight = 10000
 identifier = "github"
 name = "GitHub"
 weight = 1
-url = "https://github.com/ACRei"
+url = "https://github.com/ReiAccept"
     [social.params]
     icon = "brand-github"
     newtab = true
@@ -26,14 +26,14 @@ url = "https://twitter.com/ReiAccept"
     icon = "brand-twitter"
     newtab = true
 
-[[social]]
-identifier = "telegram"
-name = "Telegram"
-weight = 3
-url = "https://t.me/ReiOnTheLoaf"
-    [social.params]
-    icon = "telegram"
-    newtab = true
+# [[social]]
+# identifier = "telegram"
+# name = "Telegram"
+# weight = 3
+# url = "https://t.me/ReiAC"
+#     [social.params]
+#     icon = "telegram"
+#     newtab = true
 
 [[social]]
 identifier = "Email"
@@ -43,6 +43,7 @@ url = "mailto:lhh@live.com"
   [social.params]
   icon = "email"
   newTab = true
+
 
 [[social]]
 identifier = "RSS"

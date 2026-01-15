@@ -4,6 +4,7 @@ date: 2023-07-30T19:40:38+08:00
 math: true
 slug: "Routeros-PMTU-Blackhole"
 image: "pic.webp"
+tags: ["RouterOS"]
 ---
 
 当我刚刚用 RB5009 替换掉之前的老 E3 后并配好了 IPv6

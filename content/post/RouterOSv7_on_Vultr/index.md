@@ -5,6 +5,7 @@ math: true
 slug: "RouterOSv7_BGP_on_Vultr"
 description: "本文于酒后写成，若您按照本文将网络搞炸了，请致电美国迷失海岸啤酒酿造厂"
 image: "pic.webp"
+tags: ["RouterOS"]
 ---
 
 ## 安装

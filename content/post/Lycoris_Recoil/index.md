@@ -3,16 +3,7 @@ title: "莉可丽丝 Lycoris Recoil"
 date: 2022-09-25T16:39:13+08:00
 math: true
 slug: "Lycoris_Recoil"
-# weight: 1
-# aliases: ["/first"]
-# tags: ["Tag1","Tag2"]
 categories: ["DumpTruck"]
-# author: ["Me", "You"] # multiple authors
-# showToc: true
-# TocOpen: false
-# draft: false
-# hidemeta: false
-# comments: false
 description: "如果不是第12集实在太烂，我觉得会是一部贴贴番佳作"
 image: "99866254_p0.jpg"
 ---

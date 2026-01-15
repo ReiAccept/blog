@@ -3,16 +3,8 @@ title: "方程豹 钛7"
 date: 2025-12-03T23:09:39+08:00
 math: true
 slug: "Formula_Leopard_Ti7"
-# weight: 1
-# aliases: ["/first"]
-# tags: ["Tag1","Tag2"]
+tags: ["汽车"]
 categories: ["Hardware"]
-# author: ["Me", "You"] # multiple authors
-# showToc: true
-# TocOpen: false
-# draft: false
-# hidemeta: false
-# comments: false
 description: "应该是我买过体积最大的电子产品, 甚至搭载了汽油发电机"
 image: "title.jpg"
 ---

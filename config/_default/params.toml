@@ -15,7 +15,7 @@ lastUpdated = "2006/1/2/15:04 CST"
 
 [sidebar]
 emoji = "🤔"
-subtitle = "一个小朋友的互联网自留地"
+# subtitle = "希望这里的东西对您有用"
 
 [sidebar.avatar]
 enabled = true

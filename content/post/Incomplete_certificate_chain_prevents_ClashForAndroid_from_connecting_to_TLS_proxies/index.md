@@ -4,6 +4,7 @@ date: 2023-01-01T04:18:13+08:00
 math: true
 slug: "Incomplete_certificate_chain_prevents_ClashForAndroid_from_connecting_to_TLS_proxies"
 image: "pic.jpg"
+tags: ["安卓"]
 ---
 
 Over the past few days , ClashForAndroid could not connect TLS proxies. The reason was found in the log

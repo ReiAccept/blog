@@ -3,15 +3,8 @@ title: "红米 AX6000 刷入 OpenWRT 和 Uboot"
 date: 2023-10-18T20:30:49+08:00
 math: true
 slug: "redmi_ax6000_openwrt_with_ubootmod"
-# weight: 1
-# aliases: ["/first"]
 categories: ["Hardware"]
-# author: ["Me", "You"] # multiple authors
-# showToc: true
-# TocOpen: false
-# draft: false
-# hidemeta: false
-# comments: false
+tags: ["Infra"]
 description: "这玩意感觉还是缺几个2.5G网口，但是当AP差不多得了"
 image: "cover.jpg"
 ---

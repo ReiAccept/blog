@@ -3,16 +3,8 @@ title: "MikroTik RB5009"
 date: 2023-07-30T10:30:00+08:00
 math: true
 slug: "Mikrotik_RB5009"
-# weight: 1
-# aliases: ["/first"]
-
 categories: ["Hardware"]
-# author: ["Me", "You"] # multiple authors
-# showToc: true
-# TocOpen: false
-# draft: false
-# hidemeta: false
-# comments: false
+tags: ["RouterOS"]
 description: "如果这玩意的配置是 2 个 SFP+ 和 8 个 2.5G RJ45 将是绝杀"
 image: "pic.jpg"
 ---

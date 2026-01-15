@@ -3,6 +3,7 @@ title: "XiaomiEU 固件添加国行 NFC"
 date: 2025-12-12T20:50:27+08:00
 math: true
 slug: "MiPay4XiaomiEU"
+tags: ["安卓"]
 ---
 
 近期将手机从 AfterlifeOS 这一类原生刷回了 HyperOS3, 小米14 的类原生还是不够完善

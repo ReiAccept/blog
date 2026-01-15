@@ -3,16 +3,8 @@ title: "银欣 CS382"
 date: 2025-04-06T05:36:06+08:00
 math: true
 slug: "SilverStone_CS382"
-# weight: 1
-# aliases: ["/first"]
-# tags: ["Tag1","Tag2"]
 categories: ["Hardware"]
-# author: ["Me", "You"] # multiple authors
-# showToc: true
-# TocOpen: false
-# draft: false
-# hidemeta: false
-# comments: false
+tags: ["Infra"]
 description: "新的 8 盘位 NAS, 十年老兵迎广 MS04 光荣退役"
 image: "cover.png"
 ---
