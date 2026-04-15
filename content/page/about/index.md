@@ -23,7 +23,7 @@ menu:
 ### Codeforces
 [![Codeforces Rating](https://api.cubercsl.site/api/codeforces?user=ReiAC&style=for-the-badge)](https://codeforces.com/profile/ReiAC)
 
-### 设备
+### 我使用的设备
 ![AMD 7800X3D](https://img.shields.io/badge/7800X3D-red?style=for-the-badge&logo=AMD)
 ![NVIDIA RTX4070](https://img.shields.io/badge/RTX4070-76B900?style=for-the-badge&logo=nvidia&logoColor=FFFFFF)
 ![Windows 11](https://img.shields.io/static/v1?style=for-the-badge&message=Windows%2011&color=0078D6&logo=Windows&logoColor=FFFFFF&label=)
@@ -32,34 +32,13 @@ menu:
 ![Arch Linux](https://img.shields.io/badge/Arch_Linux-1793D1?style=for-the-badge&logo=arch-linux&logoColor=white)
 
 ![MacBookPro 2021](https://img.shields.io/static/v1?style=for-the-badge&message=MacBookPro%202021&color=000000&logo=Apple&logoColor=FFFFFF&label=)
-![macOS Sequoia](https://img.shields.io/static/v1?style=for-the-badge&message=macOS%20Sequoia&color=000000&logo=macOS&logoColor=FFFFFF&label=)
+![macOS 26](https://img.shields.io/static/v1?style=for-the-badge&message=macOS%2026&color=000000&logo=macOS&logoColor=FFFFFF&label=)
 
-![Xiaomi 14](https://img.shields.io/static/v1?style=for-the-badge&message=Xiaomi%2014&color=FF6900&logo=Xiaomi&logoColor=FFFFFF&label=)
+![OnePlus 15](https://img.shields.io/badge/OnePlus%2015-%23F5010C.svg?style=for-the-badge&logo=oneplus&logoColor=white)
 ![iPhone 16 Pro](https://img.shields.io/static/v1?style=for-the-badge&message=iPhone%2016%20Pro&color=000000&logo=iOS&logoColor=FFFFFF&label=)
 
-### Tools
 
-![Visual Studio Code](https://img.shields.io/static/v1?style=for-the-badge&message=Visual+Studio+Code&color=007ACC&logo=Visual+Studio+Code&logoColor=FFFFFF&label=)
-![Vim](https://img.shields.io/static/v1?style=for-the-badge&message=Vim&color=019733&logo=Vim&logoColor=FFFFFF&label=)
-![GoLand](https://img.shields.io/static/v1?style=for-the-badge&message=GoLand&color=000000&logo=GoLand&logoColor=FFFFFF&label=)
-![PyCharm](https://img.shields.io/static/v1?style=for-the-badge&message=PyCharm&color=000000&logo=PyCharm&logoColor=FFFFFF&label=)
-
-![Git](https://img.shields.io/static/v1?style=for-the-badge&message=Git&color=F05032&logo=Git&logoColor=FFFFFF&label=)
-![MySQL](https://img.shields.io/static/v1?style=for-the-badge&message=MySQL&color=4479A1&logo=MySQL&logoColor=FFFFFF&label=)
-![Hugo](https://img.shields.io/static/v1?style=for-the-badge&message=Hugo&color=FF4088&logo=Hugo&logoColor=FFFFFF&label=)
-![Hexo](https://img.shields.io/static/v1?style=for-the-badge&message=Hexo&color=0E83CD&logo=Hexo&logoColor=FFFFFF&label=)
-![NGINX](https://img.shields.io/static/v1?style=for-the-badge&message=NGINX&color=009639&logo=NGINX&logoColor=FFFFFF&label=)
-
-### Languages
-
-![C](https://img.shields.io/badge/C-222222?style=for-the-badge&logo=C&logoColor=A8B9CC)
-![C++](https://img.shields.io/badge/C%2B%2B-00599C?style=for-the-badge&logo=C%2B%2B&logoColor=FFFFFF)
-![Python](https://img.shields.io/badge/Python-3776AB?style=for-the-badge&logo=Python&logoColor=FFFFFF)
-![JavaScript](https://img.shields.io/badge/JavaScript-F7DF1E?style=for-the-badge&logo=javascript&logoColor=black)
-![TypeScript](https://img.shields.io/badge/TypeScript-3178C6?style=for-the-badge&logo=typescript&logoColor=black)
-![Vim Script](https://img.shields.io/badge/Vim%20Script-019733?style=for-the-badge&logo=Vim&logoColor=FFFFFF)
-
-### Games
+### 我玩的游戏
 - 暴雪系
   - 星际争霸2 国服 宗师
   - 好友ID: Spaceless#5104
