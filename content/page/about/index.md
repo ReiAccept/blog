@@ -14,9 +14,6 @@ menu:
       icon: user
 ---
 
-- 记录摸鱼的日常流水帐
-- 如果博客里的东西帮到您了，那真是太好了
-
 ## 关于我
 
 - 什么都写一点工程师, 简历可以在 LinkedIn 上找到
@@ -73,6 +70,16 @@ menu:
   - 独占游戏玩的比较多
   - 好友ID:SW-0298-7511-7319
 
+
+## 站点历程
+
+- 2025.05.25 迁移回 github pages
+- 2022.01.25 更换静态站生成器到 hugo, 并迁移到 Azure Static Web App 和 Cloudflare pages
+- 2021.12.22 更换域名为 rei.ac
+- 2019.09.01 更换域名为 spaceless.me
+- 2017.10.01 使用 Hexo 静态站生成器并迁移到 github pages
+- 2015.04.03 于 RedHat OpenShift 上基于 WP 建站
+- 2013.XX.XX 于初中信息课上学习到 Adobe Dreamweaver 开始研究做个站点 ~~但是没有支付方式买一个服务器~~
 
 ## 版权说明
 
