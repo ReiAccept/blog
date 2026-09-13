@@ -1,5 +1,5 @@
 baseurl = "https://blog.rei.ac"
-languageCode = "zh-cn"
+locale= "zh-cn"
 theme = "hugo-theme-stack"
 title = "ReiAC's Blog"
 

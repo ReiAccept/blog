@@ -1,7 +1,7 @@
 {{ define "main" }}
 <h2 class="section-title">亲友</h2>
 <div class="friends-container">
-    {{ range .Site.Data.friends.friend }}
+    {{ range hugo.Data.friends.friend }}
     <a class="friends-list" href="{{ .url }}" target="_blank">
         <div class=friend-avatar>
             <img src="{{ .avatar }}" class="lazyload friend-avatar-img" loading="lazy" alt="{{ .name }}"/>

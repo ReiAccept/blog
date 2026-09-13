@@ -4,3 +4,10 @@
 .main-article .article-footer section.article-lastmod{
     text-transform: none;
 }
+
+// Theme 4.0.3 dropped --zh-font-family from the global font stacks, which sends
+// CJK text to the generic sans-serif fallback. Restore the CJK families.
+:root {
+    --base-font-family: "Lato", var(--sys-font-family), "PingFang SC", "Hiragino Sans GB", "Droid Sans Fallback", "Microsoft YaHei", sans-serif;
+    --code-font-family: Menlo, Monaco, Consolas, "Courier New", "PingFang SC", "Hiragino Sans GB", "Droid Sans Fallback", "Microsoft YaHei", monospace;
+}

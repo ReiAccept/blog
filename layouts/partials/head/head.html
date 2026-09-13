@@ -2,13 +2,19 @@
 <meta name='viewport' content='width=device-width, initial-scale=1'>
 
 {{- $description := partialCached "data/description" . .RelPermalink -}}
-<meta name='description' content='{{ $description }}'>
+<meta name='description' {{ printf "content=%q" $description | safeHTMLAttr }}>
+{{ with .Params.Keywords }}<meta name="keywords" content="{{ delimit . ", " }}">{{ end }}
 
-{{- $title := partialCached "data/title" . .RelPermalink -}}
+{{- $title := partial "data/title" . -}}
 <title>{{ $title }}{{ if not .IsHome }} | {{$.Site.Title }}{{ end }}</title>
 
+{{ with .Params.canonicalUrl }}
+<link rel="canonical" href="{{ . }}">
+{{ else }}
 <link rel='canonical' href='{{ .Permalink }}'>
+{{ end }}
 
+{{- partial "head/custom-font.html" . -}}
 {{- partial "head/style.html" . -}}
 {{- partial "head/script.html" . -}}
 {{- partial "head/opengraph/include.html" . -}}
@@ -17,10 +23,17 @@
     <link rel="{{ .Rel }}" type="{{ .MediaType.Type }}" href="{{ .Permalink | safeURL }}">
 {{- end -}}
 
+{{- /* Left as a plain URL on purpose: helper/image returns the remote URL
+       unchanged for non-local images but downloads it at build time. */ -}}
 {{ with .Site.Params.favicon }}
     <link rel="shortcut icon" href="{{ . }}" >
     <link rel="apple-touch-icon" href="{{ . }}"/>
 {{ end }}
 
-{{- template "_internal/google_analytics.html" . -}}
+{{- if .Site.Params.cookies.enabled -}}
+    {{- partial "cookies/analytics.html" . -}}
+{{- else -}}
+    {{- template "_internal/google_analytics.html" . -}}
+{{- end -}}
+
 {{- partial "head/custom.html" . -}}

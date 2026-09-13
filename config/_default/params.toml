@@ -16,11 +16,8 @@ lastUpdated = "2006/1/2/15:04 CST"
 [sidebar]
 emoji = "🤔"
 # subtitle = "希望这里的东西对您有用"
-
-[sidebar.avatar]
-enabled = true
-local = true
-src = "img/avatar.jpg"
+# Resolved through the global `resources` namespace, i.e. assets/img/avatar.jpg
+avatar = "img/avatar.jpg"
 
 [article]
 math = false
