@@ -175,8 +175,6 @@ mimic 文档给出的算法是"在 WireGuard MTU 基础上减 12"：以太网 15
 
 推测原因为 mimic 生成的 TCP 报文头带选项（时间戳/SACK/窗口缩放等），使外层 TCP 头达到约 40+ 字节而非 20 字节，实际每包开销约 108 字节而非文档所述的 74 字节，故上限落在 1392 而非 1416。
 
-> **实践建议**：任何环境部署 mimic 后，**务必用 DF 位探测实测 MTU 边界**，不要直接套用文档的 1408。
-
 ### XDP native 模式在 virtio_net 上触发连接中断
 
 鹅云是 KVM + virtio_net 网卡。mimic 以默认的 **native** 模式挂载 XDP 的**瞬间**，当前 SSH 会话被 RST（`kex_exchange_identification: read: Connection reset by peer`），但 ICMP 与重建连接均正常。
@@ -211,7 +209,7 @@ mimic 的透明改写发生在 eBPF 层，netfilter 在不同方向看到的东�
 | 入口方向（XDP 在 netfilter INPUT **之前**执行，已还原） | **UDP** |
 | 链路中间的真实抓包 | **TCP**（出口） |
 
-所以规则必须两条都写，缺一不可：
+所以规则必须TCP/UDP都写
 
 ```nft
 tcp dport 51820 accept
