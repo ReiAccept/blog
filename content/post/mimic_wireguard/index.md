@@ -266,9 +266,9 @@ IP 鹅云内网IP.51820 > 瓦工IP.51820: Flags [.], win 65535, length 128
 
 | | 鹅云 | 瓦工 | 本地 p330 |
 |---|---|---|---|
-| 角色 | hub | 对端 | 对端 |
+| 角色 | hub | 海外hub | 家用服务器 |
 | 网络位置 | 公网 EIP, 网卡上是内网地址 | 真实公网 IP | 家宽 NAT 后, **PPPoE** |
-| 网卡 | virtio_net | — | Intel **e1000e** |
+| 网卡 | virtio_net | — | Intel **e1000e** (其实还插了个82599ES, 但是这块卡不用来走这条路线)|
 | XDP 模式 | `skb` | `skb` | `skb` |
 | mimic filter | `local=` 本机地址 | `local=` 本机地址 | **`remote=` 对端地址** |
 
