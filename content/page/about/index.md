@@ -65,7 +65,7 @@ menu:
 - 除非注明，本博客所有文章皆为原创。
 - 除非另有声明，本博客之原创文章采用 [CC BY-NC-SA 4.0](https://creativecommons.org/licenses/by-nc-sa/4.0/deed.zh) 进行许可。
 - 转载请同时需要注明原文链接和作者名字。
-- 本博客运行于 [Azure Static Web Apps](https://azure.microsoft.com/en-us/services/app-service/static/) / [CloudFlare Pages](https://pages.cloudflare.com/) / [Github Pages](https://pages.github.io/)，源代码位于 [Github 仓库](https://github.com/ReiAccept/blog)
+- 本博客运行于 [Github Pages](https://pages.github.io/)，源代码位于 [Github 仓库](https://github.com/ReiAccept/blog)
 
 ## 投喂
 
