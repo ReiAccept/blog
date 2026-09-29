@@ -295,6 +295,21 @@ max_window = true
 filter = remote=腾讯云EIP:51820
 ```
 
+p330 的地址是 DHCP 分的, 一旦 DHCP 换了地址, mimic 就匹配不上任何包, 所以客户端这边按对端匹配:
+
+man page 里 `stale` 参数的说明也是围绕 `remote` filter 描述"客户端本地端口变化"的场景, 算是官方暗示了这种用法。
+
+但是话又说回来了, 家里到腾讯云感觉直接跑wg就行了……一共6M带宽, 运营商也 QoS 不到哪里去
+
+这次 p330 是物理机, Intel e1000e, 正好也在 mimic 文档点名的那份"原生 XDP 可能不稳定"的驱动列表里 (e1000/e1000e/igb/igc)。
+
+所以直接写 `xdp_mode = skb`, 生效后 `ip link show eno1` 能看到 `xdpgeneric`:
+
+```
+2: eno1: <BROADCAST,MULTICAST,UP,LOWER_UP> mtu 1500 xdpgeneric ...
+    prog/xdp id 200 name ingress_handler tag 394bf6a8d35f24d3 jited
+```
+
 ### 腾讯云侧
 
 之前在腾讯云的 filter 写的是
@@ -331,43 +346,10 @@ WireGuard 那边暂时用 live 的方式加 peer, 不重启接口，家宽后也
 AllowedIPs = 192.168.X.0/24   # 原来是 192.168.X.1/32
 ```
 
-`/32` 会同时卡住两件事: 不放行源地址是 `.3` 的包, 也不把去 `.3` 的回程路由进隧道。
-
-### 这次踩到的坑
+`/32` 会同时卡住两件事: 不放行源地址是 `.3` 的包, 也不把去 `.3` 的回程路由进隧道
 
 
-#### 客户端在 NAT 后, filter 要写 `remote=` 而不是 `local=`
-
-腾讯云和瓦工两边一个是固定内网地址、一个是公网地址, 所以上次两边都写 `local=`。但 p330 的地址是 DHCP 分的:
-
-```ini
-filter = local=家宽内网地址:51820   # 租约一变就静默失效
-```
-
-一旦 DHCP 换了地址, mimic 就匹配不上任何包 —— 隧道"看起来还在", 但混淆其实已经失效了。
-
-所以客户端这边按对端匹配:
-
-```ini
-filter = remote=腾讯云EIP:51820
-```
-
-这样跟本机地址无关。man page 里 `stale` 参数的说明也是围绕 `remote` filter 描述"客户端本地端口变化"的场景, 算是官方暗示了这种用法。
-
-但是话又说回来了, 家里到腾讯云感觉直接跑wg就行了……一共6M带宽, 运营商也 QoS 不到哪里去
-
-#### e1000e 网卡必须 `xdp_mode = skb`
-
-上次腾讯云是因为 virtio_net 才用的 skb。这次 p330 是物理机, Intel e1000e, 正好也在 mimic 文档点名的那份"原生 XDP 可能不稳定"的驱动列表里 (e1000/e1000e/igb/igc)。
-
-所以直接写 `xdp_mode = skb`, 生效后 `ip link show eno1` 能看到 `xdpgeneric`:
-
-```
-2: eno1: <BROADCAST,MULTICAST,UP,LOWER_UP> mtu 1500 xdpgeneric ...
-    prog/xdp id 200 name ingress_handler tag 394bf6a8d35f24d3 jited
-```
-
-#### MTU
+### MTU 测试
 
 上次在这条 `腾讯云↔瓦工` 链路上测出来的最大内层 MTU 是 1392, 当时还推测了一通"mimic 的 TCP 头带选项"云云。这次在 p330 这条链路上重新做 DF 位探测, 结果对不上。
 
@@ -396,7 +378,7 @@ filter = remote=腾讯云EIP:51820
 最终仍然用 1380, 没有跟着调到 1424。 原因是 wg0 的 MTU 是 per-interface 的, 一个接口上所有 peer 共用一个值 —— 腾讯云那边 wg0 已经是 1380, 而且 `腾讯云↔瓦工` 那条链路的上限本来就是 1392。单独把 p330 调到 1424 就变成非对称 MTU, 迟早出问题。1380 在这条链路上留了 44 字节余量, 够用。
 
 
-### 这次的验证结果
+### 验证
 
 #### 连通性
 
