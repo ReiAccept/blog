@@ -4,16 +4,12 @@ date: 2026-09-13T10:30:00+08:00
 math: true
 slug: "mimic_wireguard"
 tags: ["Infra"]
-lastmod: 2026-09-27T23:45:00+08:00
+description: "原来是用 Phantun 的, 前两天在 ACM Homelab 群听一个群友在玩这个, 也研究了一下"
 ---
-
-将一台腾讯云轻量和一台瓦工中, 通过 mimic 传输进行 WireGuard 组网
-
-原来我是用 Phantun 的, 前两天听一个群友在研究这个, 也想玩一下
 
 2026-09-27 更新
 
-把 p330 改成了: wg直连腾讯云+ wg + mimic 连瓦工,顺带再研究一下上次没挖到底的 MTU 坑
+把 p330 改成了: wg直连腾讯云+ wg + mimic 连瓦工, 顺带抓了一下上次的 MTU 坑
 
 2026-09-26 更新
 
