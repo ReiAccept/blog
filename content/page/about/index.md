@@ -16,7 +16,10 @@ menu:
 
 ## 关于我
 
-- 什么都写一点工程师, 简历可以在 LinkedIn 上找到
+- 兴趣广泛, CS/EE 领域很多领域都有涉猎懂一点
+- 自动化工具爱好者（也许是因为我有点懒, 计算机能靠谱的自己动了就不用我动了）
+- 非工作项目时是个古法编程爱好者（在家折腾想搞的项目算个放松活动）
+- 目前在某公司网络安全实验室工作, 做密码应用和实现这一块（我的密码学其实是大学时炒币接触炒币,从而去研究了区块链相关原理从而学的hhhhh, 阴差阳错走上这行业）
 - 头像是[诺艾尔(天体的秩序)](https://zh.moegirl.org.cn/诺艾尔(天体的秩序))不是[珂朵莉](https://zh.moegirl.org.cn/珂朵莉)
 
 
@@ -26,9 +29,6 @@ menu:
 ### 我使用的设备
 ![AMD 7800X3D](https://img.shields.io/badge/7800X3D-red?style=for-the-badge&logo=AMD)
 ![NVIDIA RTX4070](https://img.shields.io/badge/RTX4070-76B900?style=for-the-badge&logo=nvidia&logoColor=FFFFFF)
-![Windows 11](https://img.shields.io/static/v1?style=for-the-badge&message=Windows%2011&color=0078D6&logo=Windows&logoColor=FFFFFF&label=)
-
-![ThinkPad T14P](https://img.shields.io/badge/ThinkPad%20T14P-000000?style=for-the-badge&logo=Lenovo&logoColor=FFFFFF)
 ![Arch Linux](https://img.shields.io/badge/Arch_Linux-1793D1?style=for-the-badge&logo=arch-linux&logoColor=white)
 
 ![MacBookPro 2021](https://img.shields.io/static/v1?style=for-the-badge&message=MacBookPro%202021&color=000000&logo=Apple&logoColor=FFFFFF&label=)
@@ -67,6 +67,3 @@ menu:
 - 转载请同时需要注明原文链接和作者名字。
 - 本博客运行于 [Github Pages](https://pages.github.io/)，源代码位于 [Github 仓库](https://github.com/ReiAccept/blog)
 
-## 投喂
-
-这是一个Vultr的AFF链接如果您要买VPS的话也许可以点一下 https://www.vultr.com/?ref=9464460-8H
