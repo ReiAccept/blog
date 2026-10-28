@@ -18,7 +18,13 @@ math: true
 
 最开始以为是公司防火墙策略的问题, 但是想想也不对, 毕竟更新前好的, 更神秘的是另一台 Debian 更新之后也复现了问题
 
-具体原因是这个改动 https://git.kernel.org/pub/scm/linux/kernel/git/stable/linux.git/commit/?id=5da5662181ef8a251e3ba564903002c2e87de452
+抓包看了眼序列, 发现发现第二条连接的 SYN 没回应, 像是被丢弃了, 想了想这条链路只能是 内核网络链路和 apt 应用了,
+
+因为另一台 Debian13 的机器 upgrade 后并没有更新 apt, 那想来只能是内核了
+
+验证了一下降级 apt 包里的内核历史版本, 发现好了
+
+二分法确认到第一个有这个问题的内核版本是 6.12.94, 检查相关改动, 大概能定位到这个改动 https://git.kernel.org/pub/scm/linux/kernel/git/stable/linux.git/commit/?id=5da5662181ef8a251e3ba564903002c2e87de452
 
 这个改动是从主线 7.0 cherry pick 来修到 6.12.94 内核上的, 让 Timestamp Offset 的数值分布发生变化，使公司镜像源的服务器一直丢弃这个包
 
