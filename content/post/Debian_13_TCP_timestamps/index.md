@@ -48,11 +48,9 @@ https://zhuanlan.zhihu.com/p/145939529
 
 这篇知乎文章和现在的区别是 tcp_tw_recycle 这个东西已经于2017年移除（上面 commit 链接也有提到）
 
-接着检索互联网, 发现 Linux 网络开发邮件列表中，有一份专门讨论 tcp: secure_seq: add back ports to TS offset 的后续报告。它描述了 NAT 场景下的 TCP Timestamp Offset 回归问题，而且报告者发现，将客户端设置为 tcp_timestamps=2 可以恢复正常。
+接着检索互联网, 发现 Linux 网络开发邮件列表中，有份2026年的, 专门讨论 tcp: secure_seq: add back ports to TS offset 的后续报告。它描述了 NAT 场景下的 TCP Timestamp Offset 回归问题，而且报告者发现，将客户端设置为 tcp_timestamps=2 可以恢复正常。
 
 https://lists.openwall.net/netdev/2026/06/11/29
-
-时间是 2026 年的, 较近期
 
 结合两篇文章和自己抓包, 盲猜了一个问题发生步骤
 
