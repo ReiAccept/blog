@@ -64,3 +64,19 @@ https://lists.openwall.net/netdev/2026/06/11/29
 且 Debian 12 的 timestamp 序列似乎是递增的？（但是这里不合理，因为net.ipv4.tcp_timestamps = 1 这个默认选项很早就存在了）
 
 由于是在公司遇到这个问题, 工作时间直接被同事召唤解决其他问题去了, 暂时没空完整详细的探究这个问题发生的根源, 因此只先记录到现在这个程度
+
+## 第二天更新
+
+到公司抓包了一下 Debian12 内核的 TCP 连接, ts序列确实在这种情况下单调递增的……这和文档描述不太一致
+
+究其原因是这个补丁导致的 https://git.kernel.org/pub/scm/linux/kernel/git/stable/linux.git/commit/?id=28ee1b746f493b7c62347d714f58fbf4f70df4f0
+
+> Unfortunately too many devices (not under our control) use tcp_tw_recycle=1,
+> which depends on timestamps being identical of the same saddr.
+> 
+> Although tcp_tw_recycle got removed in net-next we can't make
+> such end hosts disappear so downgrade to per-host timestamp offsets.
+
+也就是说, 这个补丁为了兼容性的问题改动, 在 28ee1b746f49 这个补丁到 6.12.94 版本之间, 让 Linux 内核的行为和文档描述是不一致的
+
+然后公司镜像源的防火墙或是什么设备, 就属于那些不兼容设备……
