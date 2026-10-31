@@ -23,18 +23,6 @@ avatar = "https://q1.qlogo.cn/g?b=qq&nk=936992197&s=640"
 desc = "挺可爱的，就是有点傻，是鲍鲍的女朋友哦"
 
 [[friend]]
-name = "文哥"
-url = "https://sakurayu.top/"
-avatar = "https://q1.qlogo.cn/g?b=qq&nk=578329240&s=640"
-desc = "强力学长"
-
-[[friend]]
-name = "松鼠姐姐"
-url = "https://sosusosu.icu/"
-avatar = "https://raw.githubusercontent.com/sosupro/sosupro.github.io/main/images/avatar.webp"
-desc = "优质坚果提供地"
-
-[[friend]]
 name = "ssr"
 url = "https://leanhe.dev/"
 avatar = "https://leanhe.dev/favicon.ico"
@@ -53,22 +41,10 @@ avatar = "https://avatars.githubusercontent.com/u/22931465"
 desc = "The end is always near."
 
 [[friend]]
-name = "BruceChen"
-url = "https://brucec.cn/"
-avatar = "https://static.brucec.cn/image/avatar/my/avatar_1080w.webp"
-desc = "QwQ"
-
-[[friend]]
 name = "koto-k"
 url = "https://www.cnblogs.com/koto-k/"
 avatar = "https://q1.qlogo.cn/g?b=qq&nk=2557746160&s=640"
 desc = "Keep your feet on your track."
-
-[[friend]]
-name = "Aclarar"
-url = "https://collapsemos.top/"
-avatar = "https://q1.qlogo.cn/g?b=qq&nk=1957762024&s=640"
-desc = "爱与和平♂"
 
 [[friend]]
 name = "刻师傅！"
@@ -84,7 +60,7 @@ desc = "是蓝天天的男朋友哦"
 
 [[friend]]
 name = "Season0518"
-url = "https://season0518.github.io/MyBlog/"
+url = "https://season.ac/"
 avatar = "https://q1.qlogo.cn/g?b=qq&nk=1342367762&s=640"
 desc = "清纯学弟"
 
