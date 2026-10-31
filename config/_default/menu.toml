@@ -1,12 +1,12 @@
 # Configure main menu and social menu
 [[main]]
-# identifier = "oldblog"
-# name = "旧版"
-# url = "https://rei.meta.io"
-# weight = 10000
-#     [main.params]
-#     icon = "home"
-#     newtab = true
+identifier = "AboutMe"
+name = "关于"
+url = "https://rei.ac"
+weight = 10000
+    [main.params]
+    icon = "user"
+    newtab = true
 
 [[social]]
 identifier = "github"
