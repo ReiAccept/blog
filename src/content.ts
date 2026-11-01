@@ -45,20 +45,35 @@ export type CopyrightItem = {
   text: Localized
 }
 
+export type FriendsPageContent = {
+  title: Localized
+  intro: Localized
+  count: Localized
+  metaDescription: Localized
+  applyTitle: Localized
+  applyBody: Localized
+  applyCta: Localized
+  applySubject: Localized
+  applyEmail: string
+}
+
+const asset = (path: string) => `${import.meta.env.BASE_URL}assets/${path}`
+
 export const site = {
   name: 'ReiAC',
   title: "ReiAC's Index",
   handle: '@ReiAccept',
-  blog: 'https://blog.rei.ac',
+  index: 'https://rei.ac',
   github: 'https://github.com/ReiAccept',
-  avatar: './assets/avatar.png',
-  cover: './assets/cover.webp',
-  coverSmall: './assets/cover-960.webp',
+  avatar: asset('avatar.png'),
+  cover: asset('cover.webp'),
+  coverSmall: asset('cover-960.webp'),
 } as const
 
 export const nav = {
   brand: { zh: site.title, en: site.title },
   blog: { zh: '博客', en: 'Blog' },
+  friends: { zh: '友链', en: 'Friends' },
   about: { zh: '关于', en: 'About' },
 } satisfies Record<string, Localized>
 
@@ -167,7 +182,7 @@ export const socials: Social[] = [
     id: 'blog',
     name: { zh: '博客', en: 'Blog' },
     handle: 'blog.rei.ac',
-    href: site.blog,
+    href: site.index,
   },
   {
     id: 'github',
@@ -191,7 +206,7 @@ export const socials: Social[] = [
     id: 'rss',
     name: { zh: 'RSS 订阅', en: 'RSS' },
     handle: '/index.xml',
-    href: `${site.blog}/index.xml`,
+    href: `${site.index}/index.xml`,
   },
   {
     id: 'codeforces',
@@ -207,9 +222,9 @@ export const gear: GearGroup[] = [
     name: { zh: '台式机', en: 'Desktop' },
     icon: 'monitor',
     badges: [
-      { src: './assets/badges/7800x3d.svg', alt: 'AMD Ryzen 7 7800X3D' },
-      { src: './assets/badges/rtx4070.svg', alt: 'NVIDIA GeForce RTX 4070' },
-      { src: './assets/badges/archlinux.svg', alt: 'Arch Linux' },
+      { src: asset('badges/7800x3d.svg'), alt: 'AMD Ryzen 7 7800X3D' },
+      { src: asset('badges/rtx4070.svg'), alt: 'NVIDIA GeForce RTX 4070' },
+      { src: asset('badges/archlinux.svg'), alt: 'Arch Linux' },
     ],
   },
   {
@@ -217,7 +232,7 @@ export const gear: GearGroup[] = [
     name: { zh: '笔记本', en: 'Laptop' },
     icon: 'laptop',
     badges: [
-      { src: './assets/badges/macbookpro2021.svg', alt: 'MacBook Pro 2021' },
+      { src: asset('badges/macbookpro2021.svg'), alt: 'MacBook Pro 2021' },
       { src: 'https://img.shields.io/static/v1?style=for-the-badge&message=macOS%2027&color=000000&logo=macOS&logoColor=FFFFFF&label=', alt: 'macOS 27' },
     ],
   },
@@ -226,8 +241,8 @@ export const gear: GearGroup[] = [
     name: { zh: '手机', en: 'Mobile' },
     icon: 'smartphone',
     badges: [
-      { src: './assets/badges/oneplus15.svg', alt: 'OnePlus 15' },
-      { src: './assets/badges/iphone16pro.svg', alt: 'iPhone 16 Pro' },
+      { src: asset('badges/oneplus15.svg'), alt: 'OnePlus 15' },
+      { src: asset('badges/iphone16pro.svg'), alt: 'iPhone 16 Pro' },
     ],
   },
 ]
@@ -340,11 +355,32 @@ export const copyright: CopyrightItem[] = [
   }
 ]
 
+export const friendsPage: FriendsPageContent = {
+  title: { zh: '友链', en: 'Friends' },
+  intro: {
+    zh: '这里收录了一些朋友的站点',
+    en: 'A small collection of sites run by friends.',
+  },
+  count: { zh: '位朋友', en: 'friends' },
+  metaDescription: {
+    zh: 'ReiAC 的朋友们：一起写博客、折腾技术的站点收藏。',
+    en: 'Friends of ReiAC — blogs and sites worth a visit.',
+  },
+  applyTitle: { zh: '想交换友链？', en: 'Want to exchange links?' },
+  applyBody: {
+    zh: '欢迎交换友链。请把站点名称、链接、头像地址和一句介绍发给我，我会尽快回复。',
+    en: 'I am happy to exchange links. Send me your site name, URL, avatar and a one-line introduction, and I will reply as soon as I can.',
+  },
+  applyCta: { zh: '发送邮件', en: 'Send an email' },
+  applySubject: { zh: '友链申请', en: 'Friend link request' },
+  applyEmail: 'lhh@live.com',
+}
+
 export const sections = {
   codeforces: { zh: 'Codeforces', en: 'Codeforces' },
   socials: { zh: '社交', en: 'Socials' },
-  gear: { zh: '我使用的设备', en: 'My gear' },
-  games: { zh: '我玩的游戏', en: 'Games' },
+  gear: { zh: '设备', en: 'Devices' },
+  games: { zh: '游戏', en: 'Games' },
   timeline: { zh: '站点历程', en: 'Site timeline' },
   copyright: { zh: '版权说明', en: 'Copyright' },
   colophon: { zh: '关于本页', en: 'Colophon' },

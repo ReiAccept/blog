@@ -2,7 +2,7 @@ import { Link, useLocation } from 'react-router-dom'
 import type { Lang } from '../content'
 import { ui } from '../content'
 import { cx } from '../lib/cx'
-import { langPath, useI18n } from '../lib/i18n'
+import { localizePath, useI18n } from '../lib/i18n'
 
 const languageOptions: Array<{ value: Lang; label: string; htmlLang: string }> = [
   { value: 'zh', label: '中', htmlLang: 'zh-CN' },
@@ -32,7 +32,11 @@ export function LanguageToggle({ solid }: { solid: boolean }) {
         return (
           <Link
             key={option.value}
-            to={{ pathname: langPath(option.value), hash: location.hash }}
+            to={{
+              pathname: localizePath(location.pathname, option.value),
+              search: location.search,
+              hash: location.hash,
+            }}
             lang={option.htmlLang}
             aria-label={active ? option.label : actionLabel}
             aria-current={active ? 'page' : undefined}

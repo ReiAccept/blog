@@ -46,6 +46,18 @@ export function langPath(lang: Lang): string {
   return `/${lang}`
 }
 
+/** Swap the language segment while keeping the current page. */
+export function localizePath(pathname: string, lang: Lang): string {
+  const segments = pathname.split('/')
+
+  if (isLang(segments[1])) {
+    segments[1] = lang
+    return segments.join('/') || langPath(lang)
+  }
+
+  return pathname === '/' ? langPath(lang) : `${langPath(lang)}${pathname}`
+}
+
 type LanguageContextValue = {
   lang: Lang
   setLang: (lang: Lang) => void
@@ -75,9 +87,13 @@ export function LanguageProvider({ lang, children }: { lang: Lang; children: Rea
         return
       }
 
-      navigate({ pathname: langPath(next), hash: location.hash })
+      navigate({
+        pathname: localizePath(location.pathname, next),
+        search: location.search,
+        hash: location.hash,
+      })
     },
-    [lang, location.hash, navigate],
+    [lang, location.hash, location.pathname, location.search, navigate],
   )
 
   const toggleLang = useCallback(() => {

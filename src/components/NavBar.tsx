@@ -1,16 +1,23 @@
 import { useEffect, useState } from 'react'
-import { LuArrowUpRight, LuBookOpen } from 'react-icons/lu'
+import { LuArrowUpRight, LuBookOpen, LuUser, LuUsers } from 'react-icons/lu'
+import { Link, useLocation } from 'react-router-dom'
 import { nav, site, ui } from '../content'
 import { cx } from '../lib/cx'
-import { useI18n } from '../lib/i18n'
+import { langPath, useI18n } from '../lib/i18n'
 import { LanguageToggle } from './LanguageToggle'
 import { ThemeToggle } from './ThemeToggle'
 
 export function NavBar() {
-  const { pick } = useI18n()
+  const { lang, pick } = useI18n()
+  const location = useLocation()
   const [scrolled, setScrolled] = useState(false)
   const [hovered, setHovered] = useState(false)
   const solid = scrolled || hovered
+
+  const aboutPath = langPath(lang)
+  const friendsPath = `${aboutPath}/friends`
+  const onFriends = location.pathname === friendsPath
+  const onAbout = !onFriends
 
   useEffect(() => {
     const onScroll = () => setScrolled(window.scrollY > 24)
@@ -35,7 +42,7 @@ export function NavBar() {
         className="mx-auto flex h-full max-w-[1200px] items-center gap-3 px-4 sm:px-6"
       >
         <a
-          href={site.blog}
+          href={site.index}
           className="group flex min-w-0 items-center gap-3"
           aria-label={site.title}
         >
@@ -66,7 +73,7 @@ export function NavBar() {
           )}
         >
           <a
-            href={site.blog}
+            href={site.index}
             target="_blank"
             rel="noreferrer"
             className="inline-flex items-center gap-1 rounded-lg px-3 py-2 text-sm font-semibold text-slate-600 transition-colors hover:text-slate-950 dark:text-slate-300 dark:hover:text-white"
@@ -74,17 +81,62 @@ export function NavBar() {
             {pick(nav.blog)}
             <LuArrowUpRight className="size-3.5" aria-hidden="true" />
           </a>
-          <a
-            href="#top"
-            aria-current="page"
-            className="rounded-lg px-3 py-2 text-sm font-semibold text-sky-600 transition-colors hover:text-sky-700 dark:text-sky-400 dark:hover:text-sky-300"
+          <Link
+            to={friendsPath}
+            aria-current={onFriends ? 'page' : undefined}
+            className={cx(
+              'rounded-lg px-3 py-2 text-sm font-semibold transition-colors',
+              onFriends
+                ? 'text-sky-600 dark:text-sky-400'
+                : 'text-slate-600 hover:text-slate-950 dark:text-slate-300 dark:hover:text-white',
+            )}
+          >
+            {pick(nav.friends)}
+          </Link>
+          <Link
+            to={aboutPath}
+            aria-current={onAbout ? 'page' : undefined}
+            className={cx(
+              'rounded-lg px-3 py-2 text-sm font-semibold transition-colors',
+              onAbout
+                ? 'text-sky-600 dark:text-sky-400'
+                : 'text-slate-600 hover:text-slate-950 dark:text-slate-300 dark:hover:text-white',
+            )}
           >
             {pick(nav.about)}
-          </a>
+          </Link>
         </div>
 
+        {onFriends ? (
+          <Link
+            to={aboutPath}
+            aria-label={pick(nav.about)}
+            className={cx(
+              'inline-flex size-8 items-center justify-center rounded-full ring-1 transition-colors duration-200 sm:hidden',
+              solid
+                ? 'bg-slate-100 text-slate-500 ring-slate-200/80 dark:bg-slate-800 dark:text-slate-400 dark:ring-slate-700'
+                : 'bg-slate-950/35 text-white ring-white/25 backdrop-blur-md',
+            )}
+          >
+            <LuUser className="size-4" aria-hidden="true" />
+          </Link>
+        ) : (
+          <Link
+            to={friendsPath}
+            aria-label={pick(nav.friends)}
+            className={cx(
+              'inline-flex size-8 items-center justify-center rounded-full ring-1 transition-colors duration-200 sm:hidden',
+              solid
+                ? 'bg-slate-100 text-slate-500 ring-slate-200/80 dark:bg-slate-800 dark:text-slate-400 dark:ring-slate-700'
+                : 'bg-slate-950/35 text-white ring-white/25 backdrop-blur-md',
+            )}
+          >
+            <LuUsers className="size-4" aria-hidden="true" />
+          </Link>
+        )}
+
         <a
-          href={site.blog}
+          href={site.index}
           target="_blank"
           rel="noreferrer"
           aria-label={pick(nav.blog)}
