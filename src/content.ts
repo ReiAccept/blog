@@ -334,8 +334,8 @@ export const copyright: CopyrightItem[] = [
   },
   {
     text: {
-      zh: '本博客运行于 [GitHub Pages](https://pages.github.com/)，源代码位于 [GitHub 仓库](https://github.com/ReiAccept/blog)；本页源码单独位于 [GitHub 仓库](https://github.com/ReiAccept/about)。',
-      en: 'This blog runs on [GitHub Pages](https://pages.github.com/); the source code lives in the [GitHub repository](https://github.com/ReiAccept/blog); the source code for this page is separately located in the [GitHub repository](https://github.com/ReiAccept/about).',
+      zh: '本博客运行于 [GitHub Pages](https://pages.github.com/)，源代码位于 [GitHub 仓库](https://github.com/ReiAccept/blog)；本页源码单独位于 about 分支',
+      en: 'This blog runs on [GitHub Pages](https://pages.github.com/); the source code lives in the [GitHub repository](https://github.com/ReiAccept/blog); the source code for this page is separately located in the about branch.',
     },
   }
 ]
