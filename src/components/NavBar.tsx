@@ -73,7 +73,7 @@ export function NavBar() {
           )}
         >
           <a
-            href={site.index}
+            href={site.blog}
             target="_blank"
             rel="noreferrer"
             className="inline-flex items-center gap-1 rounded-lg px-3 py-2 text-sm font-semibold text-slate-600 transition-colors hover:text-slate-950 dark:text-slate-300 dark:hover:text-white"
@@ -136,7 +136,7 @@ export function NavBar() {
         )}
 
         <a
-          href={site.index}
+          href={site.blog}
           target="_blank"
           rel="noreferrer"
           aria-label={pick(nav.blog)}

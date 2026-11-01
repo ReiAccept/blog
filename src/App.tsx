@@ -33,7 +33,7 @@ function AboutPage() {
   const { lang, pick } = useI18n()
 
   usePageMeta(
-    lang === 'zh' ? '关于本站' : 'About',
+    lang === 'zh' ? '关于我' : 'About',
     lang === 'zh'
       ? '关于 ReiAC：兴趣、设备、游戏与站点历程。'
       : 'About ReiAC: interests, gear, games and the history of this site.',

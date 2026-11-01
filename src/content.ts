@@ -64,6 +64,7 @@ export const site = {
   title: "ReiAC's Index",
   handle: '@ReiAccept',
   index: 'https://rei.ac',
+  blog: 'https://blog.rei.ac',
   github: 'https://github.com/ReiAccept',
   avatar: asset('avatar.png'),
   cover: asset('cover.webp'),
@@ -182,7 +183,7 @@ export const socials: Social[] = [
     id: 'blog',
     name: { zh: '博客', en: 'Blog' },
     handle: 'blog.rei.ac',
-    href: site.index,
+    href: site.blog,
   },
   {
     id: 'github',
@@ -206,7 +207,7 @@ export const socials: Social[] = [
     id: 'rss',
     name: { zh: 'RSS 订阅', en: 'RSS' },
     handle: '/index.xml',
-    href: `${site.index}/index.xml`,
+    href: `${site.blog}/index.xml`,
   },
   {
     id: 'codeforces',
