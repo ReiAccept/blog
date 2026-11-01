@@ -19,12 +19,12 @@ export function Footer() {
         <p className="mt-2 flex flex-wrap items-center justify-center gap-x-1.5 gap-y-1 text-xs text-slate-400 dark:text-slate-500">
           <span>{pick(footer.designInspired)}</span>
           <a
-            href="https://github.com/ReiAccept/about.git"
+            href="https://github.com/ReiAccept/blog/tree/about"
             target="_blank"
             rel="noreferrer"
             className="footer-link"
           >
-            Github
+            ReiAccept/blog
           </a>
           <span aria-hidden="true">·</span>
           <span>{pick(footer.builtWith)}</span>
