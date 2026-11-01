@@ -8,6 +8,15 @@ weight = 10000
     icon = "user"
     newtab = true
 
+[[main]]
+identifier = "Friends"
+name = "友链"
+url = "https://rei.ac/zh/friends"
+weight = 9999
+    [main.params]
+    icon = "link"
+    newtab = true
+
 [[social]]
 identifier = "github"
 name = "GitHub"
