@@ -47,7 +47,7 @@ export type CopyrightItem = {
 
 export const site = {
   name: 'ReiAC',
-  title: "ReiAC's Blog",
+  title: "ReiAC's Index",
   handle: '@ReiAccept',
   blog: 'https://blog.rei.ac',
   github: 'https://github.com/ReiAccept',
