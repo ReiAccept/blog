@@ -1,30 +1,33 @@
-# Compiled Object files, Static and Dynamic libs (Shared Objects)
-*.o
-*.a
-*.so
+# Logs
+logs
+*.log
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+pnpm-debug.log*
+lerna-debug.log*
 
-# Folders
-_obj
-_test
+node_modules
+dist
+dist-ssr
+*.local
 
-# Architecture specific extensions/prefixes
-*.[568vq]
-[568vq].out
+# Local reference / screenshot tooling
+.ref-*/
+.ref-*.css
+.ref-*.html
+.shots/
+.chrome-data*/
+.npm-cache/
+.tools/
 
-*.cgo1.go
-*.cgo2.c
-_cgo_defun.c
-_cgo_gotypes.go
-_cgo_export.*
-
-_testmain.go
-
-*.exe
-*.test
-
-public
+# Editor directories and files
+.vscode/*
+!.vscode/extensions.json
+.idea
 .DS_Store
-
-resources
-
-.hugo_build.lock
+*.suo
+*.ntvs*
+*.njsproj
+*.sln
+*.sw?

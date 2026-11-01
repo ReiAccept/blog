@@ -1,0 +1,214 @@
+@import "tailwindcss";
+
+@custom-variant dark (&:where(.dark, .dark *));
+
+@theme {
+  --font-sans:
+    "Rubik", "Noto Sans SC", "Noto Sans", "MiSans", "PingFang SC",
+    "Hiragino Sans GB", "Microsoft YaHei", ui-sans-serif, system-ui, sans-serif;
+  --font-mono:
+    "JetBrains Mono", "Ubuntu Mono", ui-monospace, SFMono-Regular, Menlo,
+    Monaco, Consolas, "Liberation Mono", monospace;
+}
+
+@layer base {
+  :root {
+    color-scheme: light;
+  }
+
+  html.dark {
+    color-scheme: dark;
+  }
+
+  html {
+    scroll-behavior: smooth;
+    -webkit-tap-highlight-color: transparent;
+    -webkit-text-size-adjust: 100%;
+  }
+
+  body {
+    margin: 0;
+    min-width: 320px;
+    min-height: 100vh;
+    background-color: #fff;
+    color: #334155;
+    font-family: var(--font-sans);
+    text-rendering: optimizeLegibility;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+  }
+
+  .dark body {
+    background-color: #020617;
+    color: #cbd5e1;
+  }
+
+  #root {
+    min-height: 100vh;
+  }
+
+  a {
+    text-decoration: none;
+  }
+
+  button {
+    font: inherit;
+  }
+
+  code {
+    font-family: var(--font-mono);
+    font-size: 0.9em;
+  }
+
+  ::selection {
+    background-color: #bae6fd;
+    color: #082f49;
+  }
+
+  .dark ::selection {
+    background-color: #0369a1;
+    color: #f0f9ff;
+  }
+
+  :focus-visible {
+    outline: 2px solid #0ea5e9;
+    outline-offset: 2px;
+  }
+
+  ::-webkit-scrollbar {
+    width: 8px;
+    height: 8px;
+  }
+
+  ::-webkit-scrollbar-track {
+    background-color: #f8fafc;
+  }
+
+  ::-webkit-scrollbar-thumb {
+    border-radius: 5px;
+    background-color: #cbd5e1;
+  }
+
+  .dark ::-webkit-scrollbar-track {
+    background-color: #0f172a;
+  }
+
+  .dark ::-webkit-scrollbar-thumb {
+    background-color: #334155;
+  }
+}
+
+@layer components {
+  .card {
+    border: 1px solid #e2e8f0;
+    border-radius: 0.75rem;
+    background-color: #fff;
+    box-shadow: 0 1px 2px 0 rgb(15 23 42 / 0.04);
+    transition:
+      box-shadow 0.2s ease,
+      border-color 0.2s ease;
+  }
+
+  .card:hover {
+    border-color: #cbd5e1;
+    box-shadow:
+      0 10px 15px -3px rgb(15 23 42 / 0.08),
+      0 4px 6px -4px rgb(15 23 42 / 0.08);
+  }
+
+  .dark .card {
+    border-color: rgb(51 65 85 / 0.7);
+    background-color: #0f172a;
+    box-shadow: none;
+  }
+
+  .dark .card:hover {
+    border-color: #475569;
+    box-shadow:
+      0 10px 15px -3px rgb(0 0 0 / 0.35),
+      0 4px 6px -4px rgb(0 0 0 / 0.3);
+  }
+
+  .link {
+    color: #0284c7;
+    border-bottom: 1px dashed #7dd3fc;
+    box-decoration-break: clone;
+    transition:
+      color 0.2s ease,
+      background-color 0.2s ease,
+      border-color 0.2s ease;
+  }
+
+  .link:hover {
+    color: #0369a1;
+    border-bottom-color: #0ea5e9;
+    background-color: #e0f2fe;
+  }
+
+  .dark .link {
+    color: #38bdf8;
+    border-bottom-color: #0369a1;
+  }
+
+  .dark .link:hover {
+    color: #7dd3fc;
+    border-bottom-color: #38bdf8;
+    background-color: rgb(14 165 233 / 0.12);
+  }
+
+  .footer-link {
+    color: #64748b;
+    text-decoration: underline;
+    text-decoration-color: transparent;
+    text-underline-offset: 2px;
+    transition:
+      color 0.2s ease,
+      text-decoration-color 0.2s ease;
+  }
+
+  .footer-link:hover {
+    color: #0284c7;
+    text-decoration-color: currentColor;
+  }
+
+  .dark .footer-link {
+    color: #94a3b8;
+  }
+
+  .dark .footer-link:hover {
+    color: #38bdf8;
+  }
+}
+
+.cover-fade {
+  background: linear-gradient(
+    to bottom,
+    rgb(255 255 255 / 0) 0%,
+    rgb(255 255 255 / 0) 88%,
+    #fff 100%
+  );
+}
+
+.dark .cover-fade {
+  background: linear-gradient(
+    to bottom,
+    rgb(2 6 23 / 0) 0%,
+    rgb(2 6 23 / 0) 78%,
+    #020617 100%
+  );
+}
+
+@media (prefers-reduced-motion: reduce) {
+  html {
+    scroll-behavior: auto;
+  }
+
+  *,
+  *::before,
+  *::after {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+    scroll-behavior: auto !important;
+  }
+}

@@ -1,6 +1,0 @@
-# Uncomment this file to enable multilanguage site support
-
-[zh-cn]
-label = "中文"
-direction = "ltr"
-weight = 1

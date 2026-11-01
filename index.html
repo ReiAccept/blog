@@ -1,0 +1,63 @@
+<!doctype html>
+<html lang="zh-CN">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="color-scheme" content="light dark" />
+
+    <title>关于本站 - ReiAC's Blog</title>
+    <meta
+      name="description"
+      content="关于 ReiAC：兴趣、设备、游戏与站点历程。About ReiAC: interests, gear, games and the history of this site."
+    />
+    <meta name="author" content="ReiAC" />
+    <meta name="theme-color" content="#ffffff" media="(prefers-color-scheme: light)" />
+    <meta name="theme-color" content="#020617" media="(prefers-color-scheme: dark)" />
+
+    <meta property="og:type" content="profile" />
+    <meta property="og:site_name" content="ReiAC's Blog" />
+    <meta property="og:title" content="关于本站 - ReiAC's Blog" />
+    <meta
+      property="og:description"
+      content="关于 ReiAC：兴趣、设备、游戏与站点历程。About ReiAC: interests, gear, games and the history of this site."
+    />
+    <meta property="og:image" content="./assets/cover.webp" />
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta name="twitter:title" content="关于本站 - ReiAC's Blog" />
+    <meta
+      name="twitter:description"
+      content="关于 ReiAC：兴趣、设备、游戏与站点历程。About ReiAC: interests, gear, games and the history of this site."
+    />
+    <meta name="twitter:image" content="./assets/cover.webp" />
+
+    <link rel="icon" type="image/jpeg" href="./assets/avatar.png" />
+    <link rel="apple-touch-icon" href="./assets/avatar.png" />
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@400;500;600&family=Noto+Sans+SC:wght@100..900&family=Rubik:wght@300..900&display=swap"
+      rel="stylesheet"
+    />
+
+    <script>
+      ;(() => {
+        try {
+          const key = 'rei-about-theme'
+          const stored = window.localStorage.getItem(key)
+          const dark = stored
+            ? stored === 'dark'
+            : window.matchMedia('(prefers-color-scheme: dark)').matches
+          document.documentElement.classList.toggle('dark', dark)
+          document.documentElement.style.colorScheme = dark ? 'dark' : 'light'
+        } catch {
+          /* Ignore unavailable storage. */
+        }
+      })()
+    </script>
+  </head>
+  <body>
+    <div id="root"></div>
+    <script type="module" src="/src/main.tsx"></script>
+  </body>
+</html>
