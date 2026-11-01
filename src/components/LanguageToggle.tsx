@@ -1,7 +1,8 @@
+import { Link, useLocation } from 'react-router-dom'
 import type { Lang } from '../content'
 import { ui } from '../content'
 import { cx } from '../lib/cx'
-import { useI18n } from '../lib/i18n'
+import { langPath, useI18n } from '../lib/i18n'
 
 const languageOptions: Array<{ value: Lang; label: string; htmlLang: string }> = [
   { value: 'zh', label: '中', htmlLang: 'zh-CN' },
@@ -9,7 +10,8 @@ const languageOptions: Array<{ value: Lang; label: string; htmlLang: string }> =
 ]
 
 export function LanguageToggle({ solid }: { solid: boolean }) {
-  const { lang, setLang, pick } = useI18n()
+  const { lang, pick } = useI18n()
+  const location = useLocation()
 
   return (
     <div
@@ -28,14 +30,18 @@ export function LanguageToggle({ solid }: { solid: boolean }) {
           option.value === 'zh' ? pick(ui.switchToChinese) : pick(ui.switchToEnglish)
 
         return (
-          <button
+          <Link
             key={option.value}
-            type="button"
+            to={{ pathname: langPath(option.value), hash: location.hash }}
             lang={option.htmlLang}
             aria-label={active ? option.label : actionLabel}
-            aria-pressed={active}
+            aria-current={active ? 'page' : undefined}
             title={actionLabel}
-            onClick={() => setLang(option.value)}
+            onClick={(event) => {
+              if (active) {
+                event.preventDefault()
+              }
+            }}
             className={cx(
               'rounded-full px-2 py-1 leading-none transition-colors duration-200',
               active
@@ -48,7 +54,7 @@ export function LanguageToggle({ solid }: { solid: boolean }) {
             )}
           >
             {option.label}
-          </button>
+          </Link>
         )
       })}
     </div>

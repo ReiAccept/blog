@@ -1,3 +1,3 @@
-# ReiAC · About
+# 博客的 About 页面
 
-My About Page
+运行在 Cloudflare Pages 上
