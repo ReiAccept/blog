@@ -359,8 +359,8 @@ export const copyright: CopyrightItem[] = [
 export const friendsPage: FriendsPageContent = {
   title: { zh: '友链', en: 'Friends' },
   intro: {
-    zh: '这里收录了一些朋友的站点',
-    en: 'A small collection of sites run by friends.',
+    zh: '这里收录了一些朋友的站点（按名称排序）',
+    en: 'A small collection of sites run by friends.(sorted by name)',
   },
   count: { zh: '位朋友', en: 'friends' },
   metaDescription: {

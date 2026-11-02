@@ -17,8 +17,8 @@ export const friends: Friend[] = [
     url: 'https://www.cnblogs.com/onglublog/',
     avatar: 'https://q1.qlogo.cn/g?b=qq&nk=632599557&s=640',
     desc: {
-      zh: 'WSX%%%，XCPC金牌爷',
-      en: 'WSX%%%, XCPC gold medalist',
+      zh: 'WSX%%%, ICPC金牌爷',
+      en: 'WSX%%%, ICPC gold medalist',
     },
   },
   {
@@ -26,8 +26,8 @@ export const friends: Friend[] = [
     url: 'https://kaizynx.github.io/',
     avatar: 'https://cdn.jsdelivr.net/gh/KaizynX/cdn/img/custom/avatar.gif',
     desc: {
-      zh: '凯爷%%%，我的爱豆，WF选手，我ACM板子都是学他的',
-      en: 'Kai%%%, my idol and a WF finalist — I learned all my ACM templates from him',
+      zh: '凯爷%%%, ICPC WP finalist',
+      en: 'Kai%%%, my idol and a WF finalist',
     },
   },
   {
@@ -40,21 +40,12 @@ export const friends: Friend[] = [
     },
   },
   {
-    name: '蓝天天',
-    url: 'http://fubluesky.github.io/',
+    name: '蓝天',
+    url: 'https://fubluesky.github.io/',
     avatar: 'https://q1.qlogo.cn/g?b=qq&nk=936992197&s=640',
     desc: {
       zh: '可爱蓝天',
       en: "Pretty cute",
-    },
-  },
-  {
-    name: 'ssr',
-    url: 'https://leanhe.dev/',
-    avatar: 'https://leanhe.dev/favicon.ico',
-    desc: {
-      zh: '',
-      en: '',
     },
   },
   {
@@ -99,7 +90,7 @@ export const friends: Friend[] = [
     avatar: 'https://q1.qlogo.cn/g?b=qq&nk=1026106774&s=640',
     desc: {
       zh: '是蓝天天的男朋友哦',
-      en: "BaoBao, LanTianTian's boyfriend",
+      en: "",
     },
   },
   {
@@ -108,7 +99,7 @@ export const friends: Friend[] = [
     avatar: 'https://q1.qlogo.cn/g?b=qq&nk=1342367762&s=640',
     desc: {
       zh: '清纯学弟',
-      en: 'A pure-hearted underclassman',
+      en: '',
     },
   },
   {
@@ -117,7 +108,7 @@ export const friends: Friend[] = [
     avatar: 'https://avatars.githubusercontent.com/u/65482183',
     desc: {
       zh: '坏了，我成学妹了',
-      en: "Oh no — I've become the underclassman",
+      en: "",
     },
   },
   {
@@ -129,13 +120,4 @@ export const friends: Friend[] = [
       en: 'OIer / ACMer / Win32 dev',
     },
   },
-  {
-    name: '浅梦',
-    url: 'https://1804040636.github.io/',
-    avatar: 'https://1804040636.github.io/img/head.png',
-    desc: {
-      zh: '浅梦の博客',
-      en: "Qianmeng's blog",
-    },
-  },
-]
+].sort((a, b) => b.name.localeCompare(a.name))
