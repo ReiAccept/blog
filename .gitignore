@@ -34,3 +34,4 @@ dist-ssr
 
 /resources
 .hugo_build.lock
+themes
