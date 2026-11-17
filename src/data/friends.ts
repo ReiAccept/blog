@@ -129,4 +129,4 @@ export const friends: Friend[] = [
       en: 'soha!',
     },
   },
-].sort((a, b) => b.name.localeCompare(a.name))
+].sort((a, b) => a.url.localeCompare(b.url))
