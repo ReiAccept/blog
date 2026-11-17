@@ -58,7 +58,7 @@ export const friends: Friend[] = [
     },
   },
   {
-    name: "涩队CSL's blog",
+    name: "CSL",
     url: 'https://cubercsl.site/',
     avatar: 'https://avatars.githubusercontent.com/u/22931465',
     desc: {
@@ -103,7 +103,7 @@ export const friends: Friend[] = [
     },
   },
   {
-    name: '残城三梦 / Livinfly',
+    name: 'Livinfly',
     url: 'https://livinfly.github.io/',
     avatar: 'https://avatars.githubusercontent.com/u/65482183',
     desc: {
@@ -121,9 +121,9 @@ export const friends: Friend[] = [
     },
   },
   {
-    name: '海上的宫殿',
+    name: 'Soha',
     url: 'https://soha.moe/',
-    avatar: 'https://q1.qlogo.cn/g?b=qq&nk=376202833&s=640',
+    avatar: 'https://avatars.githubusercontent.com/u/5895757',
     desc: {
       zh: '梭哈姐姐',
       en: 'soha!',
