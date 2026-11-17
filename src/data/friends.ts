@@ -120,4 +120,13 @@ export const friends: Friend[] = [
       en: 'OIer / ACMer / Win32 dev',
     },
   },
+  {
+    name: '海上的宫殿',
+    url: 'https://soha.moe/',
+    avatar: 'https://q1.qlogo.cn/g?b=qq&nk=376202833&s=640',
+    desc: {
+      zh: '梭哈姐姐',
+      en: 'soha!',
+    },
+  },
 ].sort((a, b) => b.name.localeCompare(a.name))
