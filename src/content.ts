@@ -35,6 +35,20 @@ export type Game = {
   tone: 'amber' | 'rose' | 'sky'
 }
 
+export type ServiceIcon = 'archlinux' | 'bgp'
+
+export type ServiceTone = 'sky' | 'emerald'
+
+export type Service = {
+  id: string
+  name: Localized
+  meta: string
+  description: Localized
+  href: string
+  icon: ServiceIcon
+  tone: ServiceTone
+}
+
 export type TimelineItem = {
   date: string
   title: Localized
@@ -111,7 +125,7 @@ export const intro: Localized[] = [
     en: "Broad interests — I've dabbled in many corners of CS/EE, enough to know a little about each.",
   },
   {
-    zh: '从小学开始的“图吧”垃圾佬，大船服务器是真爱（家里Homelab除了核心路由外全是大船二手服务器硬件）',
+    zh: '从小学开始的“图吧”垃圾佬，大船服务器是真爱（家里 Homelab 除了核心路由外全是大船二手服务器硬件）',
     en: "Ex-enterprise server pulls are my true love(In my home lab, everything except the core router is second-hand server hardware from those big shipments).",
   },
   {
@@ -119,7 +133,7 @@ export const intro: Localized[] = [
     en: "Automation tooling enthusiast — maybe because I'm a little lazy: if a computer can reliably do it for me, it should.",
   },
   {
-    zh: '不工作时用 打游戏/看番/古法编程/古法配Homelab 来放松心情和消磨时间',
+    zh: '不工作时用 打游戏/看番/古法编程/古法配 Homelab 来放松心情和消磨时间',
     en: 'On non-work projects I am an old-school, artisanal programming enthusiast — tinkering with side projects at home is how I relax.',
   },
   {
@@ -127,7 +141,7 @@ export const intro: Localized[] = [
     en: 'I firmly believe that open source is the future of computing.',
   },
   {
-    zh: '目前在某公司网络安全实验室工作，做密码应用和实现这一块（我的密码学其实是大学时炒币接触炒币，从而去研究了区块链相关原理从而学的hhhhh）',
+    zh: '目前在某公司网络安全实验室工作，做密码应用和实现这一块（我的密码学最开始是大学时炒币接触炒币，从而去研究了区块链相关原理从而学的hhhhh）',
     en: "Currently working in a company's cybersecurity lab on cryptographic applications and implementations. (I actually got into crypto by trading coins in college, which led me to study blockchain fundamentals — and somehow I stumbled into this industry, hahaha.)",
   },
   {
@@ -252,7 +266,7 @@ export const games: Game[] = [
   {
     id: 'sc2',
     name: { zh: '星际争霸2', en: 'StarCraft II' },
-    meta: { zh: '国服 · 宗师', en: 'CN · Grandmaster' },
+    meta: { zh: '宗师 (国服)', en: 'Grandmaster at CN Server' },
     accountLabel: { zh: '好友 ID', en: 'Friend ID' },
     account: 'Spaceless#5104',
     icon: 'starcraft',
@@ -270,11 +284,38 @@ export const games: Game[] = [
   {
     id: 'switch',
     name: { zh: 'Nintendo Switch', en: 'Nintendo Switch' },
-    meta: { zh: '第一方游戏启动器', en: 'Nintendo first-party game launcher' },
+    meta: { zh: '', en: '' },
     accountLabel: { zh: '好友 ID', en: 'Friend ID' },
     account: 'SW-0298-7511-7319',
     icon: 'switch',
     tone: 'sky',
+  },
+]
+
+export const services: Service[] = [
+  {
+    id: 'archlinux',
+    name: { zh: 'ArchLinux 软件源', en: 'Arch Linux repository' },
+    meta: 'repo.rei.ac',
+    description: {
+      zh: '基于 lilac 打包一些自用小软件',
+      en: 'built with lilac',
+    },
+    href: 'https://repo.rei.ac',
+    icon: 'archlinux',
+    tone: 'sky',
+  },
+  {
+    id: 'bgp',
+    name: { zh: 'BGP', en: 'BGP' },
+    meta: 'AS198527',
+    description: {
+      zh: '开放 Peering~',
+      en: 'open to peering',
+    },
+    href: 'https://bgp.tools/as/198527',
+    icon: 'bgp',
+    tone: 'emerald',
   },
 ]
 
@@ -379,6 +420,7 @@ export const friendsPage: FriendsPageContent = {
 
 export const sections = {
   codeforces: { zh: 'Codeforces', en: 'Codeforces' },
+  services: { zh: '服务', en: 'Services' },
   socials: { zh: '社交', en: 'Socials' },
   gear: { zh: '设备', en: 'Devices' },
   games: { zh: '游戏', en: 'Games' },

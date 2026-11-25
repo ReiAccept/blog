@@ -5,16 +5,24 @@ import {
   LuLaptop,
   LuMail,
   LuMonitor,
+  LuRoute,
   LuSmartphone,
 } from 'react-icons/lu'
 import {
+  SiArchlinux,
   SiCodeforces,
   SiDota2,
   SiGithub,
   SiRss,
   SiX,
 } from 'react-icons/si'
-import type { GameIcon, GearIcon, SocialIcon } from '../content'
+import type {
+  GameIcon,
+  GearIcon,
+  ServiceIcon,
+  ServiceTone,
+  SocialIcon,
+} from '../content'
 
 type IconSpec = {
   Icon: IconType
@@ -40,6 +48,18 @@ export const gameIcons: Record<GameIcon, IconType> = {
   starcraft: LuGamepad2,
   dota2: SiDota2,
   switch: LuGamepad2,
+}
+
+export const serviceIcons: Record<ServiceIcon, IconType> = {
+  archlinux: SiArchlinux,
+  bgp: LuRoute,
+}
+
+export const serviceToneClasses: Record<ServiceTone, string> = {
+  sky:
+    'bg-sky-50 text-sky-600 ring-sky-500/20 dark:bg-sky-400/10 dark:text-sky-300 dark:ring-sky-400/20',
+  emerald:
+    'bg-emerald-50 text-emerald-600 ring-emerald-500/20 dark:bg-emerald-400/10 dark:text-emerald-300 dark:ring-emerald-400/20',
 }
 
 export const gameToneClasses: Record<'amber' | 'rose' | 'sky', string> = {

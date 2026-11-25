@@ -16,6 +16,7 @@ import { Gear } from './components/Gear'
 import { PageLayout } from './components/PageLayout'
 import { Profile } from './components/Profile'
 import { Section } from './components/Section'
+import { Services } from './components/Services'
 import { Socials } from './components/Socials'
 import { Timeline } from './components/Timeline'
 import { sections } from './content'
@@ -68,6 +69,9 @@ function AboutPage() {
         />
 
         <aside className="mt-10 min-w-0 border-t border-slate-200/70 pt-8 lg:mt-0 lg:w-[25%] lg:flex-none lg:border-t-0 lg:pt-0 dark:border-slate-700/60">
+          <Section id="services" title={pick(sections.services)}>
+            <Services />
+          </Section>
           <Section id="timeline" title={pick(sections.timeline)}>
             <Timeline />
           </Section>
